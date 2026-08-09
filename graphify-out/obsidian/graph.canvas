@@ -1,0 +1,6511 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 0,
+      "y": 0,
+      "width": 1760,
+      "height": 820,
+      "color": "1"
+    },
+    {
+      "id": "n_core_providers_firebase_providers_dart",
+      "type": "file",
+      "file": "dot-coreprovidersfirebase_providers.dart.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_core_widgets_glass_card_dart",
+      "type": "file",
+      "file": "dot-corewidgetsglass_card.dart.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_data_auth_repository_dart",
+      "type": "file",
+      "file": "dot-dataauth_repository.dart.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_activelistscreen",
+      "type": "file",
+      "file": "ActiveListScreen.md",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_asyncvalue",
+      "type": "file",
+      "file": "AsyncValue.md",
+      "x": 820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_authcontroller",
+      "type": "file",
+      "file": "AuthController.md",
+      "x": 1020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_authrepository",
+      "type": "file",
+      "file": "AuthRepository.md",
+      "x": 1220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumerstatefulwidget",
+      "type": "file",
+      "file": "ConsumerStatefulWidget.md",
+      "x": 1420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_createlistscreen",
+      "type": "file",
+      "file": "CreateListScreen.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_householdcontroller",
+      "type": "file",
+      "file": "HouseholdController.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_householdsetupscreen",
+      "type": "file",
+      "file": "HouseholdSetupScreen.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_loginscreen",
+      "type": "file",
+      "file": "LoginScreen.md",
+      "x": 620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_manage_household_screen_managehouseholdscreen",
+      "type": "file",
+      "file": "ManageHouseholdScreen.md",
+      "x": 820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_settingsscreen",
+      "type": "file",
+      "file": "SettingsScreen.md",
+      "x": 1020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_shoppinglistcontroller",
+      "type": "file",
+      "file": "ShoppingListController.md",
+      "x": 1220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_statenotifier",
+      "type": "file",
+      "file": "StateNotifier.md",
+      "x": 1420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model_usermodel",
+      "type": "file",
+      "file": "UserModel.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_loginscreenstate",
+      "type": "file",
+      "file": "_LoginScreenState.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_builduserprofilecard",
+      "type": "file",
+      "file": "_buildUserProfileCard.md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_emailcontroller",
+      "type": "file",
+      "file": "_emailController.md",
+      "x": 620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_formkey",
+      "type": "file",
+      "file": "_formKey.md",
+      "x": 820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_issignup",
+      "type": "file",
+      "file": "_isSignUp.md",
+      "x": 1020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_namecontroller",
+      "type": "file",
+      "file": "_nameController.md",
+      "x": 1220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_obscurepassword",
+      "type": "file",
+      "file": "_obscurePassword.md",
+      "x": 1420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_passwordcontroller",
+      "type": "file",
+      "file": "_passwordController.md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_saveprofilename",
+      "type": "file",
+      "file": "_saveProfileName.md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_submit",
+      "type": "file",
+      "file": "_submit.md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_appinitialdataloaderprovider",
+      "type": "file",
+      "file": "appInitialDataLoaderProvider.md",
+      "x": 620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_authcontrollerprovider",
+      "type": "file",
+      "file": "authControllerProvider.md",
+      "x": 820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_authrepositoryprovider",
+      "type": "file",
+      "file": "authRepositoryProvider.md",
+      "x": 1020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_authstateprovider",
+      "type": "file",
+      "file": "authStateProvider.md",
+      "x": 1220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_authuser",
+      "type": "file",
+      "file": "authUser.md",
+      "x": 1420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_auth_controller_dart",
+      "type": "file",
+      "file": "auth_controller.dart_1.md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller",
+      "type": "file",
+      "file": "auth_controller.dart.md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_build",
+      "type": "file",
+      "file": "build_6.md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_createhousehold",
+      "type": "file",
+      "file": "createHousehold_1.md",
+      "x": 620,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_createstate",
+      "type": "file",
+      "file": "createState_2.md",
+      "x": 820,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_data",
+      "type": "file",
+      "file": "data.md",
+      "x": 1020,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen_dispose",
+      "type": "file",
+      "file": "dispose_2.md",
+      "x": 1220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_firestore",
+      "type": "file",
+      "file": "firestore_2.md",
+      "x": 1420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_householdstate",
+      "type": "file",
+      "file": "householdState.md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_login_screen",
+      "type": "file",
+      "file": "login_screen.dart.md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_repository",
+      "type": "file",
+      "file": "repository.md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_requestjoin",
+      "type": "file",
+      "file": "requestJoin.md",
+      "x": 620,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_signin",
+      "type": "file",
+      "file": "signIn.md",
+      "x": 820,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_signout",
+      "type": "file",
+      "file": "signOut_1.md",
+      "x": 1020,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_signup",
+      "type": "file",
+      "file": "signUp.md",
+      "x": 1220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_updateprofile",
+      "type": "file",
+      "file": "updateProfile.md",
+      "x": 1420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_userprofilestate",
+      "type": "file",
+      "file": "userProfileState.md",
+      "x": 20,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_watch",
+      "type": "file",
+      "file": "watch.md",
+      "x": 220,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 1840,
+      "y": 0,
+      "width": 1540,
+      "height": 820,
+      "color": "2"
+    },
+    {
+      "id": "n_data_household_repository_dart",
+      "type": "file",
+      "file": "dot-datahousehold_repository.dart.md",
+      "x": 1860,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model_categorymodel",
+      "type": "file",
+      "file": "CategoryModel.md",
+      "x": 2060,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumerstate",
+      "type": "file",
+      "file": "ConsumerState.md",
+      "x": 2260,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_dashboardscreen",
+      "type": "file",
+      "file": "DashboardScreen.md",
+      "x": 2460,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_householdmodel",
+      "type": "file",
+      "file": "HouseholdModel.md",
+      "x": 2660,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_householdrepository",
+      "type": "file",
+      "file": "HouseholdRepository.md",
+      "x": 2860,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_activelistscreenstate",
+      "type": "file",
+      "file": "_ActiveListScreenState.md",
+      "x": 3060,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_createlistscreenstate",
+      "type": "file",
+      "file": "_CreateListScreenState.md",
+      "x": 1860,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_dashboardscreenstate",
+      "type": "file",
+      "file": "_DashboardScreenState.md",
+      "x": 2060,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_householdsetupscreenstate",
+      "type": "file",
+      "file": "_HouseholdSetupScreenState.md",
+      "x": 2260,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_manage_household_screen_managehouseholdscreenstate",
+      "type": "file",
+      "file": "_ManageHouseholdScreenState.md",
+      "x": 2460,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_settingsscreenstate",
+      "type": "file",
+      "file": "_SettingsScreenState.md",
+      "x": 2660,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_additem",
+      "type": "file",
+      "file": "_addItem.md",
+      "x": 2860,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_sendupdatenotification",
+      "type": "file",
+      "file": "_sendUpdateNotification.md",
+      "x": 3060,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_showaddsubgroupdialog",
+      "type": "file",
+      "file": "_showAddSubgroupDialog.md",
+      "x": 1860,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_showreassigndialog",
+      "type": "file",
+      "file": "_showReassignDialog.md",
+      "x": 2060,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_showreassignlistdialog",
+      "type": "file",
+      "file": "_showReassignListDialog.md",
+      "x": 2260,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_submit",
+      "type": "file",
+      "file": "_submit_1.md",
+      "x": 2460,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_activelistsprovider",
+      "type": "file",
+      "file": "activeListsProvider.md",
+      "x": 2660,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_addsubgroup",
+      "type": "file",
+      "file": "addSubgroup_1.md",
+      "x": 2860,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_approvejoin",
+      "type": "file",
+      "file": "approveJoin.md",
+      "x": 3060,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_authuser",
+      "type": "file",
+      "file": "authUser_1.md",
+      "x": 1860,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_build",
+      "type": "file",
+      "file": "build_1.md",
+      "x": 2060,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_build",
+      "type": "file",
+      "file": "build_7.md",
+      "x": 2260,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_manage_household_screen_build",
+      "type": "file",
+      "file": "build_8.md",
+      "x": 2460,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_build",
+      "type": "file",
+      "file": "build_9.md",
+      "x": 2660,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_build",
+      "type": "file",
+      "file": "build_10.md",
+      "x": 2860,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_build",
+      "type": "file",
+      "file": "build_11.md",
+      "x": 3060,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_build",
+      "type": "file",
+      "file": "build_12.md",
+      "x": 1860,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_currenthouseholdprovider",
+      "type": "file",
+      "file": "currentHouseholdProvider.md",
+      "x": 2060,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_household",
+      "type": "file",
+      "file": "household.md",
+      "x": 2260,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_householdcontrollerprovider",
+      "type": "file",
+      "file": "householdControllerProvider.md",
+      "x": 2460,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_householdmembersprovider",
+      "type": "file",
+      "file": "householdMembersProvider.md",
+      "x": 2660,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_householdrepositoryprovider",
+      "type": "file",
+      "file": "householdRepositoryProvider.md",
+      "x": 2860,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller",
+      "type": "file",
+      "file": "household_controller.dart.md",
+      "x": 3060,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_initstate",
+      "type": "file",
+      "file": "initState_2.md",
+      "x": 1860,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_isapprovedmemberprovider",
+      "type": "file",
+      "file": "isApprovedMemberProvider.md",
+      "x": 2060,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_pendingmembersprovider",
+      "type": "file",
+      "file": "pendingMembersProvider.md",
+      "x": 2260,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_ref",
+      "type": "file",
+      "file": "ref_1.md",
+      "x": 2460,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_rejectjoin",
+      "type": "file",
+      "file": "rejectJoin.md",
+      "x": 2660,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_removesubgroup",
+      "type": "file",
+      "file": "removeSubgroup_1.md",
+      "x": 2860,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_repository",
+      "type": "file",
+      "file": "repository_1.md",
+      "x": 3060,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_shoppinglistcontrollerprovider",
+      "type": "file",
+      "file": "shoppingListControllerProvider.md",
+      "x": 1860,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_singlelistprovider",
+      "type": "file",
+      "file": "singleListProvider.md",
+      "x": 2060,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_updatecategories",
+      "type": "file",
+      "file": "updateCategories.md",
+      "x": 2260,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_updatesubgroups",
+      "type": "file",
+      "file": "updateSubgroups_1.md",
+      "x": 2460,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_controller_userprofile",
+      "type": "file",
+      "file": "userProfile.md",
+      "x": 2660,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_presentation_auth_controller_userprofileprovider",
+      "type": "file",
+      "file": "userProfileProvider.md",
+      "x": 2860,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 3460,
+      "y": 0,
+      "width": 1540,
+      "height": 820,
+      "color": "3"
+    },
+    {
+      "id": "n_ios_runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry",
+      "type": "file",
+      "file": "+registerWithRegistry.md",
+      "x": 3480,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_providers_firebase_providers_dart",
+      "type": "file",
+      "file": "dot-providersfirebase_providers.dart.md",
+      "x": 3680,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_annotation_pragma",
+      "type": "file",
+      "file": "@pragma.md",
+      "x": 3880,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_firebase_options_defaultfirebaseoptions",
+      "type": "file",
+      "file": "DefaultFirebaseOptions.md",
+      "x": 4080,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_firebasemessaging",
+      "type": "file",
+      "file": "FirebaseMessaging.md",
+      "x": 4280,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_flutterlocalnotificationsplugin",
+      "type": "file",
+      "file": "FlutterLocalNotificationsPlugin.md",
+      "x": 4480,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ios_runner_generatedpluginregistrant_generatedpluginregistrant",
+      "type": "file",
+      "file": "GeneratedPluginRegistrant.md",
+      "x": 4680,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ios_runner_generatedpluginregistrant_h_ios_runner_generatedpluginregistrant",
+      "type": "file",
+      "file": "GeneratedPluginRegistrant.h.md",
+      "x": 3480,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ios_runner_generatedpluginregistrant_m_ios_runner_generatedpluginregistrant",
+      "type": "file",
+      "file": "GeneratedPluginRegistrant.m.md",
+      "x": 3680,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mainshellscreen_main_shell_screen",
+      "type": "file",
+      "file": "MainShellScreen Widget.md",
+      "x": 3880,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_nsobject",
+      "type": "file",
+      "file": "NSObject.md",
+      "x": 4080,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_notificationservice",
+      "type": "file",
+      "file": "NotificationService.md",
+      "x": 4280,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hatlyspec_push_notifications",
+      "type": "file",
+      "file": "Push Notifications Spec.md",
+      "x": 4480,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hatlyspec_shopping_list_schema",
+      "type": "file",
+      "file": "Shopping Lists Firestore Schema.md",
+      "x": 4680,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_main_firebasemessagingbackgroundhandler",
+      "type": "file",
+      "file": "_firebaseMessagingBackgroundHandler.md",
+      "x": 3480,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_getserviceaccountjson",
+      "type": "file",
+      "file": "_getServiceAccountJson.md",
+      "x": 3680,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_localnotifications",
+      "type": "file",
+      "file": "_localNotifications.md",
+      "x": 3880,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_resolvetargetfcmtokens",
+      "type": "file",
+      "file": "_resolveTargetFcmTokens.md",
+      "x": 4080,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_firebase_options_android",
+      "type": "file",
+      "file": "android.md",
+      "x": 4280,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_app_dart",
+      "type": "file",
+      "file": "appapp.dart.md",
+      "x": 4480,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dart_convert",
+      "type": "file",
+      "file": "dartconvert.md",
+      "x": 4680,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_firebase_options_dart",
+      "type": "file",
+      "file": "firebase_options.dart_1.md",
+      "x": 3480,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_firebase_options",
+      "type": "file",
+      "file": "firebase_options.dart.md",
+      "x": 3680,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_firestore",
+      "type": "file",
+      "file": "firestore.md",
+      "x": 3880,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_initialize",
+      "type": "file",
+      "file": "initialize.md",
+      "x": 4080,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_main_initializeapp",
+      "type": "file",
+      "file": "initializeApp.md",
+      "x": 4280,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_firebase_options_ios",
+      "type": "file",
+      "file": "ios.md",
+      "x": 4480,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_main_main",
+      "type": "file",
+      "file": "main().md",
+      "x": 4680,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_main",
+      "type": "file",
+      "file": "main.dart.md",
+      "x": 3480,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_messaging",
+      "type": "file",
+      "file": "messaging.md",
+      "x": 3680,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service",
+      "type": "file",
+      "file": "notification_service.dart.md",
+      "x": 3880,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_firebase_core_firebase_core_dart",
+      "type": "file",
+      "file": "packagefirebase_corefirebase_core.dart.md",
+      "x": 4080,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_firebase_messaging_firebase_messaging_dart",
+      "type": "file",
+      "file": "packagefirebase_messagingfirebase_messaging.dart.md",
+      "x": 4280,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_flutter_foundation_dart",
+      "type": "file",
+      "file": "packageflutterfoundation.dart.md",
+      "x": 4480,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_flutter_dotenv_flutter_dotenv_dart",
+      "type": "file",
+      "file": "packageflutter_dotenvflutter_dotenv.dart.md",
+      "x": 4680,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_flutter_local_notifications_flutter_local_notifications_dart",
+      "type": "file",
+      "file": "packageflutter_local_notificationsflutter_local_notifications.dart.md",
+      "x": 3480,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_google_fonts_google_fonts_dart",
+      "type": "file",
+      "file": "packagegoogle_fontsgoogle_fonts.dart.md",
+      "x": 3680,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_googleapis_auth_auth_io_dart",
+      "type": "file",
+      "file": "packagegoogleapis_authauth_io.dart.md",
+      "x": 3880,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_saveuserfcmtoken",
+      "type": "file",
+      "file": "saveUserFcmToken.md",
+      "x": 4080,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_sendfcmv1push",
+      "type": "file",
+      "file": "sendFcmV1Push.md",
+      "x": 4280,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_sendlistcreatednotification",
+      "type": "file",
+      "file": "sendListCreatedNotification.md",
+      "x": 4480,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_sendlistupdatenotification",
+      "type": "file",
+      "file": "sendListUpdateNotification.md",
+      "x": 4680,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_showlocalnotification",
+      "type": "file",
+      "file": "showLocalNotification.md",
+      "x": 3480,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_static_const_firebaseoptions",
+      "type": "file",
+      "file": "static const FirebaseOptions.md",
+      "x": 3680,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_subscribetohouseholdtopic",
+      "type": "file",
+      "file": "subscribeToHouseholdTopic.md",
+      "x": 3880,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_firebase_options_web",
+      "type": "file",
+      "file": "web.md",
+      "x": 4080,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 5080,
+      "y": 0,
+      "width": 1540,
+      "height": 820,
+      "color": "4"
+    },
+    {
+      "id": "n_core_widgets_glass_dialog_dart",
+      "type": "file",
+      "file": "dot-corewidgetsglass_dialog.dart.md",
+      "x": 5100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_household_domain_category_model_dart",
+      "type": "file",
+      "file": "dot-householddomaincategory_model.dart.md",
+      "x": 5300,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_household_presentation_household_controller_dart",
+      "type": "file",
+      "file": "dot-householdpresentationhousehold_controller.dart.md",
+      "x": 5500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumerwidget",
+      "type": "file",
+      "file": "ConsumerWidget.md",
+      "x": 5700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_history_screen_historyscreen",
+      "type": "file",
+      "file": "HistoryScreen.md",
+      "x": 5900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_categorysection",
+      "type": "file",
+      "file": "_CategorySection.md",
+      "x": 6100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_shoppinglistcard",
+      "type": "file",
+      "file": "_ShoppingListCard.md",
+      "x": 6300,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_confirmdeletelist",
+      "type": "file",
+      "file": "_confirmDeleteList.md",
+      "x": 5100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_confirmdeletelist",
+      "type": "file",
+      "file": "_confirmDeleteList_1.md",
+      "x": 5300,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_history_screen_confirmdeletelist",
+      "type": "file",
+      "file": "_confirmDeleteList_2.md",
+      "x": 5500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_copycode",
+      "type": "file",
+      "file": "_copyCode_1.md",
+      "x": 5700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_iscopied",
+      "type": "file",
+      "file": "_isCopied_2.md",
+      "x": 5900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_quickaddcontroller",
+      "type": "file",
+      "file": "_quickAddController.md",
+      "x": 6100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_selectedcategory",
+      "type": "file",
+      "file": "_selectedCategory.md",
+      "x": 6300,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_history_screen_showcompletedlistitemsdialog",
+      "type": "file",
+      "file": "_showCompletedListItemsDialog.md",
+      "x": 5100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_showoutofstockdialog",
+      "type": "file",
+      "file": "_showOutOfStockDialog.md",
+      "x": 5300,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen",
+      "type": "file",
+      "file": "active_list_screen.dart.md",
+      "x": 5500,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_history_screen_build",
+      "type": "file",
+      "file": "build_13.md",
+      "x": 5700,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_color",
+      "type": "file",
+      "file": "color_1.md",
+      "x": 5900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_confirmed",
+      "type": "file",
+      "file": "confirmed.md",
+      "x": 6100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_createstate",
+      "type": "file",
+      "file": "createState_6.md",
+      "x": 6300,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_createstate",
+      "type": "file",
+      "file": "createState_8.md",
+      "x": 5100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_currentuid",
+      "type": "file",
+      "file": "currentUid.md",
+      "x": 5300,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_currentuser",
+      "type": "file",
+      "file": "currentUser_1.md",
+      "x": 5500,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen",
+      "type": "file",
+      "file": "dashboard_screen.dart.md",
+      "x": 5700,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_dispose",
+      "type": "file",
+      "file": "dispose_5.md",
+      "x": 5900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_history_screen",
+      "type": "file",
+      "file": "history_screen.dart.md",
+      "x": 6100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_household",
+      "type": "file",
+      "file": "household_1.md",
+      "x": 6300,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_isowner",
+      "type": "file",
+      "file": "isOwner.md",
+      "x": 5100,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_isowner",
+      "type": "file",
+      "file": "isOwner_1.md",
+      "x": 5300,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_isselected",
+      "type": "file",
+      "file": "isSelected_1.md",
+      "x": 5500,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_items",
+      "type": "file",
+      "file": "items_1.md",
+      "x": 5700,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_label",
+      "type": "file",
+      "file": "label_1.md",
+      "x": 5900,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_list",
+      "type": "file",
+      "file": "list_1.md",
+      "x": 6100,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_listid",
+      "type": "file",
+      "file": "listId.md",
+      "x": 6300,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_members",
+      "type": "file",
+      "file": "members.md",
+      "x": 5100,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_membersstate",
+      "type": "file",
+      "file": "membersState.md",
+      "x": 5300,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_ontap",
+      "type": "file",
+      "file": "onTap_2.md",
+      "x": 5500,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_ontap",
+      "type": "file",
+      "file": "onTap_4.md",
+      "x": 5700,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_othermembers",
+      "type": "file",
+      "file": "otherMembers.md",
+      "x": 5900,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_go_router_go_router_dart",
+      "type": "file",
+      "file": "packagego_routergo_router.dart.md",
+      "x": 6100,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_selectedassignedto",
+      "type": "file",
+      "file": "selectedAssignedTo.md",
+      "x": 6300,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_selectedassignedtoname",
+      "type": "file",
+      "file": "selectedAssignedToName.md",
+      "x": 5100,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_shopping_list_controller_dart",
+      "type": "file",
+      "file": "shopping_list_controller.dart.md",
+      "x": 5300,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_dashboard_screen_subgroupkeys",
+      "type": "file",
+      "file": "subgroupKeys.md",
+      "x": 5500,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_title",
+      "type": "file",
+      "file": "title_2.md",
+      "x": 5700,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 6700,
+      "y": 0,
+      "width": 1540,
+      "height": 720,
+      "color": "5"
+    },
+    {
+      "id": "n_core_services_notification_service_dart",
+      "type": "file",
+      "file": "dot-coreservicesnotification_service.dart.md",
+      "x": 6720,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_data_shopping_list_repository_dart",
+      "type": "file",
+      "file": "dot-datashopping_list_repository.dart.md",
+      "x": 6920,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_domain_shopping_item_model_dart",
+      "type": "file",
+      "file": "dot-domainshopping_item_model.dart.md",
+      "x": 7120,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_domain_shopping_list_model_dart",
+      "type": "file",
+      "file": "dot-domainshopping_list_model.dart.md",
+      "x": 7320,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref",
+      "type": "file",
+      "file": "Ref.md",
+      "x": 7520,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model_shoppingitemmodel",
+      "type": "file",
+      "file": "ShoppingItemModel.md",
+      "x": 7720,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_shoppinglistmodel",
+      "type": "file",
+      "file": "ShoppingListModel.md",
+      "x": 7920,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_shoppinglistrepository",
+      "type": "file",
+      "file": "ShoppingListRepository.md",
+      "x": 6720,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_utils_whatsapp_parser_whatsappparser",
+      "type": "file",
+      "file": "WhatsAppParser.md",
+      "x": 6920,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_utils_whatsapp_parser_autodetectcategory",
+      "type": "file",
+      "file": "_autoDetectCategory.md",
+      "x": 7120,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_additemtolist",
+      "type": "file",
+      "file": "addItemToList.md",
+      "x": 7320,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_additemtolist",
+      "type": "file",
+      "file": "addItemToList_1.md",
+      "x": 7520,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_authuser",
+      "type": "file",
+      "file": "authUser_2.md",
+      "x": 7720,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_completelist",
+      "type": "file",
+      "file": "completeList.md",
+      "x": 7920,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_completelist",
+      "type": "file",
+      "file": "completeList_1.md",
+      "x": 6720,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_createlist",
+      "type": "file",
+      "file": "createList.md",
+      "x": 6920,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_createlist",
+      "type": "file",
+      "file": "createList_1.md",
+      "x": 7120,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_deletelist",
+      "type": "file",
+      "file": "deleteList.md",
+      "x": 7320,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_deletelist",
+      "type": "file",
+      "file": "deleteList_1.md",
+      "x": 7520,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_firestore",
+      "type": "file",
+      "file": "firestore_4.md",
+      "x": 7720,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_household",
+      "type": "file",
+      "file": "household_2.md",
+      "x": 7920,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_notifylistupdated",
+      "type": "file",
+      "file": "notifyListUpdated.md",
+      "x": 6720,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_utils_whatsapp_parser_parserawtext",
+      "type": "file",
+      "file": "parseRawText.md",
+      "x": 6920,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_ref",
+      "type": "file",
+      "file": "ref_2.md",
+      "x": 7120,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_removeitemfromlist",
+      "type": "file",
+      "file": "removeItemFromList.md",
+      "x": 7320,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_removeitemfromlist",
+      "type": "file",
+      "file": "removeItemFromList_1.md",
+      "x": 7520,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_repository",
+      "type": "file",
+      "file": "repository_2.md",
+      "x": 7720,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_shoppinglistrepositoryprovider",
+      "type": "file",
+      "file": "shoppingListRepositoryProvider.md",
+      "x": 7920,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller",
+      "type": "file",
+      "file": "shopping_list_controller.dart_1.md",
+      "x": 6720,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository",
+      "type": "file",
+      "file": "shopping_list_repository.dart.md",
+      "x": 6920,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_updateitemstatus",
+      "type": "file",
+      "file": "updateItemStatus.md",
+      "x": 7120,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_updateitemstatus",
+      "type": "file",
+      "file": "updateItemStatus_1.md",
+      "x": 7320,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_updatelistassignment",
+      "type": "file",
+      "file": "updateListAssignment.md",
+      "x": 7520,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_updatelistassignment",
+      "type": "file",
+      "file": "updateListAssignment_1.md",
+      "x": 7720,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_shopping_list_controller_watch",
+      "type": "file",
+      "file": "watch_1.md",
+      "x": 7920,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_watchactivehouseholdlists",
+      "type": "file",
+      "file": "watchActiveHouseholdLists.md",
+      "x": 6720,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_watchcompletedhouseholdlists",
+      "type": "file",
+      "file": "watchCompletedHouseholdLists.md",
+      "x": 6920,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_data_shopping_list_repository_watchlist",
+      "type": "file",
+      "file": "watchList.md",
+      "x": 7120,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_utils_whatsapp_parser",
+      "type": "file",
+      "file": "whatsapp_parser.dart.md",
+      "x": 7320,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 8320,
+      "y": 0,
+      "width": 1320,
+      "height": 720,
+      "color": "6"
+    },
+    {
+      "id": "n_auth_domain_user_model_dart",
+      "type": "file",
+      "file": "dot-authdomainuser_model.dart.md",
+      "x": 8340,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_domain_category_model_dart",
+      "type": "file",
+      "file": "dot-domaincategory_model.dart.md",
+      "x": 8540,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_domain_household_model_dart",
+      "type": "file",
+      "file": "dot-domainhousehold_model.dart.md",
+      "x": 8740,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_domain_user_model_dart",
+      "type": "file",
+      "file": "dot-domainuser_model.dart.md",
+      "x": 8940,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_firebaseauth",
+      "type": "file",
+      "file": "FirebaseAuth.md",
+      "x": 9140,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_firebasefirestore",
+      "type": "file",
+      "file": "FirebaseFirestore.md",
+      "x": 9340,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stream",
+      "type": "file",
+      "file": "Stream.md",
+      "x": 8340,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_user_get",
+      "type": "file",
+      "file": "User get.md",
+      "x": 8540,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_generateinvitecode",
+      "type": "file",
+      "file": "_generateInviteCode.md",
+      "x": 8740,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_addsubgroup",
+      "type": "file",
+      "file": "addSubgroup.md",
+      "x": 8940,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_approvejoinrequest",
+      "type": "file",
+      "file": "approveJoinRequest.md",
+      "x": 9140,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_auth",
+      "type": "file",
+      "file": "auth.md",
+      "x": 9340,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_authstatechanges",
+      "type": "file",
+      "file": "authStateChanges.md",
+      "x": 8340,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository",
+      "type": "file",
+      "file": "auth_repository.dart.md",
+      "x": 8540,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_createhousehold",
+      "type": "file",
+      "file": "createHousehold.md",
+      "x": 8740,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_currentuser",
+      "type": "file",
+      "file": "currentUser.md",
+      "x": 8940,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dart_math",
+      "type": "file",
+      "file": "dartmath.md",
+      "x": 9140,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_providers_firebase_providers_firebasemessagingprovider",
+      "type": "file",
+      "file": "firebaseMessagingProvider.md",
+      "x": 9340,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_providers_firebase_providers",
+      "type": "file",
+      "file": "firebase_providers.dart.md",
+      "x": 8340,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_firestore",
+      "type": "file",
+      "file": "firestore_1.md",
+      "x": 8540,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_firestore",
+      "type": "file",
+      "file": "firestore_3.md",
+      "x": 8740,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository",
+      "type": "file",
+      "file": "household_repository.dart.md",
+      "x": 8940,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_cloud_firestore_cloud_firestore_dart",
+      "type": "file",
+      "file": "packagecloud_firestorecloud_firestore.dart.md",
+      "x": 9140,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_firebase_auth_firebase_auth_dart",
+      "type": "file",
+      "file": "packagefirebase_authfirebase_auth.dart.md",
+      "x": 9340,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_rejectjoinrequest",
+      "type": "file",
+      "file": "rejectJoinRequest.md",
+      "x": 8340,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_removesubgroup",
+      "type": "file",
+      "file": "removeSubgroup.md",
+      "x": 8540,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_requestjoinhousehold",
+      "type": "file",
+      "file": "requestJoinHousehold.md",
+      "x": 8740,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_signinwithemail",
+      "type": "file",
+      "file": "signInWithEmail.md",
+      "x": 8940,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_signout",
+      "type": "file",
+      "file": "signOut.md",
+      "x": 9140,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_signupwithemail",
+      "type": "file",
+      "file": "signUpWithEmail.md",
+      "x": 9340,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_updatehouseholdcategories",
+      "type": "file",
+      "file": "updateHouseholdCategories.md",
+      "x": 8340,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_updatesubgroups",
+      "type": "file",
+      "file": "updateSubgroups.md",
+      "x": 8540,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_updateuserprofile",
+      "type": "file",
+      "file": "updateUserProfile.md",
+      "x": 8740,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_watchhousehold",
+      "type": "file",
+      "file": "watchHousehold.md",
+      "x": 8940,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_data_household_repository_watchhouseholdmembers",
+      "type": "file",
+      "file": "watchHouseholdMembers.md",
+      "x": 9140,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_data_auth_repository_watchuserprofile",
+      "type": "file",
+      "file": "watchUserProfile.md",
+      "x": 9340,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 0,
+      "y": 900,
+      "width": 1320,
+      "height": 720,
+      "color": "1"
+    },
+    {
+      "id": "n_datetime",
+      "type": "file",
+      "file": "DateTime.md",
+      "x": 20,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_list",
+      "type": "file",
+      "file": "List.md",
+      "x": 220,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_map",
+      "type": "file",
+      "file": "Map.md",
+      "x": 420,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_activecategories",
+      "type": "file",
+      "file": "activeCategories.md",
+      "x": 620,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_adminid",
+      "type": "file",
+      "file": "adminId.md",
+      "x": 820,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_assignedto",
+      "type": "file",
+      "file": "assignedTo.md",
+      "x": 1020,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_assignedtoname",
+      "type": "file",
+      "file": "assignedToName.md",
+      "x": 20,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_category_model_dart",
+      "type": "file",
+      "file": "category_model.dart_1.md",
+      "x": 220,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_copywith",
+      "type": "file",
+      "file": "copyWith_2.md",
+      "x": 420,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_copywith",
+      "type": "file",
+      "file": "copyWith_4.md",
+      "x": 620,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_createdat",
+      "type": "file",
+      "file": "createdAt.md",
+      "x": 820,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_createdat",
+      "type": "file",
+      "file": "createdAt_1.md",
+      "x": 1020,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_createdby",
+      "type": "file",
+      "file": "createdBy.md",
+      "x": 20,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_customcategories",
+      "type": "file",
+      "file": "customCategories.md",
+      "x": 220,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_frommap",
+      "type": "file",
+      "file": "fromMap_2.md",
+      "x": 420,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_frommap",
+      "type": "file",
+      "file": "fromMap_4.md",
+      "x": 620,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_householdid",
+      "type": "file",
+      "file": "householdId_1.md",
+      "x": 820,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model",
+      "type": "file",
+      "file": "household_model.dart.md",
+      "x": 1020,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_id",
+      "type": "file",
+      "file": "id_1.md",
+      "x": 20,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_id",
+      "type": "file",
+      "file": "id_3.md",
+      "x": 220,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_invitecode",
+      "type": "file",
+      "file": "inviteCode.md",
+      "x": 420,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_items",
+      "type": "file",
+      "file": "items.md",
+      "x": 620,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_memberids",
+      "type": "file",
+      "file": "memberIds.md",
+      "x": 820,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_name",
+      "type": "file",
+      "file": "name_2.md",
+      "x": 1020,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_pendinguserids",
+      "type": "file",
+      "file": "pendingUserIds.md",
+      "x": 20,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_shopping_item_model_dart",
+      "type": "file",
+      "file": "shopping_item_model.dart_1.md",
+      "x": 220,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model",
+      "type": "file",
+      "file": "shopping_list_model.dart.md",
+      "x": 420,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_status",
+      "type": "file",
+      "file": "status_1.md",
+      "x": 620,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_subgroups",
+      "type": "file",
+      "file": "subgroups.md",
+      "x": 820,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_title",
+      "type": "file",
+      "file": "title_1.md",
+      "x": 1020,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_household_model_tomap",
+      "type": "file",
+      "file": "toMap_2.md",
+      "x": 20,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_tomap",
+      "type": "file",
+      "file": "toMap_4.md",
+      "x": 220,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_list_model_updatedat",
+      "type": "file",
+      "file": "updatedAt.md",
+      "x": 420,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 1840,
+      "y": 900,
+      "width": 1320,
+      "height": 720,
+      "color": "2"
+    },
+    {
+      "id": "n_core_widgets_hatly_header_bar_dart",
+      "type": "file",
+      "file": "dot-corewidgetshatly_header_bar.dart.md",
+      "x": 1860,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_auth_presentation_auth_controller_dart",
+      "type": "file",
+      "file": "dot-authpresentationauth_controller.dart.md",
+      "x": 2060,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_formstate",
+      "type": "file",
+      "file": "FormState.md",
+      "x": 2260,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_buildcategorycard",
+      "type": "file",
+      "file": "_buildCategoryCard.md",
+      "x": 2460,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_buildhouseholdcard",
+      "type": "file",
+      "file": "_buildHouseholdCard.md",
+      "x": 2660,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_codecontroller",
+      "type": "file",
+      "file": "_codeController.md",
+      "x": 2860,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_copycode",
+      "type": "file",
+      "file": "_copyCode.md",
+      "x": 1860,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_manage_household_screen_copyinvitecode",
+      "type": "file",
+      "file": "_copyInviteCode.md",
+      "x": 2060,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_createformkey",
+      "type": "file",
+      "file": "_createFormKey.md",
+      "x": 2260,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_deletecategory",
+      "type": "file",
+      "file": "_deleteCategory.md",
+      "x": 2460,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_manage_household_screen_iscopied",
+      "type": "file",
+      "file": "_isCopied.md",
+      "x": 2660,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_iscopied",
+      "type": "file",
+      "file": "_isCopied_1.md",
+      "x": 2860,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_isjoining",
+      "type": "file",
+      "file": "_isJoining.md",
+      "x": 1860,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_joinformkey",
+      "type": "file",
+      "file": "_joinFormKey.md",
+      "x": 2060,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_namecontroller",
+      "type": "file",
+      "file": "_nameController_1.md",
+      "x": 2260,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_namecontroller",
+      "type": "file",
+      "file": "_nameController_2.md",
+      "x": 2460,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_showaddcategorydialog",
+      "type": "file",
+      "file": "_showAddCategoryDialog.md",
+      "x": 2660,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_showeditcategorydialog",
+      "type": "file",
+      "file": "_showEditCategoryDialog.md",
+      "x": 2860,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_showsubgroupassignmentdialog",
+      "type": "file",
+      "file": "_showSubgroupAssignmentDialog.md",
+      "x": 1860,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_submitcreate",
+      "type": "file",
+      "file": "_submitCreate.md",
+      "x": 2060,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_submitjoin",
+      "type": "file",
+      "file": "_submitJoin.md",
+      "x": 2260,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_class",
+      "type": "file",
+      "file": "class.md",
+      "x": 2460,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_createstate",
+      "type": "file",
+      "file": "createState_3.md",
+      "x": 2660,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_manage_household_screen_createstate",
+      "type": "file",
+      "file": "createState_4.md",
+      "x": 2860,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_createstate",
+      "type": "file",
+      "file": "createState_5.md",
+      "x": 1860,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen_dispose",
+      "type": "file",
+      "file": "dispose_3.md",
+      "x": 2060,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen_dispose",
+      "type": "file",
+      "file": "dispose_4.md",
+      "x": 2260,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_household_controller_dart",
+      "type": "file",
+      "file": "household_controller.dart_1.md",
+      "x": 2460,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_household_setup_screen",
+      "type": "file",
+      "file": "household_setup_screen.dart.md",
+      "x": 2660,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_presentation_manage_household_screen",
+      "type": "file",
+      "file": "manage_household_screen.dart.md",
+      "x": 2860,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_flutter_services_dart",
+      "type": "file",
+      "file": "packageflutterservices.dart.md",
+      "x": 1860,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_settings_presentation_settings_screen",
+      "type": "file",
+      "file": "settings_screen.dart.md",
+      "x": 2060,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 3460,
+      "y": 900,
+      "width": 1100,
+      "height": 620,
+      "color": "3"
+    },
+    {
+      "id": "n_features_auth_domain_user_model_dart",
+      "type": "file",
+      "file": "dot-featuresauthdomainuser_model.dart.md",
+      "x": 3480,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_features_auth_presentation_login_screen_dart",
+      "type": "file",
+      "file": "dot-featuresauthpresentationlogin_screen.dart.md",
+      "x": 3680,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_features_household_presentation_household_setup_screen_dart",
+      "type": "file",
+      "file": "dot-featureshouseholdpresentationhousehold_setup_screen.dart.md",
+      "x": 3880,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_features_household_presentation_manage_household_screen_dart",
+      "type": "file",
+      "file": "dot-featureshouseholdpresentationmanage_household_screen.dart.md",
+      "x": 4080,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_features_shopping_list_presentation_active_list_screen_dart",
+      "type": "file",
+      "file": "dot-featuresshopping_listpresentationactive_list_screen.dart.md",
+      "x": 4280,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_animation",
+      "type": "file",
+      "file": "Animation.md",
+      "x": 3480,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_animationcontroller",
+      "type": "file",
+      "file": "AnimationController.md",
+      "x": 3680,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_gorouter",
+      "type": "file",
+      "file": "GoRouter.md",
+      "x": 3880,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_offset",
+      "type": "file",
+      "file": "Offset.md",
+      "x": 4080,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_animcontroller",
+      "type": "file",
+      "file": "_animController.md",
+      "x": 4280,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_buildfadeslidepage",
+      "type": "file",
+      "file": "_buildFadeSlidePage.md",
+      "x": 3480,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_fadeanim",
+      "type": "file",
+      "file": "_fadeAnim.md",
+      "x": 3680,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_hasnavigated",
+      "type": "file",
+      "file": "_hasNavigated.md",
+      "x": 3880,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_ref",
+      "type": "file",
+      "file": "_ref.md",
+      "x": 4080,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_scaleanim",
+      "type": "file",
+      "file": "_scaleAnim.md",
+      "x": 4280,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_build",
+      "type": "file",
+      "file": "build_2.md",
+      "x": 3480,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_createstate",
+      "type": "file",
+      "file": "createState_1.md",
+      "x": 3680,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_dispose",
+      "type": "file",
+      "file": "dispose_1.md",
+      "x": 3880,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_initstate",
+      "type": "file",
+      "file": "initState_1.md",
+      "x": 4080,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_main_shell_screen_dart",
+      "type": "file",
+      "file": "main_shell_screen.dart_1.md",
+      "x": 4280,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_notifier",
+      "type": "file",
+      "file": "notifier.md",
+      "x": 3480,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_redirect",
+      "type": "file",
+      "file": "redirect.md",
+      "x": 3680,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router",
+      "type": "file",
+      "file": "router.dart.md",
+      "x": 3880,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_routernotifierprovider",
+      "type": "file",
+      "file": "routerNotifierProvider.md",
+      "x": 4080,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_state",
+      "type": "file",
+      "file": "state.md",
+      "x": 4280,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 5080,
+      "y": 900,
+      "width": 1100,
+      "height": 620,
+      "color": "4"
+    },
+    {
+      "id": "n_features_auth_presentation_auth_controller_dart",
+      "type": "file",
+      "file": "dot-featuresauthpresentationauth_controller.dart.md",
+      "x": 5100,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_features_household_presentation_household_controller_dart",
+      "type": "file",
+      "file": "dot-featureshouseholdpresentationhousehold_controller.dart.md",
+      "x": 5300,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_features_settings_presentation_settings_screen_dart",
+      "type": "file",
+      "file": "dot-featuressettingspresentationsettings_screen.dart.md",
+      "x": 5500,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_features_shopping_list_presentation_create_list_screen_dart",
+      "type": "file",
+      "file": "dot-featuresshopping_listpresentationcreate_list_screen.dart.md",
+      "x": 5700,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_features_shopping_list_presentation_dashboard_screen_dart",
+      "type": "file",
+      "file": "dot-featuresshopping_listpresentationdashboard_screen.dart.md",
+      "x": 5900,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_features_shopping_list_presentation_history_screen_dart",
+      "type": "file",
+      "file": "dot-featuresshopping_listpresentationhistory_screen.dart.md",
+      "x": 5100,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icondata",
+      "type": "file",
+      "file": "IconData.md",
+      "x": 5300,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_mainshellscreen",
+      "type": "file",
+      "file": "MainShellScreen.md",
+      "x": 5500,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_streamsubscription",
+      "type": "file",
+      "file": "StreamSubscription.md",
+      "x": 5700,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "type": "file",
+      "file": "_MainShellScreenState.md",
+      "x": 5900,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_currentindex",
+      "type": "file",
+      "file": "_currentIndex.md",
+      "x": 5100,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_initnotifications",
+      "type": "file",
+      "file": "_initNotifications.md",
+      "x": 5300,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_notifsub",
+      "type": "file",
+      "file": "_notifSub.md",
+      "x": 5500,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_createstate",
+      "type": "file",
+      "file": "createState.md",
+      "x": 5700,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dart_async",
+      "type": "file",
+      "file": "dartasync.md",
+      "x": 5900,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_dispose",
+      "type": "file",
+      "file": "dispose.md",
+      "x": 5100,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_icon",
+      "type": "file",
+      "file": "icon.md",
+      "x": 5300,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_initstate",
+      "type": "file",
+      "file": "initState.md",
+      "x": 5500,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_isselected",
+      "type": "file",
+      "file": "isSelected.md",
+      "x": 5700,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_label",
+      "type": "file",
+      "file": "label.md",
+      "x": 5900,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen",
+      "type": "file",
+      "file": "main_shell_screen.dart.md",
+      "x": 5100,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_services_notification_service_notificationserviceprovider",
+      "type": "file",
+      "file": "notificationServiceProvider.md",
+      "x": 5300,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_ontap",
+      "type": "file",
+      "file": "onTap.md",
+      "x": 5500,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_selectedicon",
+      "type": "file",
+      "file": "selectedIcon.md",
+      "x": 5700,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Subsystem 10",
+      "x": 6700,
+      "y": 900,
+      "width": 1100,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_lib_app_config_theme_apptheme",
+      "type": "file",
+      "file": "AppTheme.md",
+      "x": 6720,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hatlyspec_hatly_app",
+      "type": "file",
+      "file": "Hatly App Spec.md",
+      "x": 6920,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_app_hatly_app",
+      "type": "file",
+      "file": "HatlyApp Widget.md",
+      "x": 7120,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_backgroundcanvas",
+      "type": "file",
+      "file": "backgroundCanvas.md",
+      "x": 7320,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_bakerycolor",
+      "type": "file",
+      "file": "bakeryColor.md",
+      "x": 7520,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_butchercolor",
+      "type": "file",
+      "file": "butcherColor.md",
+      "x": 6720,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_deepslate",
+      "type": "file",
+      "file": "deepSlate.md",
+      "x": 6920,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_errorred",
+      "type": "file",
+      "file": "errorRed.md",
+      "x": 7120,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_glassborder",
+      "type": "file",
+      "file": "glassBorder.md",
+      "x": 7320,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_glassfill",
+      "type": "file",
+      "file": "glassFill.md",
+      "x": 7520,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_othercolor",
+      "type": "file",
+      "file": "otherColor.md",
+      "x": 6720,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_pharmacycolor",
+      "type": "file",
+      "file": "pharmacyColor.md",
+      "x": 6920,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_primaryemerald",
+      "type": "file",
+      "file": "primaryEmerald.md",
+      "x": 7120,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_secondarymint",
+      "type": "file",
+      "file": "secondaryMint.md",
+      "x": 7320,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_static_const_color",
+      "type": "file",
+      "file": "static const Color.md",
+      "x": 7520,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_supermarketcolor",
+      "type": "file",
+      "file": "supermarketColor.md",
+      "x": 6720,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_surfacecontainer",
+      "type": "file",
+      "file": "surfaceContainer.md",
+      "x": 6920,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_textprimary",
+      "type": "file",
+      "file": "textPrimary.md",
+      "x": 7120,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme_textsecondary",
+      "type": "file",
+      "file": "textSecondary.md",
+      "x": 7320,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_theme",
+      "type": "file",
+      "file": "theme.dart.md",
+      "x": 7520,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 8320,
+      "y": 900,
+      "width": 1100,
+      "height": 520,
+      "color": "6"
+    },
+    {
+      "id": "n_string",
+      "type": "file",
+      "file": "String.md",
+      "x": 8340,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model_category",
+      "type": "file",
+      "file": "category.md",
+      "x": 8540,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model_copywith",
+      "type": "file",
+      "file": "copyWith.md",
+      "x": 8740,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model_copywith",
+      "type": "file",
+      "file": "copyWith_3.md",
+      "x": 8940,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model_email",
+      "type": "file",
+      "file": "email.md",
+      "x": 9140,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model_fcmtoken",
+      "type": "file",
+      "file": "fcmToken.md",
+      "x": 8340,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model_frommap",
+      "type": "file",
+      "file": "fromMap.md",
+      "x": 8540,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model_frommap",
+      "type": "file",
+      "file": "fromMap_3.md",
+      "x": 8740,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model_householdid",
+      "type": "file",
+      "file": "householdId.md",
+      "x": 8940,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model_id",
+      "type": "file",
+      "file": "id_2.md",
+      "x": 9140,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 8340,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model_name",
+      "type": "file",
+      "file": "name_3.md",
+      "x": 8540,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model_note",
+      "type": "file",
+      "file": "note.md",
+      "x": 8740,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model",
+      "type": "file",
+      "file": "shopping_item_model.dart.md",
+      "x": 8940,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model_status",
+      "type": "file",
+      "file": "status.md",
+      "x": 9140,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model_tomap",
+      "type": "file",
+      "file": "toMap.md",
+      "x": 8340,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_domain_shopping_item_model_tomap",
+      "type": "file",
+      "file": "toMap_3.md",
+      "x": 8540,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model_uid",
+      "type": "file",
+      "file": "uid.md",
+      "x": 8740,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_auth_domain_user_model",
+      "type": "file",
+      "file": "user_model.dart.md",
+      "x": 8940,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Shopping Lists & Utility Controllers",
+      "x": 0,
+      "y": 1700,
+      "width": 1100,
+      "height": 520,
+      "color": "1"
+    },
+    {
+      "id": "n_utils_whatsapp_parser_dart",
+      "type": "file",
+      "file": "dot-utilswhatsapp_parser.dart.md",
+      "x": 20,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_additem",
+      "type": "file",
+      "file": "_addItem_1.md",
+      "x": 220,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_formkey",
+      "type": "file",
+      "file": "_formKey_1.md",
+      "x": 420,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_iteminputcontroller",
+      "type": "file",
+      "file": "_itemInputController.md",
+      "x": 620,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_items",
+      "type": "file",
+      "file": "_items.md",
+      "x": 820,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_openwhatsappimportdialog",
+      "type": "file",
+      "file": "_openWhatsAppImportDialog.md",
+      "x": 20,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_selectedassignedto",
+      "type": "file",
+      "file": "_selectedAssignedTo.md",
+      "x": 220,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_selectedassignedtoname",
+      "type": "file",
+      "file": "_selectedAssignedToName.md",
+      "x": 420,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_selectedcategory",
+      "type": "file",
+      "file": "_selectedCategory_1.md",
+      "x": 620,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_titlecontroller",
+      "type": "file",
+      "file": "_titleController.md",
+      "x": 820,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_whatsapptextcontroller",
+      "type": "file",
+      "file": "_whatsappTextController.md",
+      "x": 20,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_color",
+      "type": "file",
+      "file": "color_2.md",
+      "x": 220,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_createstate",
+      "type": "file",
+      "file": "createState_7.md",
+      "x": 420,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen",
+      "type": "file",
+      "file": "create_list_screen.dart.md",
+      "x": 620,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_dispose",
+      "type": "file",
+      "file": "dispose_6.md",
+      "x": 820,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_icon",
+      "type": "file",
+      "file": "icon_1.md",
+      "x": 20,
+      "y": 2020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_isselected",
+      "type": "file",
+      "file": "isSelected_2.md",
+      "x": 220,
+      "y": 2020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_label",
+      "type": "file",
+      "file": "label_2.md",
+      "x": 420,
+      "y": 2020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_ontap",
+      "type": "file",
+      "file": "onTap_3.md",
+      "x": 620,
+      "y": 2020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Subsystem 13",
+      "x": 1840,
+      "y": 1700,
+      "width": 880,
+      "height": 520,
+      "color": "2"
+    },
+    {
+      "id": "n_edgeinsetsgeometry",
+      "type": "file",
+      "file": "EdgeInsetsGeometry.md",
+      "x": 1860,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_voidcallback",
+      "type": "file",
+      "file": "VoidCallback.md",
+      "x": 2060,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_blur",
+      "type": "file",
+      "file": "blur.md",
+      "x": 2260,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_bordercolor",
+      "type": "file",
+      "file": "borderColor.md",
+      "x": 2460,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_borderradius",
+      "type": "file",
+      "file": "borderRadius.md",
+      "x": 1860,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_build",
+      "type": "file",
+      "file": "build_4.md",
+      "x": 2060,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_child",
+      "type": "file",
+      "file": "child.md",
+      "x": 2260,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dart_ui",
+      "type": "file",
+      "file": "dartui.md",
+      "x": 2460,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_fillcolor",
+      "type": "file",
+      "file": "fillColor.md",
+      "x": 1860,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card",
+      "type": "file",
+      "file": "glass_card.dart.md",
+      "x": 2060,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_hasactiveglow",
+      "type": "file",
+      "file": "hasActiveGlow.md",
+      "x": 2260,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_margin",
+      "type": "file",
+      "file": "margin.md",
+      "x": 2460,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_ontap",
+      "type": "file",
+      "file": "onTap_1.md",
+      "x": 1860,
+      "y": 2020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_padding",
+      "type": "file",
+      "file": "padding.md",
+      "x": 2060,
+      "y": 2020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g14",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 3460,
+      "y": 1700,
+      "width": 880,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "n_test_unit_household_model_test",
+      "type": "file",
+      "file": "household_model_test.dart.md",
+      "x": 3480,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_test_unit_household_model_test_main",
+      "type": "file",
+      "file": "main.md",
+      "x": 3680,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_test_unit_shopping_list_model_test_main",
+      "type": "file",
+      "file": "main_1.md",
+      "x": 3880,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_test_unit_user_model_test_main",
+      "type": "file",
+      "file": "main_2.md",
+      "x": 4080,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_test_unit_whatsapp_parser_test_main",
+      "type": "file",
+      "file": "main_3.md",
+      "x": 3480,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_flutter_test_flutter_test_dart",
+      "type": "file",
+      "file": "packageflutter_testflutter_test.dart.md",
+      "x": 3680,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_hatly_features_auth_domain_user_model_dart",
+      "type": "file",
+      "file": "packagehatlyfeaturesauthdomainuser_model.dart.md",
+      "x": 3880,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_hatly_features_household_domain_household_model_dart",
+      "type": "file",
+      "file": "packagehatlyfeatureshouseholddomainhousehold_model.dart.md",
+      "x": 4080,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_hatly_features_shopping_list_domain_shopping_item_model_dart",
+      "type": "file",
+      "file": "packagehatlyfeaturesshopping_listdomainshopping_item_model.dart.md",
+      "x": 3480,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_hatly_features_shopping_list_domain_shopping_list_model_dart",
+      "type": "file",
+      "file": "packagehatlyfeaturesshopping_listdomainshopping_list_model.dart.md",
+      "x": 3680,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_hatly_features_shopping_list_utils_whatsapp_parser_dart",
+      "type": "file",
+      "file": "packagehatlyfeaturesshopping_listutilswhatsapp_parser.dart.md",
+      "x": 3880,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_test_unit_shopping_list_model_test",
+      "type": "file",
+      "file": "shopping_list_model_test.dart.md",
+      "x": 4080,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_test_unit_user_model_test",
+      "type": "file",
+      "file": "user_model_test.dart.md",
+      "x": 3480,
+      "y": 2020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_test_unit_whatsapp_parser_test",
+      "type": "file",
+      "file": "whatsapp_parser_test.dart.md",
+      "x": 3680,
+      "y": 2020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g15",
+      "type": "group",
+      "label": "Household & Family Group Management",
+      "x": 5080,
+      "y": 1700,
+      "width": 880,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "n_config_theme_dart",
+      "type": "file",
+      "file": "dot-configtheme.dart.md",
+      "x": 5100,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_app_splash_screen",
+      "type": "file",
+      "file": "AppSplashScreen Widget.md",
+      "x": 5300,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_changenotifier",
+      "type": "file",
+      "file": "ChangeNotifier.md",
+      "x": 5500,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_app_hatlyapp",
+      "type": "file",
+      "file": "HatlyApp.md",
+      "x": 5700,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hatlyspec_household_group",
+      "type": "file",
+      "file": "Household Group Concept.md",
+      "x": 5100,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_routernotifier",
+      "type": "file",
+      "file": "RouterNotifier.md",
+      "x": 5300,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_app",
+      "type": "file",
+      "file": "app.dart.md",
+      "x": 5500,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_app_build",
+      "type": "file",
+      "file": "build.md",
+      "x": 5700,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_config_router_dart",
+      "type": "file",
+      "file": "configrouter.dart.md",
+      "x": 5100,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "type": "file",
+      "file": "packageflutter_riverpodflutter_riverpod.dart.md",
+      "x": 5300,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_routerprovider",
+      "type": "file",
+      "file": "routerProvider.md",
+      "x": 5500,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g16",
+      "type": "group",
+      "label": "Visual Assets & Branding",
+      "x": 6700,
+      "y": 1700,
+      "width": 880,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "n_web_manifest_background_color",
+      "type": "file",
+      "file": "background_color.md",
+      "x": 6720,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_description",
+      "type": "file",
+      "file": "description.md",
+      "x": 6920,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_display",
+      "type": "file",
+      "file": "display.md",
+      "x": 7120,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_icons",
+      "type": "file",
+      "file": "icons.md",
+      "x": 7320,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest",
+      "type": "file",
+      "file": "manifest.json.md",
+      "x": 6720,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_name",
+      "type": "file",
+      "file": "name_4.md",
+      "x": 6920,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_orientation",
+      "type": "file",
+      "file": "orientation.md",
+      "x": 7120,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_prefer_related_applications",
+      "type": "file",
+      "file": "prefer_related_applications.md",
+      "x": 7320,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_short_name",
+      "type": "file",
+      "file": "short_name.md",
+      "x": 6720,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_start_url",
+      "type": "file",
+      "file": "start_url.md",
+      "x": 6920,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_theme_color",
+      "type": "file",
+      "file": "theme_color.md",
+      "x": 7120,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g17",
+      "type": "group",
+      "label": "Authentication & User Management",
+      "x": 8320,
+      "y": 1700,
+      "width": 880,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_lib_app_config_router_appsplashscreen",
+      "type": "file",
+      "file": "AppSplashScreen.md",
+      "x": 8340,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_route",
+      "type": "file",
+      "file": "Route.md",
+      "x": 8540,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_route_household_setup",
+      "type": "file",
+      "file": "Route household-setup.md",
+      "x": 8740,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_route_login",
+      "type": "file",
+      "file": "Route login.md",
+      "x": 8940,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_singletickerproviderstatemixin",
+      "type": "file",
+      "file": "SingleTickerProviderStateMixin.md",
+      "x": 8340,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_appsplashscreenstate",
+      "type": "file",
+      "file": "_AppSplashScreenState.md",
+      "x": 8540,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_listentorealtimenotifications",
+      "type": "file",
+      "file": "_listenToRealtimeNotifications.md",
+      "x": 8740,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_router_startsplashtimer",
+      "type": "file",
+      "file": "_startSplashTimer.md",
+      "x": 8940,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_providers_firebase_providers_firebaseauthprovider",
+      "type": "file",
+      "file": "firebaseAuthProvider.md",
+      "x": 8340,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_providers_firebase_providers_firebasefirestoreprovider",
+      "type": "file",
+      "file": "firebaseFirestoreProvider.md",
+      "x": 8540,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g18",
+      "type": "group",
+      "label": "Household & Family Group Management",
+      "x": 0,
+      "y": 2300,
+      "width": 880,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model",
+      "type": "file",
+      "file": "category_model.dart.md",
+      "x": 20,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model_colorhex",
+      "type": "file",
+      "file": "colorHex.md",
+      "x": 220,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model_copywith",
+      "type": "file",
+      "file": "copyWith_1.md",
+      "x": 420,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model_defaultcategories",
+      "type": "file",
+      "file": "defaultCategories.md",
+      "x": 620,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model_frommap",
+      "type": "file",
+      "file": "fromMap_1.md",
+      "x": 20,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model_iconname",
+      "type": "file",
+      "file": "iconName.md",
+      "x": 220,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model_id",
+      "type": "file",
+      "file": "id.md",
+      "x": 420,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model_name",
+      "type": "file",
+      "file": "name_1.md",
+      "x": 620,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_static_list",
+      "type": "file",
+      "file": "static List.md",
+      "x": 20,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_household_domain_category_model_tomap",
+      "type": "file",
+      "file": "toMap_1.md",
+      "x": 220,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g19",
+      "type": "group",
+      "label": "Subsystem 19",
+      "x": 1840,
+      "y": 2300,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_app_config_theme_dart",
+      "type": "file",
+      "file": "dot-appconfigtheme.dart.md",
+      "x": 1860,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_widget",
+      "type": "file",
+      "file": "Widget.md",
+      "x": 2060,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_hatly_header_bar_build",
+      "type": "file",
+      "file": "build_5.md",
+      "x": 2260,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_hatly_header_bar",
+      "type": "file",
+      "file": "hatly_header_bar.dart.md",
+      "x": 1860,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_hatly_header_bar_leading",
+      "type": "file",
+      "file": "leading.md",
+      "x": 2060,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_hatly_header_bar_title",
+      "type": "file",
+      "file": "title.md",
+      "x": 2260,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_hatly_header_bar_trailing",
+      "type": "file",
+      "file": "trailing.md",
+      "x": 1860,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g20",
+      "type": "group",
+      "label": "Subsystem 20",
+      "x": 3460,
+      "y": 2300,
+      "width": 660,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_color",
+      "type": "file",
+      "file": "Color.md",
+      "x": 3480,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_dialog_cancellabel",
+      "type": "file",
+      "file": "cancelLabel.md",
+      "x": 3680,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_dialog_confirmcolor",
+      "type": "file",
+      "file": "confirmColor.md",
+      "x": 3880,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_dialog_confirmlabel",
+      "type": "file",
+      "file": "confirmLabel.md",
+      "x": 3480,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_dialog",
+      "type": "file",
+      "file": "glass_dialog.dart.md",
+      "x": 3680,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_required_string_content_string",
+      "type": "file",
+      "file": "required String content,   String.md",
+      "x": 3880,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_dialog_showglassconfirmationdialog",
+      "type": "file",
+      "file": "showGlassConfirmationDialog.md",
+      "x": 3480,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g21",
+      "type": "group",
+      "label": "Shopping Lists & Utility Controllers",
+      "x": 5080,
+      "y": 2300,
+      "width": 660,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "n_lib_core_widgets_category_badge_categorybadge",
+      "type": "file",
+      "file": "CategoryBadge.md",
+      "x": 5100,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_glass_card_glasscard",
+      "type": "file",
+      "file": "GlassCard.md",
+      "x": 5300,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_hatly_header_bar_hatlyheaderbar",
+      "type": "file",
+      "file": "HatlyHeaderBar.md",
+      "x": 5500,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_statelesswidget",
+      "type": "file",
+      "file": "StatelessWidget.md",
+      "x": 5100,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_active_list_screen_categorypillchoice",
+      "type": "file",
+      "file": "_CategoryPillChoice.md",
+      "x": 5300,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_features_shopping_list_presentation_create_list_screen_categoryselectorpill",
+      "type": "file",
+      "file": "_CategorySelectorPill.md",
+      "x": 5500,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_app_config_main_shell_screen_navbaritem",
+      "type": "file",
+      "file": "_NavBarItem.md",
+      "x": 5100,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g22",
+      "type": "group",
+      "label": "Visual Assets & Branding",
+      "x": 6700,
+      "y": 2300,
+      "width": 660,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "n_lib_core_widgets_category_badge_getcategorycolor",
+      "type": "file",
+      "file": "_getCategoryColor.md",
+      "x": 6720,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_category_badge_getcategoryicon",
+      "type": "file",
+      "file": "_getCategoryIcon.md",
+      "x": 6920,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_category_badge_build",
+      "type": "file",
+      "file": "build_3.md",
+      "x": 7120,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_category_badge_categoryname",
+      "type": "file",
+      "file": "categoryName.md",
+      "x": 6720,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_category_badge",
+      "type": "file",
+      "file": "category_badge.dart.md",
+      "x": 6920,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_core_widgets_category_badge_compact",
+      "type": "file",
+      "file": "compact.md",
+      "x": 7120,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_flutter_material_dart",
+      "type": "file",
+      "file": "packagefluttermaterial.dart.md",
+      "x": 6720,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g23",
+      "type": "group",
+      "label": "Subsystem 23",
+      "x": 8320,
+      "y": 2300,
+      "width": 660,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_ios_flutter_ephemeral_flutter_lldb_helper_rationale_8",
+      "type": "file",
+      "file": "Intercept NOTIFY_DEBUGGER_ABOUT_RX_PAGES and touch the pages..md",
+      "x": 8340,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_sbdebugger",
+      "type": "file",
+      "file": "SBDebugger.md",
+      "x": 8540,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_sbframe",
+      "type": "file",
+      "file": "SBFrame.md",
+      "x": 8740,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ios_flutter_ephemeral_flutter_lldb_helper_lldb_init_module",
+      "type": "file",
+      "file": "__lldb_init_module().md",
+      "x": 8340,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ios_flutter_ephemeral_flutter_lldb_helper",
+      "type": "file",
+      "file": "flutter_lldb_helper.py.md",
+      "x": 8540,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ios_flutter_ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "type": "file",
+      "file": "handle_new_rx_page().md",
+      "x": 8740,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g24",
+      "type": "group",
+      "label": "Shopping Lists & Utility Controllers",
+      "x": 0,
+      "y": 2800,
+      "width": 660,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_web_favicon_flutter_web_favicon",
+      "type": "file",
+      "file": "Flutter Web Favicon.md",
+      "x": 20,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_assets_images_logo_hatly_app_logo",
+      "type": "file",
+      "file": "Hatly App Shopping Basket Logo.md",
+      "x": 220,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon192_web_icon_192",
+      "type": "file",
+      "file": "Web App Icon 192x192.md",
+      "x": 420,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_icon512_web_icon_512",
+      "type": "file",
+      "file": "Web App Icon 512x512.md",
+      "x": 20,
+      "y": 2960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_web_manifest_web_app_manifest",
+      "type": "file",
+      "file": "Web App Manifest Configuration.md",
+      "x": 220,
+      "y": 2960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g25",
+      "type": "group",
+      "label": "Subsystem 25",
+      "x": 1840,
+      "y": 2800,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_flutteractivity",
+      "type": "file",
+      "file": "FlutterActivity.md",
+      "x": 1860,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_app_src_main_kotlin_com_example_hatly_mainactivity_mainactivity",
+      "type": "file",
+      "file": "MainActivity.md",
+      "x": 2060,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_app_src_main_kotlin_com_example_hatly_mainactivity",
+      "type": "file",
+      "file": "MainActivity.kt.md",
+      "x": 1860,
+      "y": 2960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g26",
+      "type": "group",
+      "label": "Subsystem 26",
+      "x": 3460,
+      "y": 2800,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_ios_flutter_flutter_export_environment",
+      "type": "file",
+      "file": "flutter_export_environment.sh.md",
+      "x": 3480,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ios_flutter_flutter_export_environment_sh__entry",
+      "type": "file",
+      "file": "flutter_export_environment.sh script.md",
+      "x": 3680,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g27",
+      "type": "group",
+      "label": "Subsystem 27",
+      "x": 5080,
+      "y": 2800,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_android_app_build_gradle",
+      "type": "file",
+      "file": "appbuild.gradle.kts.md",
+      "x": 5100,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g28",
+      "type": "group",
+      "label": "Subsystem 28",
+      "x": 6700,
+      "y": 2800,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_android_build_gradle",
+      "type": "file",
+      "file": "androidbuild.gradle.kts.md",
+      "x": 6720,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g29",
+      "type": "group",
+      "label": "Subsystem 29",
+      "x": 8320,
+      "y": 2800,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_android_settings_gradle",
+      "type": "file",
+      "file": "settings.gradle.kts.md",
+      "x": 8340,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g30",
+      "type": "group",
+      "label": "Subsystem 30",
+      "x": 0,
+      "y": 3280,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_pubspec_hatly_pkg",
+      "type": "file",
+      "file": "Hatly Package Config.md",
+      "x": 20,
+      "y": 3360,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_android_app_src_main_kotlin_com_example_hatly_mainactivity_android_app_src_main_kotlin_com_example_hatly_mainactivity_mainactivity",
+      "fromNode": "n_android_app_src_main_kotlin_com_example_hatly_mainactivity",
+      "toNode": "n_android_app_src_main_kotlin_com_example_hatly_mainactivity_mainactivity",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_android_app_src_main_kotlin_com_example_hatly_mainactivity_mainactivity_flutteractivity",
+      "fromNode": "n_android_app_src_main_kotlin_com_example_hatly_mainactivity_mainactivity",
+      "toNode": "n_flutteractivity",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_flutter_ephemeral_flutter_lldb_helper_ios_flutter_ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "fromNode": "n_ios_flutter_ephemeral_flutter_lldb_helper",
+      "toNode": "n_ios_flutter_ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_flutter_ephemeral_flutter_lldb_helper_ios_flutter_ephemeral_flutter_lldb_helper_lldb_init_module",
+      "fromNode": "n_ios_flutter_ephemeral_flutter_lldb_helper",
+      "toNode": "n_ios_flutter_ephemeral_flutter_lldb_helper_lldb_init_module",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_flutter_ephemeral_flutter_lldb_helper_handle_new_rx_page_sbframe",
+      "fromNode": "n_ios_flutter_ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "toNode": "n_sbframe",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_flutter_ephemeral_flutter_lldb_helper_handle_new_rx_page_ios_flutter_ephemeral_flutter_lldb_helper_rationale_8",
+      "fromNode": "n_ios_flutter_ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "toNode": "n_ios_flutter_ephemeral_flutter_lldb_helper_rationale_8",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_flutter_ephemeral_flutter_lldb_helper_lldb_init_module_sbdebugger",
+      "fromNode": "n_ios_flutter_ephemeral_flutter_lldb_helper_lldb_init_module",
+      "toNode": "n_sbdebugger",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_flutter_flutter_export_environment_ios_flutter_flutter_export_environment_sh__entry",
+      "fromNode": "n_ios_flutter_flutter_export_environment",
+      "toNode": "n_ios_flutter_flutter_export_environment_sh__entry",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_runner_generatedpluginregistrant_h_ios_runner_generatedpluginregistrant_ios_runner_generatedpluginregistrant_generatedpluginregistrant",
+      "fromNode": "n_ios_runner_generatedpluginregistrant_h_ios_runner_generatedpluginregistrant",
+      "toNode": "n_ios_runner_generatedpluginregistrant_generatedpluginregistrant",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_runner_generatedpluginregistrant_h_ios_runner_generatedpluginregistrant_ios_runner_generatedpluginregistrant_m_ios_runner_generatedpluginregistrant",
+      "fromNode": "n_ios_runner_generatedpluginregistrant_h_ios_runner_generatedpluginregistrant",
+      "toNode": "n_ios_runner_generatedpluginregistrant_m_ios_runner_generatedpluginregistrant",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_runner_generatedpluginregistrant_generatedpluginregistrant_ios_runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry",
+      "fromNode": "n_ios_runner_generatedpluginregistrant_generatedpluginregistrant",
+      "toNode": "n_ios_runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_runner_generatedpluginregistrant_generatedpluginregistrant_nsobject",
+      "fromNode": "n_ios_runner_generatedpluginregistrant_generatedpluginregistrant",
+      "toNode": "n_nsobject",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_runner_generatedpluginregistrant_generatedpluginregistrant_ios_runner_generatedpluginregistrant_m_ios_runner_generatedpluginregistrant",
+      "fromNode": "n_ios_runner_generatedpluginregistrant_generatedpluginregistrant",
+      "toNode": "n_ios_runner_generatedpluginregistrant_m_ios_runner_generatedpluginregistrant",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_ios_runner_generatedpluginregistrant_m_ios_runner_generatedpluginregistrant_flutterlocalnotificationsplugin",
+      "fromNode": "n_ios_runner_generatedpluginregistrant_m_ios_runner_generatedpluginregistrant",
+      "toNode": "n_flutterlocalnotificationsplugin",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_app_config_router_dart",
+      "fromNode": "n_lib_app_app",
+      "toNode": "n_config_router_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_app_config_theme_dart",
+      "fromNode": "n_lib_app_app",
+      "toNode": "n_config_theme_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_app_lib_app_app_build",
+      "fromNode": "n_lib_app_app",
+      "toNode": "n_lib_app_app_build",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_app_lib_app_app_hatlyapp",
+      "fromNode": "n_lib_app_app",
+      "toNode": "n_lib_app_app_hatlyapp",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_app_package_flutter_material_dart",
+      "fromNode": "n_lib_app_app",
+      "toNode": "n_package_flutter_material_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_app_package_flutter_riverpod_flutter_riverpod_dart",
+      "fromNode": "n_lib_app_app",
+      "toNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_app_hatlyapp_consumerwidget",
+      "fromNode": "n_lib_app_app_hatlyapp",
+      "toNode": "n_consumerwidget",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_app_hatlyapp_lib_app_config_router_routerprovider",
+      "fromNode": "n_lib_app_app_hatlyapp",
+      "toNode": "n_lib_app_config_router_routerprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerwidget_lib_features_shopping_list_presentation_active_list_screen_categorysection",
+      "fromNode": "n_consumerwidget",
+      "toNode": "n_lib_features_shopping_list_presentation_active_list_screen_categorysection",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerwidget_lib_features_shopping_list_presentation_dashboard_screen_shoppinglistcard",
+      "fromNode": "n_consumerwidget",
+      "toNode": "n_lib_features_shopping_list_presentation_dashboard_screen_shoppinglistcard",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerwidget_lib_features_shopping_list_presentation_history_screen_historyscreen",
+      "fromNode": "n_consumerwidget",
+      "toNode": "n_lib_features_shopping_list_presentation_history_screen_historyscreen",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_app_build_lib_app_config_router_routerprovider",
+      "fromNode": "n_lib_app_app_build",
+      "toNode": "n_lib_app_config_router_routerprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_app_config_main_shell_screen",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_app_config_main_shell_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_app_config_router",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_app_config_router",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_app_config_theme",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_app_config_theme",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_core_widgets_category_badge",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_core_widgets_category_badge",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_core_widgets_glass_card",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_core_widgets_glass_card",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_core_widgets_glass_dialog",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_core_widgets_glass_dialog",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_core_widgets_hatly_header_bar",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_core_widgets_hatly_header_bar",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_features_auth_presentation_login_screen",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_features_auth_presentation_login_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_features_household_domain_category_model",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_features_household_domain_category_model",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_features_household_presentation_household_setup_screen",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_features_household_presentation_household_setup_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_features_household_presentation_manage_household_screen",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_features_household_presentation_manage_household_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_features_settings_presentation_settings_screen",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_features_settings_presentation_settings_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_features_shopping_list_presentation_active_list_screen",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_active_list_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_features_shopping_list_presentation_create_list_screen",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_create_list_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_features_shopping_list_presentation_dashboard_screen",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_dashboard_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_features_shopping_list_presentation_history_screen",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_history_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_material_dart_lib_main",
+      "fromNode": "n_package_flutter_material_dart",
+      "toNode": "n_lib_main",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_app_config_main_shell_screen",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_app_config_main_shell_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_app_config_router",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_app_config_router",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_core_providers_firebase_providers",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_core_providers_firebase_providers",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_core_services_notification_service",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_core_services_notification_service",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_auth_presentation_auth_controller",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_auth_presentation_auth_controller",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_auth_presentation_login_screen",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_auth_presentation_login_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_household_presentation_household_controller",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_household_presentation_household_controller",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_household_presentation_household_setup_screen",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_household_presentation_household_setup_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_household_presentation_manage_household_screen",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_household_presentation_manage_household_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_settings_presentation_settings_screen",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_settings_presentation_settings_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_shopping_list_presentation_active_list_screen",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_active_list_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_shopping_list_presentation_create_list_screen",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_create_list_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_shopping_list_presentation_dashboard_screen",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_dashboard_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_shopping_list_presentation_history_screen",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_history_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_features_shopping_list_presentation_shopping_list_controller",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_shopping_list_controller",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_flutter_riverpod_flutter_riverpod_dart_lib_main",
+      "fromNode": "n_package_flutter_riverpod_flutter_riverpod_dart",
+      "toNode": "n_lib_main",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_config_theme_dart_lib_app_config_main_shell_screen",
+      "fromNode": "n_config_theme_dart",
+      "toNode": "n_lib_app_config_main_shell_screen",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_config_theme_dart_lib_app_config_router",
+      "fromNode": "n_config_theme_dart",
+      "toNode": "n_lib_app_config_router",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_core_providers_firebase_providers_dart",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_core_providers_firebase_providers_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_core_services_notification_service_dart",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_core_services_notification_service_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_dart_async",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_dart_async",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_dart_ui",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_dart_ui",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_features_auth_presentation_auth_controller_dart",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_features_auth_presentation_auth_controller_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_features_household_presentation_household_controller_dart",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_features_household_presentation_household_controller_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_features_settings_presentation_settings_screen_dart",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_features_settings_presentation_settings_screen_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_features_shopping_list_presentation_create_list_screen_dart",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_features_shopping_list_presentation_create_list_screen_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_features_shopping_list_presentation_dashboard_screen_dart",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_features_shopping_list_presentation_dashboard_screen_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_features_shopping_list_presentation_history_screen_dart",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_features_shopping_list_presentation_history_screen_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_icondata",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_icondata",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_build",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_build",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_createstate",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_createstate",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_currentindex",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_currentindex",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_dispose",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_dispose",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_icon",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_icon",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_initnotifications",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_initnotifications",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_initstate",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_initstate",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_isselected",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_isselected",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_label",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_label",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_listentorealtimenotifications",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_listentorealtimenotifications",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_mainshellscreen",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_mainshellscreen",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_navbaritem",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_navbaritem",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_notifsub",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_notifsub",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_ontap",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_ontap",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_lib_app_config_main_shell_screen_selectedicon",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_lib_app_config_main_shell_screen_selectedicon",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_package_cloud_firestore_cloud_firestore_dart",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_package_cloud_firestore_cloud_firestore_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_streamsubscription",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_streamsubscription",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_voidcallback",
+      "fromNode": "n_lib_app_config_main_shell_screen",
+      "toNode": "n_voidcallback",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_mainshellscreen_consumerstatefulwidget",
+      "fromNode": "n_lib_app_config_main_shell_screen_mainshellscreen",
+      "toNode": "n_consumerstatefulwidget",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_mainshellscreen_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "fromNode": "n_lib_app_config_main_shell_screen_mainshellscreen",
+      "toNode": "n_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstatefulwidget_lib_app_config_router_appsplashscreen",
+      "fromNode": "n_consumerstatefulwidget",
+      "toNode": "n_lib_app_config_router_appsplashscreen",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstatefulwidget_lib_features_auth_presentation_login_screen_loginscreen",
+      "fromNode": "n_consumerstatefulwidget",
+      "toNode": "n_lib_features_auth_presentation_login_screen_loginscreen",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstatefulwidget_lib_features_household_presentation_household_setup_screen_householdsetupscreen",
+      "fromNode": "n_consumerstatefulwidget",
+      "toNode": "n_lib_features_household_presentation_household_setup_screen_householdsetupscreen",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstatefulwidget_lib_features_household_presentation_manage_household_screen_managehouseholdscreen",
+      "fromNode": "n_consumerstatefulwidget",
+      "toNode": "n_lib_features_household_presentation_manage_household_screen_managehouseholdscreen",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstatefulwidget_lib_features_settings_presentation_settings_screen_settingsscreen",
+      "fromNode": "n_consumerstatefulwidget",
+      "toNode": "n_lib_features_settings_presentation_settings_screen_settingsscreen",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstatefulwidget_lib_features_shopping_list_presentation_active_list_screen_activelistscreen",
+      "fromNode": "n_consumerstatefulwidget",
+      "toNode": "n_lib_features_shopping_list_presentation_active_list_screen_activelistscreen",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstatefulwidget_lib_features_shopping_list_presentation_create_list_screen_createlistscreen",
+      "fromNode": "n_consumerstatefulwidget",
+      "toNode": "n_lib_features_shopping_list_presentation_create_list_screen_createlistscreen",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstatefulwidget_lib_features_shopping_list_presentation_dashboard_screen_dashboardscreen",
+      "fromNode": "n_consumerstatefulwidget",
+      "toNode": "n_lib_features_shopping_list_presentation_dashboard_screen_dashboardscreen",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_mainshellscreenstate_consumerstate",
+      "fromNode": "n_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "toNode": "n_consumerstate",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_mainshellscreenstate_lib_core_providers_firebase_providers_firebasefirestoreprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "toNode": "n_lib_core_providers_firebase_providers_firebasefirestoreprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_mainshellscreenstate_lib_core_services_notification_service_notificationserviceprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "toNode": "n_lib_core_services_notification_service_notificationserviceprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_mainshellscreenstate_lib_features_auth_presentation_auth_controller_userprofileprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "toNode": "n_lib_features_auth_presentation_auth_controller_userprofileprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_mainshellscreenstate_lib_features_household_presentation_household_controller_currenthouseholdprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_mainshellscreenstate",
+      "toNode": "n_lib_features_household_presentation_household_controller_currenthouseholdprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstate_lib_app_config_router_appsplashscreenstate",
+      "fromNode": "n_consumerstate",
+      "toNode": "n_lib_app_config_router_appsplashscreenstate",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstate_lib_features_auth_presentation_login_screen_loginscreenstate",
+      "fromNode": "n_consumerstate",
+      "toNode": "n_lib_features_auth_presentation_login_screen_loginscreenstate",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstate_lib_features_household_presentation_household_setup_screen_householdsetupscreenstate",
+      "fromNode": "n_consumerstate",
+      "toNode": "n_lib_features_household_presentation_household_setup_screen_householdsetupscreenstate",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstate_lib_features_household_presentation_manage_household_screen_managehouseholdscreenstate",
+      "fromNode": "n_consumerstate",
+      "toNode": "n_lib_features_household_presentation_manage_household_screen_managehouseholdscreenstate",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstate_lib_features_settings_presentation_settings_screen_settingsscreenstate",
+      "fromNode": "n_consumerstate",
+      "toNode": "n_lib_features_settings_presentation_settings_screen_settingsscreenstate",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstate_lib_features_shopping_list_presentation_active_list_screen_activelistscreenstate",
+      "fromNode": "n_consumerstate",
+      "toNode": "n_lib_features_shopping_list_presentation_active_list_screen_activelistscreenstate",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstate_lib_features_shopping_list_presentation_create_list_screen_createlistscreenstate",
+      "fromNode": "n_consumerstate",
+      "toNode": "n_lib_features_shopping_list_presentation_create_list_screen_createlistscreenstate",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_consumerstate_lib_features_shopping_list_presentation_dashboard_screen_dashboardscreenstate",
+      "fromNode": "n_consumerstate",
+      "toNode": "n_lib_features_shopping_list_presentation_dashboard_screen_dashboardscreenstate",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_navbaritem_statelesswidget",
+      "fromNode": "n_lib_app_config_main_shell_screen_navbaritem",
+      "toNode": "n_statelesswidget",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_statelesswidget_lib_core_widgets_category_badge_categorybadge",
+      "fromNode": "n_statelesswidget",
+      "toNode": "n_lib_core_widgets_category_badge_categorybadge",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_statelesswidget_lib_core_widgets_glass_card_glasscard",
+      "fromNode": "n_statelesswidget",
+      "toNode": "n_lib_core_widgets_glass_card_glasscard",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_statelesswidget_lib_core_widgets_hatly_header_bar_hatlyheaderbar",
+      "fromNode": "n_statelesswidget",
+      "toNode": "n_lib_core_widgets_hatly_header_bar_hatlyheaderbar",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_statelesswidget_lib_features_shopping_list_presentation_active_list_screen_categorypillchoice",
+      "fromNode": "n_statelesswidget",
+      "toNode": "n_lib_features_shopping_list_presentation_active_list_screen_categorypillchoice",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_statelesswidget_lib_features_shopping_list_presentation_create_list_screen_categoryselectorpill",
+      "fromNode": "n_statelesswidget",
+      "toNode": "n_lib_features_shopping_list_presentation_create_list_screen_categoryselectorpill",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_icondata_lib_features_shopping_list_presentation_create_list_screen",
+      "fromNode": "n_icondata",
+      "toNode": "n_lib_features_shopping_list_presentation_create_list_screen",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_voidcallback_lib_core_widgets_glass_card",
+      "fromNode": "n_voidcallback",
+      "toNode": "n_lib_core_widgets_glass_card",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_voidcallback_lib_features_shopping_list_presentation_active_list_screen",
+      "fromNode": "n_voidcallback",
+      "toNode": "n_lib_features_shopping_list_presentation_active_list_screen",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_voidcallback_lib_features_shopping_list_presentation_create_list_screen",
+      "fromNode": "n_voidcallback",
+      "toNode": "n_lib_features_shopping_list_presentation_create_list_screen",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_voidcallback_lib_features_shopping_list_presentation_dashboard_screen",
+      "fromNode": "n_voidcallback",
+      "toNode": "n_lib_features_shopping_list_presentation_dashboard_screen",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_initnotifications_lib_core_services_notification_service_notificationserviceprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_initnotifications",
+      "toNode": "n_lib_core_services_notification_service_notificationserviceprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_initnotifications_lib_features_auth_presentation_auth_controller_userprofileprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_initnotifications",
+      "toNode": "n_lib_features_auth_presentation_auth_controller_userprofileprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_initnotifications_lib_features_household_presentation_household_controller_currenthouseholdprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_initnotifications",
+      "toNode": "n_lib_features_household_presentation_household_controller_currenthouseholdprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_listentorealtimenotifications_lib_core_providers_firebase_providers_firebasefirestoreprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_listentorealtimenotifications",
+      "toNode": "n_lib_core_providers_firebase_providers_firebasefirestoreprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_listentorealtimenotifications_lib_core_services_notification_service_notificationserviceprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_listentorealtimenotifications",
+      "toNode": "n_lib_core_services_notification_service_notificationserviceprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_listentorealtimenotifications_lib_features_auth_presentation_auth_controller_userprofileprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_listentorealtimenotifications",
+      "toNode": "n_lib_features_auth_presentation_auth_controller_userprofileprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_listentorealtimenotifications_lib_features_household_presentation_household_controller_currenthouseholdprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_listentorealtimenotifications",
+      "toNode": "n_lib_features_household_presentation_household_controller_currenthouseholdprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_build_lib_features_auth_presentation_auth_controller_userprofileprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_build",
+      "toNode": "n_lib_features_auth_presentation_auth_controller_userprofileprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_main_shell_screen_build_lib_features_household_presentation_household_controller_currenthouseholdprovider",
+      "fromNode": "n_lib_app_config_main_shell_screen_build",
+      "toNode": "n_lib_features_household_presentation_household_controller_currenthouseholdprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_dart_ui_lib_core_widgets_glass_card",
+      "fromNode": "n_dart_ui",
+      "toNode": "n_lib_core_widgets_glass_card",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_cloud_firestore_cloud_firestore_dart_lib_app_config_router",
+      "fromNode": "n_package_cloud_firestore_cloud_firestore_dart",
+      "toNode": "n_lib_app_config_router",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_cloud_firestore_cloud_firestore_dart_lib_core_providers_firebase_providers",
+      "fromNode": "n_package_cloud_firestore_cloud_firestore_dart",
+      "toNode": "n_lib_core_providers_firebase_providers",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_cloud_firestore_cloud_firestore_dart_lib_core_services_notification_service",
+      "fromNode": "n_package_cloud_firestore_cloud_firestore_dart",
+      "toNode": "n_lib_core_services_notification_service",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_cloud_firestore_cloud_firestore_dart_lib_features_auth_data_auth_repository",
+      "fromNode": "n_package_cloud_firestore_cloud_firestore_dart",
+      "toNode": "n_lib_features_auth_data_auth_repository",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_cloud_firestore_cloud_firestore_dart_lib_features_auth_presentation_auth_controller",
+      "fromNode": "n_package_cloud_firestore_cloud_firestore_dart",
+      "toNode": "n_lib_features_auth_presentation_auth_controller",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_cloud_firestore_cloud_firestore_dart_lib_features_household_data_household_repository",
+      "fromNode": "n_package_cloud_firestore_cloud_firestore_dart",
+      "toNode": "n_lib_features_household_data_household_repository",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_cloud_firestore_cloud_firestore_dart_lib_features_shopping_list_data_shopping_list_repository",
+      "fromNode": "n_package_cloud_firestore_cloud_firestore_dart",
+      "toNode": "n_lib_features_shopping_list_data_shopping_list_repository",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_core_providers_firebase_providers_dart_lib_app_config_router",
+      "fromNode": "n_core_providers_firebase_providers_dart",
+      "toNode": "n_lib_app_config_router",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_core_providers_firebase_providers_dart_lib_features_auth_presentation_auth_controller",
+      "fromNode": "n_core_providers_firebase_providers_dart",
+      "toNode": "n_lib_features_auth_presentation_auth_controller",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_core_providers_firebase_providers_dart_lib_features_household_presentation_household_controller",
+      "fromNode": "n_core_providers_firebase_providers_dart",
+      "toNode": "n_lib_features_household_presentation_household_controller",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_core_providers_firebase_providers_dart_lib_features_shopping_list_presentation_shopping_list_controller",
+      "fromNode": "n_core_providers_firebase_providers_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_shopping_list_controller",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_core_services_notification_service_dart_lib_features_shopping_list_presentation_shopping_list_controller",
+      "fromNode": "n_core_services_notification_service_dart",
+      "toNode": "n_lib_features_shopping_list_presentation_shopping_list_controller",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_features_auth_presentation_auth_controller_dart_lib_app_config_router",
+      "fromNode": "n_features_auth_presentation_auth_controller_dart",
+      "toNode": "n_lib_app_config_router",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_features_household_presentation_household_controller_dart_lib_app_config_router",
+      "fromNode": "n_features_household_presentation_household_controller_dart",
+      "toNode": "n_lib_app_config_router",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_features_shopping_list_presentation_create_list_screen_dart_lib_app_config_router",
+      "fromNode": "n_features_shopping_list_presentation_create_list_screen_dart",
+      "toNode": "n_lib_app_config_router",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_animation",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_animation",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_animationcontroller",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_animationcontroller",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_asyncvalue",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_asyncvalue",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_core_widgets_glass_card_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_core_widgets_glass_card_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_features_auth_domain_user_model_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_features_auth_domain_user_model_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_features_auth_presentation_login_screen_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_features_auth_presentation_login_screen_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_features_household_presentation_household_setup_screen_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_features_household_presentation_household_setup_screen_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_features_household_presentation_manage_household_screen_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_features_household_presentation_manage_household_screen_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_features_shopping_list_presentation_active_list_screen_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_features_shopping_list_presentation_active_list_screen_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_gorouter",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_gorouter",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_animcontroller",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_animcontroller",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_appsplashscreen",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_appsplashscreen",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_appsplashscreenstate",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_appsplashscreenstate",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_build",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_build",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_buildfadeslidepage",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_buildfadeslidepage",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_createstate",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_createstate",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_dispose",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_dispose",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_fadeanim",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_fadeanim",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_hasnavigated",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_hasnavigated",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_initstate",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_initstate",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_notifier",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_notifier",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_redirect",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_redirect",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_ref",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_ref",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_routernotifier",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_routernotifier",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_routernotifierprovider",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_routernotifierprovider",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_routerprovider",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_routerprovider",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_scaleanim",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_scaleanim",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_startsplashtimer",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_startsplashtimer",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_lib_app_config_router_state",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_lib_app_config_router_state",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_main_shell_screen_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_main_shell_screen_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_offset",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_offset",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_package_firebase_auth_firebase_auth_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_package_firebase_auth_firebase_auth_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_package_go_router_go_router_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_package_go_router_go_router_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_package_google_fonts_google_fonts_dart",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_package_google_fonts_google_fonts_dart",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_ref",
+      "fromNode": "n_lib_app_config_router",
+      "toNode": "n_ref",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_appsplashscreen_lib_app_config_router_appsplashscreenstate",
+      "fromNode": "n_lib_app_config_router_appsplashscreen",
+      "toNode": "n_lib_app_config_router_appsplashscreenstate",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_appsplashscreenstate_lib_core_providers_firebase_providers_firebaseauthprovider",
+      "fromNode": "n_lib_app_config_router_appsplashscreenstate",
+      "toNode": "n_lib_core_providers_firebase_providers_firebaseauthprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_appsplashscreenstate_lib_core_providers_firebase_providers_firebasefirestoreprovider",
+      "fromNode": "n_lib_app_config_router_appsplashscreenstate",
+      "toNode": "n_lib_core_providers_firebase_providers_firebasefirestoreprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_appsplashscreenstate_singletickerproviderstatemixin",
+      "fromNode": "n_lib_app_config_router_appsplashscreenstate",
+      "toNode": "n_singletickerproviderstatemixin",
+      "label": "mixes_in [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_routernotifier_lib_app_config_router_routerprovider",
+      "fromNode": "n_lib_app_config_router_routernotifier",
+      "toNode": "n_lib_app_config_router_routerprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_routernotifier_changenotifier",
+      "fromNode": "n_lib_app_config_router_routernotifier",
+      "toNode": "n_changenotifier",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_ref_lib_features_household_presentation_household_controller",
+      "fromNode": "n_ref",
+      "toNode": "n_lib_features_household_presentation_household_controller",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_ref_lib_features_shopping_list_presentation_shopping_list_controller",
+      "fromNode": "n_ref",
+      "toNode": "n_lib_features_shopping_list_presentation_shopping_list_controller",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_routerprovider_lib_app_app_hatly_app",
+      "fromNode": "n_lib_app_config_router_routerprovider",
+      "toNode": "n_lib_app_app_hatly_app",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_routerprovider_lib_app_config_router_app_splash_screen",
+      "fromNode": "n_lib_app_config_router_routerprovider",
+      "toNode": "n_lib_app_config_router_app_splash_screen",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_routerprovider_mainshellscreen_main_shell_screen",
+      "fromNode": "n_lib_app_config_router_routerprovider",
+      "toNode": "n_mainshellscreen_main_shell_screen",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_startsplashtimer_lib_core_providers_firebase_providers_firebaseauthprovider",
+      "fromNode": "n_lib_app_config_router_startsplashtimer",
+      "toNode": "n_lib_core_providers_firebase_providers_firebaseauthprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_startsplashtimer_lib_core_providers_firebase_providers_firebasefirestoreprovider",
+      "fromNode": "n_lib_app_config_router_startsplashtimer",
+      "toNode": "n_lib_core_providers_firebase_providers_firebasefirestoreprovider",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_startsplashtimer_route",
+      "fromNode": "n_lib_app_config_router_startsplashtimer",
+      "toNode": "n_route",
+      "label": "navigates [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_app_config_router_startsplashtimer_route_household_setup",
+      "fromNode": "n_lib_app_config_router_startsplashtimer",
+      "toNode": "n_route_household_setup",
+      "label": "navigates [EXTRACTED]"
+    }
+  ]
+}

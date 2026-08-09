@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "535130089179",
+    "project_id": "hatly-app-2026",
+    "storage_bucket": "hatly-app-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535130089179:android:6d5d67820f6626d0234efe",
+        "android_client_info": {
+          "package_name": "com.example.hatly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn1-eclbvLMJVMtnCICO83mEspjomtCqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

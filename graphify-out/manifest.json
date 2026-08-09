@@ -1,0 +1,322 @@
+{
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\app\\build.gradle.kts": {
+    "mtime": 1784495239.8508146,
+    "ast_hash": "f3073a7351bb5a35b220f5dfd0d83ed5",
+    "semantic_hash": "f3073a7351bb5a35b220f5dfd0d83ed5"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\app\\google-services.json": {
+    "mtime": 1784399146.6330578,
+    "ast_hash": "4baf6536467881c19a713c60af0803ce",
+    "semantic_hash": "4baf6536467881c19a713c60af0803ce"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\app\\src\\main\\kotlin\\com\\example\\hatly\\MainActivity.kt": {
+    "mtime": 1784394065.546168,
+    "ast_hash": "c94bbcf97deb9e5ddc467a12c2bb75f8",
+    "semantic_hash": "c94bbcf97deb9e5ddc467a12c2bb75f8"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\build.gradle.kts": {
+    "mtime": 1784485518.617306,
+    "ast_hash": "994e8bdc3c7d9ff1f589e6e79d694e15",
+    "semantic_hash": "994e8bdc3c7d9ff1f589e6e79d694e15"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\settings.gradle.kts": {
+    "mtime": 1784394065.7800715,
+    "ast_hash": "087a01c04d081ae02a8e5db89f4bf3f3",
+    "semantic_hash": "087a01c04d081ae02a8e5db89f4bf3f3"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\firebase.json": {
+    "mtime": 1784399065.8352547,
+    "ast_hash": "6a7e94c3124e3d2552ee4ec011ae7b1d",
+    "semantic_hash": "6a7e94c3124e3d2552ee4ec011ae7b1d"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\firestore.indexes.json": {
+    "mtime": 1784399183.956347,
+    "ast_hash": "6231fc4ac0084672619383747fa71f06",
+    "semantic_hash": "6231fc4ac0084672619383747fa71f06"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\ios\\Flutter\\ephemeral\\flutter_lldb_helper.py": {
+    "mtime": 1784637666.3218262,
+    "ast_hash": "98fc75412162af387e2e3461e4e58094",
+    "semantic_hash": "98fc75412162af387e2e3461e4e58094"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\ios\\Flutter\\flutter_export_environment.sh": {
+    "mtime": 1784637666.3348265,
+    "ast_hash": "068bf5675bd4ad0bc1d6e2a21b5b933c",
+    "semantic_hash": "068bf5675bd4ad0bc1d6e2a21b5b933c"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\ios\\Runner\\GeneratedPluginRegistrant.h": {
+    "mtime": 1784401938.144328,
+    "ast_hash": "decb9041b5e91a07e66f4664e5dac408",
+    "semantic_hash": "decb9041b5e91a07e66f4664e5dac408"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\ios\\Runner\\GeneratedPluginRegistrant.m": {
+    "mtime": 1784494502.5882964,
+    "ast_hash": "23f1471c09d1f2b331fa0cc534ac3c40",
+    "semantic_hash": "23f1471c09d1f2b331fa0cc534ac3c40"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\app\\app.dart": {
+    "mtime": 1784652068.5566754,
+    "ast_hash": "d3bce267ca24bf7bbfbc5d644c49eba1",
+    "semantic_hash": "d3bce267ca24bf7bbfbc5d644c49eba1"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\app\\config\\main_shell_screen.dart": {
+    "mtime": 1784594444.6011913,
+    "ast_hash": "56e8d1788fd630749290498633ee124f",
+    "semantic_hash": "56e8d1788fd630749290498633ee124f"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\app\\config\\router.dart": {
+    "mtime": 1784649337.8125517,
+    "ast_hash": "a74ce8b90d691b0eb629beaee09cb63a",
+    "semantic_hash": "a74ce8b90d691b0eb629beaee09cb63a"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\app\\config\\theme.dart": {
+    "mtime": 1784682012.5288348,
+    "ast_hash": "7ba86675dd99045f5d2e99e80733e175",
+    "semantic_hash": "7ba86675dd99045f5d2e99e80733e175"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\core\\providers\\firebase_providers.dart": {
+    "mtime": 1784398396.2387693,
+    "ast_hash": "fa54dbd97f5ba99df17d50c708bf4428",
+    "semantic_hash": "fa54dbd97f5ba99df17d50c708bf4428"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\core\\services\\notification_service.dart": {
+    "mtime": 1784678354.0791647,
+    "ast_hash": "38c779a936fabfe72ff6465a02173387",
+    "semantic_hash": "38c779a936fabfe72ff6465a02173387"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\core\\widgets\\category_badge.dart": {
+    "mtime": 1784678774.7231054,
+    "ast_hash": "c0dd8efdcc6503dfda7f0b0bf85f5dc7",
+    "semantic_hash": "c0dd8efdcc6503dfda7f0b0bf85f5dc7"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\core\\widgets\\glass_card.dart": {
+    "mtime": 1784418132.2142985,
+    "ast_hash": "d010537f86e3b30c754cc33cc07ce931",
+    "semantic_hash": "d010537f86e3b30c754cc33cc07ce931"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\core\\widgets\\glass_dialog.dart": {
+    "mtime": 1784678778.446201,
+    "ast_hash": "e31ea4438d5842dda2dfd39df822f275",
+    "semantic_hash": "e31ea4438d5842dda2dfd39df822f275"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\core\\widgets\\hatly_header_bar.dart": {
+    "mtime": 1784679363.6920102,
+    "ast_hash": "d32142842152381eeebf873c7c7a1c3b",
+    "semantic_hash": "d32142842152381eeebf873c7c7a1c3b"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\auth\\data\\auth_repository.dart": {
+    "mtime": 1784595435.7835293,
+    "ast_hash": "2ca55e22306472353f33f88e113a7b51",
+    "semantic_hash": "2ca55e22306472353f33f88e113a7b51"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\auth\\domain\\user_model.dart": {
+    "mtime": 1784401875.4017787,
+    "ast_hash": "a71ba918700dde4c2987822c713ff749",
+    "semantic_hash": "a71ba918700dde4c2987822c713ff749"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\auth\\presentation\\auth_controller.dart": {
+    "mtime": 1784639363.800078,
+    "ast_hash": "13c93a4131cf6d91274eaf4c04c250d5",
+    "semantic_hash": "13c93a4131cf6d91274eaf4c04c250d5"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\auth\\presentation\\login_screen.dart": {
+    "mtime": 1784482817.036913,
+    "ast_hash": "4f82fafaf6a99ee5ab2a12edccca3972",
+    "semantic_hash": "4f82fafaf6a99ee5ab2a12edccca3972"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\household\\data\\household_repository.dart": {
+    "mtime": 1784476446.1526825,
+    "ast_hash": "83f709551e7ea39a7f5e5c4dd008dc0d",
+    "semantic_hash": "83f709551e7ea39a7f5e5c4dd008dc0d"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\household\\domain\\category_model.dart": {
+    "mtime": 1784649724.1431024,
+    "ast_hash": "4ea16646173740b7d1cdfff3ab9309c7",
+    "semantic_hash": "4ea16646173740b7d1cdfff3ab9309c7"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\household\\domain\\household_model.dart": {
+    "mtime": 1784426374.115651,
+    "ast_hash": "eec34df702f0412417a236d89eb4cca6",
+    "semantic_hash": "eec34df702f0412417a236d89eb4cca6"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\household\\presentation\\household_controller.dart": {
+    "mtime": 1784476454.4861746,
+    "ast_hash": "b89e44c3fa2209681852853c76312cf0",
+    "semantic_hash": "b89e44c3fa2209681852853c76312cf0"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\household\\presentation\\household_setup_screen.dart": {
+    "mtime": 1784679518.6447687,
+    "ast_hash": "10ef8446c18726380d1b3a73eefa18d2",
+    "semantic_hash": "10ef8446c18726380d1b3a73eefa18d2"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\household\\presentation\\manage_household_screen.dart": {
+    "mtime": 1784679508.3751278,
+    "ast_hash": "e313525ef670be45e2c881a3a24f869b",
+    "semantic_hash": "e313525ef670be45e2c881a3a24f869b"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\settings\\presentation\\settings_screen.dart": {
+    "mtime": 1784679313.9941103,
+    "ast_hash": "0211dc82a88a3b9a21ff6afab704a29f",
+    "semantic_hash": "0211dc82a88a3b9a21ff6afab704a29f"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\shopping_list\\data\\shopping_list_repository.dart": {
+    "mtime": 1784651097.859915,
+    "ast_hash": "b9a0fdaface4d848e8c76c346fa46558",
+    "semantic_hash": "b9a0fdaface4d848e8c76c346fa46558"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\shopping_list\\domain\\shopping_item_model.dart": {
+    "mtime": 1784402802.687253,
+    "ast_hash": "ea645e0e5c8f19983a9d89c26e65e240",
+    "semantic_hash": "ea645e0e5c8f19983a9d89c26e65e240"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\shopping_list\\domain\\shopping_list_model.dart": {
+    "mtime": 1784403771.4551108,
+    "ast_hash": "cc3a07c03f09a0a85e4ee27ce6965ef9",
+    "semantic_hash": "cc3a07c03f09a0a85e4ee27ce6965ef9"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\shopping_list\\presentation\\active_list_screen.dart": {
+    "mtime": 1784679406.797368,
+    "ast_hash": "fbc6bd76d463202d534a89b944c20488",
+    "semantic_hash": "fbc6bd76d463202d534a89b944c20488"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\shopping_list\\presentation\\create_list_screen.dart": {
+    "mtime": 1784679004.2827203,
+    "ast_hash": "f1ada5d8682275fdc3b1cd7b653a7300",
+    "semantic_hash": "f1ada5d8682275fdc3b1cd7b653a7300"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\shopping_list\\presentation\\dashboard_screen.dart": {
+    "mtime": 1784679007.9444344,
+    "ast_hash": "931a202f6a3b3daeee81810eed17791b",
+    "semantic_hash": "931a202f6a3b3daeee81810eed17791b"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\shopping_list\\presentation\\history_screen.dart": {
+    "mtime": 1784678788.8449042,
+    "ast_hash": "ef773d1fd15fd06ebd5d7e1dad9a25f7",
+    "semantic_hash": "ef773d1fd15fd06ebd5d7e1dad9a25f7"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\shopping_list\\presentation\\shopping_list_controller.dart": {
+    "mtime": 1784651105.6129208,
+    "ast_hash": "8a6c66b5379c17fe19a367a11f8aa056",
+    "semantic_hash": "8a6c66b5379c17fe19a367a11f8aa056"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\features\\shopping_list\\utils\\whatsapp_parser.dart": {
+    "mtime": 1784403750.5224953,
+    "ast_hash": "7cebf6f6e555e6e7de3a512685292791",
+    "semantic_hash": "7cebf6f6e555e6e7de3a512685292791"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\firebase_options.dart": {
+    "mtime": 1784404711.019039,
+    "ast_hash": "7f747cc82749669d7eb15984647703d5",
+    "semantic_hash": "7f747cc82749669d7eb15984647703d5"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\lib\\main.dart": {
+    "mtime": 1784678336.9541018,
+    "ast_hash": "f25de3a339afb555fcc9c247eafcb994",
+    "semantic_hash": "f25de3a339afb555fcc9c247eafcb994"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\test\\unit\\household_model_test.dart": {
+    "mtime": 1784403712.3413906,
+    "ast_hash": "b9a7a56645965d048093f0469144dd04",
+    "semantic_hash": "b9a7a56645965d048093f0469144dd04"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\test\\unit\\shopping_list_model_test.dart": {
+    "mtime": 1784403722.817834,
+    "ast_hash": "ab829e224b466fb642a43098054da40d",
+    "semantic_hash": "ab829e224b466fb642a43098054da40d"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\test\\unit\\user_model_test.dart": {
+    "mtime": 1784403702.3261495,
+    "ast_hash": "ab406252f86a5bd20763fbe62c1d0427",
+    "semantic_hash": "ab406252f86a5bd20763fbe62c1d0427"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\test\\unit\\whatsapp_parser_test.dart": {
+    "mtime": 1784403693.8095477,
+    "ast_hash": "caf0aa9555643055caa93ac22631f602",
+    "semantic_hash": "caf0aa9555643055caa93ac22631f602"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\web\\manifest.json": {
+    "mtime": 1784394065.9145477,
+    "ast_hash": "e70009969a234f701dff8c314f2e433f",
+    "semantic_hash": "e70009969a234f701dff8c314f2e433f"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\README.md": {
+    "mtime": 1784394065.8517475,
+    "ast_hash": "d7c0e8893e0fd02abf000fff7352bfc9",
+    "semantic_hash": "d7c0e8893e0fd02abf000fff7352bfc9"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\analysis_options.yaml": {
+    "mtime": 1784394065.5094137,
+    "ast_hash": "29c685c23a06da68389960ce6ac6f303",
+    "semantic_hash": "29c685c23a06da68389960ce6ac6f303"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\docs\\specs\\hatly-spec.md": {
+    "mtime": 1784397808.8183508,
+    "ast_hash": "f81ab5196499df9aa55adc5367f3addb",
+    "semantic_hash": "f81ab5196499df9aa55adc5367f3addb"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\pubspec.yaml": {
+    "mtime": 1784681094.9231155,
+    "ast_hash": "550b1d7c83e6d6cb333a6a2bc907108c",
+    "semantic_hash": "550b1d7c83e6d6cb333a6a2bc907108c"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\web\\index.html": {
+    "mtime": 1784394065.9008317,
+    "ast_hash": "129b6f028a5546d352b0259dce1f1e8e",
+    "semantic_hash": "129b6f028a5546d352b0259dce1f1e8e"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png": {
+    "mtime": 1741898782.846992,
+    "ast_hash": "13e9c72ec37fac220397aa819fa1ef2d",
+    "semantic_hash": "13e9c72ec37fac220397aa819fa1ef2d"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png": {
+    "mtime": 1741898782.846992,
+    "ast_hash": "6270344430679711b81476e29878caa7",
+    "semantic_hash": "6270344430679711b81476e29878caa7"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png": {
+    "mtime": 1741898782.846992,
+    "ast_hash": "a0a8db5985280b3679d99a820ae2db79",
+    "semantic_hash": "a0a8db5985280b3679d99a820ae2db79"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png": {
+    "mtime": 1741898782.846992,
+    "ast_hash": "afe1b655b9f32da22f9a4301bb8e6ba8",
+    "semantic_hash": "afe1b655b9f32da22f9a4301bb8e6ba8"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png": {
+    "mtime": 1741898782.846992,
+    "ast_hash": "57838d52c318faff743130c3fcfae0c6",
+    "semantic_hash": "57838d52c318faff743130c3fcfae0c6"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\assets\\images\\logo.png": {
+    "mtime": 1784681052.4070678,
+    "ast_hash": "2dcbbfc28679ec790feefc8dbd599825",
+    "semantic_hash": "2dcbbfc28679ec790feefc8dbd599825"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\web\\favicon.png": {
+    "mtime": 1741898782.8793454,
+    "ast_hash": "5dcef449791fa27946b3d35ad8803796",
+    "semantic_hash": "5dcef449791fa27946b3d35ad8803796"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\web\\icons\\Icon-192.png": {
+    "mtime": 1741898782.8793454,
+    "ast_hash": "ac9a721a12bbc803b44f645561ecb1e1",
+    "semantic_hash": "ac9a721a12bbc803b44f645561ecb1e1"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\web\\icons\\Icon-512.png": {
+    "mtime": 1741898782.8793454,
+    "ast_hash": "96e752610906ba2a93c65f8abe1645f1",
+    "semantic_hash": "96e752610906ba2a93c65f8abe1645f1"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\web\\icons\\Icon-maskable-192.png": {
+    "mtime": 1742176093.928453,
+    "ast_hash": "c457ef57daa1d16f64b27b786ec2ea3c",
+    "semantic_hash": "c457ef57daa1d16f64b27b786ec2ea3c"
+  },
+  "C:\\Users\\ahmed\\Desktop\\flutter\\hatly\\web\\icons\\Icon-maskable-512.png": {
+    "mtime": 1742176093.9274495,
+    "ast_hash": "301a7604d45b3e739efc881eb04896ea",
+    "semantic_hash": "301a7604d45b3e739efc881eb04896ea"
+  }
+}
