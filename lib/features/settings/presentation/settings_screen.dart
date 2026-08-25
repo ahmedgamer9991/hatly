@@ -691,48 +691,56 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         household?.activeCategories ?? CategoryModel.defaultCategories;
 
     return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          gradient: RadialGradient(
-            center: Alignment(-0.8, -0.9),
-            radius: 1.3,
-            colors: [
-              Color(0xFF11253E),
-              Color(0xFF081425),
-              Color(0xFF040E1F),
-            ],
-            stops: [0.0, 0.5, 1.0],
-          ),
-        ),
-        child: SafeArea(
-          child: Column(
-            children: [
-              const HatlyHeaderBar(title: 'Settings'),
-              Expanded(
-                child: ListView(
-                  padding: const EdgeInsets.only(
-                      left: 16, right: 16, top: 16, bottom: 100),
-                  children: [
-                    _buildUserProfileCard(currentUser, isOwner),
-                    if (household != null) ...[
-                      const SizedBox(height: 20),
-                      _buildHouseholdCard(
-                        household: household,
-                        isOwner: isOwner,
-                        pendingState: pendingState,
-                        membersState: membersState,
-                      ),
-                      if (isOwner) ...[
-                        const SizedBox(height: 20),
-                        _buildCategoryCard(categories),
-                      ],
+      body: Stack(
+        children: [
+          const RepaintBoundary(
+            child: SizedBox.expand(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                    center: Alignment(-0.8, -0.9),
+                    radius: 1.3,
+                    colors: [
+                      Color(0xFF11253E),
+                      Color(0xFF081425),
+                      Color(0xFF040E1F),
                     ],
-                  ],
+                    stops: [0.0, 0.5, 1.0],
+                  ),
                 ),
               ),
-            ],
+            ),
           ),
-        ),
+          SafeArea(
+            child: Column(
+              children: [
+                const HatlyHeaderBar(title: 'Settings'),
+                Expanded(
+                  child: ListView(
+                    padding: const EdgeInsets.only(
+                        left: 16, right: 16, top: 16, bottom: 100),
+                    children: [
+                      _buildUserProfileCard(currentUser, isOwner),
+                      if (household != null) ...[
+                        const SizedBox(height: 20),
+                        _buildHouseholdCard(
+                          household: household,
+                          isOwner: isOwner,
+                          pendingState: pendingState,
+                          membersState: membersState,
+                        ),
+                        if (isOwner) ...[
+                          const SizedBox(height: 20),
+                          _buildCategoryCard(categories),
+                        ],
+                      ],
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -27,6 +27,7 @@ Whenever the user requests a task, **refer to this matrix** to select and execut
 | **Unit & Widget Testing** | Writing tests for models, controllers, or UI widgets | [`dart-add-unit-test`](file:///C:/Users/ahmed/.gemini/config/plugins/flutter/skills/dart-add-unit-test/SKILL.md), [`flutter-add-widget-test`](file:///C:/Users/ahmed/.gemini/config/plugins/flutter/skills/flutter-add-widget-test/SKILL.md), & [`dart-generate-test-mocks`](file:///C:/Users/ahmed/.gemini/config/plugins/flutter/skills/dart-generate-test-mocks/SKILL.md) |
 | **Code Review & Audits** | Deep security, performance, and cleanliness reviews | [`ultimate-code-reviewer`](file:///C:/Users/ahmed/.gemini/config/skills/ultimate-code-reviewer/SKILL.md) |
 | **Code Base Knowledge Graph** | Analyzing relationships, dependencies, and architecture | [`graphify`](file:///C:/Users/ahmed/.gemini/config/skills/graphify/SKILL.md) |
+| **Codebase Snapshot & Blueprint**| Generating or updating high-density token-efficient snapshot | [`snapshot-maker`](file:///C:/Users/ahmed/.gemini/config/skills/snapshot-maker/SKILL.md) |
 | **Static Verification** | Running linter checks & applying mechanical auto-fixes | [`dart-run-static-analysis`](file:///C:/Users/ahmed/.gemini/config/plugins/flutter/skills/dart-run-static-analysis/SKILL.md) |
 
 ---
@@ -71,6 +72,10 @@ flowchart TD
 
 ### Stage 5: Verification & Walkthrough
 - Provide a concise summary of edits made and test results.
+
+### Stage 6: Maintain Token-Efficient Project Snapshot
+- After completing and verifying code edits, update [`snapshot.md`](file:///c:/Users/ahmed/Desktop/flutter/hatly/snapshot.md) at the project root to keep project state, providers, and component changes synchronized.
+- Prior to starting complex edits, consult `snapshot.md` first to minimize token usage.
 
 ---
 
