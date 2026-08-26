@@ -99,6 +99,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                             const SizedBox(height: 4),
                             Text(
                               currentHousehold.name,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
                               style: const TextStyle(
                                 color: AppTheme.textPrimary,
                                 fontWeight: FontWeight.bold,
@@ -478,6 +480,8 @@ class _ShoppingListCard extends ConsumerWidget {
                   children: [
                     Text(
                       list.title,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 1,
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
@@ -502,37 +506,41 @@ class _ShoppingListCard extends ConsumerWidget {
                         ),
                         if (isOwner) ...[
                           const SizedBox(width: 4),
-                          InkWell(
-                            onTap: () =>
-                                _showReassignListDialog(context, ref, list),
-                            borderRadius: BorderRadius.circular(6),
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 6, vertical: 2),
-                              decoration: BoxDecoration(
-                                color: AppTheme.primaryEmerald
-                                    .withValues(alpha: 0.15),
-                                borderRadius: BorderRadius.circular(6),
-                                border: Border.all(
-                                    color: AppTheme.primaryEmerald
-                                        .withValues(alpha: 0.3)),
-                              ),
-                              child: const Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Icon(Icons.edit_rounded,
-                                      size: 11,
-                                      color: AppTheme.primaryEmerald),
-                                  SizedBox(width: 3),
-                                  Text(
-                                    'Change',
-                                    style: TextStyle(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.bold,
-                                      color: AppTheme.primaryEmerald,
+                          Semantics(
+                            button: true,
+                            label: 'Change assignment for ${list.title}',
+                            child: InkWell(
+                              onTap: () =>
+                                  _showReassignListDialog(context, ref, list),
+                              borderRadius: BorderRadius.circular(6),
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 6, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: AppTheme.primaryEmerald
+                                      .withValues(alpha: 0.15),
+                                  borderRadius: BorderRadius.circular(6),
+                                  border: Border.all(
+                                      color: AppTheme.primaryEmerald
+                                          .withValues(alpha: 0.3)),
+                                ),
+                                child: const Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(Icons.edit_rounded,
+                                        size: 11,
+                                        color: AppTheme.primaryEmerald),
+                                    SizedBox(width: 3),
+                                    Text(
+                                      'Change',
+                                      style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold,
+                                        color: AppTheme.primaryEmerald,
+                                      ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           ),
@@ -585,20 +593,24 @@ class _ShoppingListCard extends ConsumerWidget {
             ],
           ),
           const SizedBox(height: 8),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(6),
-            child: TweenAnimationBuilder<double>(
-              duration: const Duration(milliseconds: 500),
-              curve: Curves.easeOutCubic,
-              tween: Tween<double>(begin: 0.0, end: progress),
-              builder: (context, animValue, child) {
-                return LinearProgressIndicator(
-                  value: animValue,
-                  minHeight: 8,
-                  backgroundColor: const Color(0x1AFFFFFF),
-                  valueColor: AlwaysStoppedAnimation<Color>(cardColor),
-                );
-              },
+          Semantics(
+            label: 'Shopping list progress',
+            value: '$percentInt percent completed',
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(6),
+              child: TweenAnimationBuilder<double>(
+                duration: const Duration(milliseconds: 500),
+                curve: Curves.easeOutCubic,
+                tween: Tween<double>(begin: 0.0, end: progress),
+                builder: (context, animValue, child) {
+                  return LinearProgressIndicator(
+                    value: animValue,
+                    minHeight: 8,
+                    backgroundColor: const Color(0x1AFFFFFF),
+                    valueColor: AlwaysStoppedAnimation<Color>(cardColor),
+                  );
+                },
+              ),
             ),
           ),
         ],

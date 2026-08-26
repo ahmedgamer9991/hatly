@@ -197,10 +197,12 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             child: Center(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 480),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
                     // App Branding Emblem
                     Container(
                       padding: const EdgeInsets.all(16),
@@ -251,50 +253,60 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                               child: Row(
                                 children: [
                                   Expanded(
-                                    child: GestureDetector(
-                                      onTap: () => setState(() => _isSignUp = false),
-                                      child: AnimatedContainer(
-                                        duration: const Duration(milliseconds: 200),
-                                        padding: const EdgeInsets.symmetric(vertical: 10),
-                                        decoration: BoxDecoration(
-                                          color: !_isSignUp
-                                              ? AppTheme.primaryEmerald
-                                              : Colors.transparent,
-                                          borderRadius: BorderRadius.circular(10),
-                                        ),
-                                        child: Text(
-                                          'Sign In',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                                    child: Semantics(
+                                      selected: !_isSignUp,
+                                      button: true,
+                                      label: 'Sign In tab',
+                                      child: GestureDetector(
+                                        onTap: () => setState(() => _isSignUp = false),
+                                        child: AnimatedContainer(
+                                          duration: const Duration(milliseconds: 200),
+                                          padding: const EdgeInsets.symmetric(vertical: 12),
+                                          decoration: BoxDecoration(
                                             color: !_isSignUp
-                                                ? const Color(0xFF00391C)
-                                                : AppTheme.textSecondary,
+                                                ? AppTheme.primaryEmerald
+                                                : Colors.transparent,
+                                            borderRadius: BorderRadius.circular(10),
+                                          ),
+                                          child: Text(
+                                            'Sign In',
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: !_isSignUp
+                                                  ? const Color(0xFF00391C)
+                                                  : AppTheme.textSecondary,
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Expanded(
-                                    child: GestureDetector(
-                                      onTap: () => setState(() => _isSignUp = true),
-                                      child: AnimatedContainer(
-                                        duration: const Duration(milliseconds: 200),
-                                        padding: const EdgeInsets.symmetric(vertical: 10),
-                                        decoration: BoxDecoration(
-                                          color: _isSignUp
-                                              ? AppTheme.primaryEmerald
-                                              : Colors.transparent,
-                                          borderRadius: BorderRadius.circular(10),
-                                        ),
-                                        child: Text(
-                                          'Sign Up',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                                    child: Semantics(
+                                      selected: _isSignUp,
+                                      button: true,
+                                      label: 'Sign Up tab',
+                                      child: GestureDetector(
+                                        onTap: () => setState(() => _isSignUp = true),
+                                        child: AnimatedContainer(
+                                          duration: const Duration(milliseconds: 200),
+                                          padding: const EdgeInsets.symmetric(vertical: 12),
+                                          decoration: BoxDecoration(
                                             color: _isSignUp
-                                                ? const Color(0xFF00391C)
-                                                : AppTheme.textSecondary,
+                                                ? AppTheme.primaryEmerald
+                                                : Colors.transparent,
+                                            borderRadius: BorderRadius.circular(10),
+                                          ),
+                                          child: Text(
+                                            'Sign Up',
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: _isSignUp
+                                                  ? const Color(0xFF00391C)
+                                                  : AppTheme.textSecondary,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -354,6 +366,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                 labelText: 'Password',
                                 prefixIcon: const Icon(Icons.lock_outline),
                                 suffixIcon: IconButton(
+                                  tooltip: _obscurePassword ? 'Show password' : 'Hide password',
                                   icon: Icon(
                                     _obscurePassword
                                         ? Icons.visibility_outlined
@@ -405,7 +418,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         ),
                       ),
                     ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),

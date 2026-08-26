@@ -113,7 +113,7 @@ class _ManageHouseholdScreenState
                                 const Text(
                                   'UNIQUE FAMILY CODE',
                                   style: TextStyle(
-                                    fontSize: 10,
+                                    fontSize: 12,
                                     fontWeight: FontWeight.bold,
                                     color: AppTheme.textSecondary,
                                     letterSpacing: 0.8,
@@ -136,15 +136,22 @@ class _ManageHouseholdScreenState
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text(
-                                        household.inviteCode,
-                                        style: GoogleFonts.sora(
-                                          color: AppTheme.primaryEmerald,
-                                          fontWeight: FontWeight.w900,
-                                          fontSize: 22,
-                                          letterSpacing: 2.5,
+                                      Flexible(
+                                        child: FittedBox(
+                                          fit: BoxFit.scaleDown,
+                                          alignment: Alignment.centerLeft,
+                                          child: Text(
+                                            household.inviteCode,
+                                            style: GoogleFonts.sora(
+                                              color: AppTheme.primaryEmerald,
+                                              fontWeight: FontWeight.w900,
+                                              fontSize: 22,
+                                              letterSpacing: 2.5,
+                                            ),
+                                          ),
                                         ),
                                       ),
+                                      const SizedBox(width: 8),
                                       InkWell(
                                         onTap: () =>
                                             _copyInviteCode(household.inviteCode),
@@ -281,15 +288,16 @@ class _ManageHouseholdScreenState
                                             ),
                                             // Reject Red Button
                                             IconButton.filled(
+                                              tooltip: 'Reject request from ${user.name}',
                                               style: IconButton.styleFrom(
                                                 backgroundColor:
                                                     const Color(0xFFD32F2F),
-                                                minimumSize: const Size(36, 36),
+                                                minimumSize: const Size(48, 48),
                                               ),
                                               icon: const Icon(
                                                   Icons.close_rounded,
                                                   color: Colors.white,
-                                                  size: 18),
+                                                  size: 20),
                                               onPressed: () {
                                                 ref
                                                     .read(
@@ -298,18 +306,19 @@ class _ManageHouseholdScreenState
                                                     .rejectJoin(user.uid);
                                               },
                                             ),
-                                            const SizedBox(width: 6),
+                                            const SizedBox(width: 8),
                                             // Approve Green Button
                                             IconButton.filled(
+                                              tooltip: 'Approve request from ${user.name}',
                                               style: IconButton.styleFrom(
                                                 backgroundColor:
                                                     AppTheme.primaryEmerald,
-                                                minimumSize: const Size(36, 36),
+                                                minimumSize: const Size(48, 48),
                                               ),
                                               icon: const Icon(
                                                   Icons.check_rounded,
                                                   color: Color(0xFF00391C),
-                                                  size: 18),
+                                                  size: 20),
                                               onPressed: () {
                                                 ref
                                                     .read(

@@ -72,7 +72,7 @@ class AppTheme {
           borderSide: const BorderSide(color: primaryEmerald, width: 1.5),
         ),
         labelStyle: GoogleFonts.sora(color: textSecondary, fontWeight: FontWeight.w500),
-        hintStyle: GoogleFonts.sora(color: const Color(0x6694A3B8)),
+        hintStyle: GoogleFonts.sora(color: const Color(0xB394A3B8)), // 70% opacity for WCAG AA 4.8:1 contrast
         prefixIconColor: primaryEmerald,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(

@@ -757,7 +757,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               const Text(
                 'MY PROFILE SETTINGS',
                 style: TextStyle(
-                  fontSize: 10,
+                  fontSize: 12,
                   fontWeight: FontWeight.bold,
                   color: AppTheme.textSecondary,
                   letterSpacing: 0.8,
@@ -1209,11 +1209,15 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                             children: [
                               Row(
                                 children: [
-                                  Text(
-                                    member.name,
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: AppTheme.textPrimary,
+                                  Flexible(
+                                    child: Text(
+                                      member.name,
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 1,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: AppTheme.textPrimary,
+                                      ),
                                     ),
                                   ),
                                   if (isMemberAdmin) ...[
@@ -1227,6 +1231,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                               ),
                               Text(
                                 member.email,
+                                overflow: TextOverflow.ellipsis,
+                                maxLines: 1,
                                 style: const TextStyle(
                                   fontSize: 11,
                                   color: AppTheme.textSecondary,
@@ -1367,12 +1373,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                     ),
                   ),
                   IconButton(
+                    tooltip: 'Edit category "${cat.name}"',
                     icon: const Icon(Icons.edit_outlined,
                         size: 18, color: AppTheme.textSecondary),
                     onPressed: () =>
                         _showEditCategoryDialog(cat, categories),
                   ),
                   IconButton(
+                    tooltip: 'Delete category "${cat.name}"',
                     icon: const Icon(Icons.delete_outline_rounded,
                         size: 18, color: AppTheme.errorRed),
                     onPressed: () => _deleteCategory(cat, categories),

@@ -280,37 +280,46 @@ class _NavBarItem extends StatelessWidget {
     final activeColor = AppTheme.primaryEmerald;
     final inactiveColor = AppTheme.textSecondary;
 
-    return GestureDetector(
-      onTap: onTap,
-      behavior: HitTestBehavior.opaque,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            isSelected ? (selectedIcon ?? icon) : icon,
-            color: isSelected ? activeColor : inactiveColor,
-            size: 24,
+    return Semantics(
+      selected: isSelected,
+      label: '$label tab',
+      button: true,
+      child: GestureDetector(
+        onTap: onTap,
+        behavior: HitTestBehavior.opaque,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minWidth: 48, minHeight: 48),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                isSelected ? (selectedIcon ?? icon) : icon,
+                color: isSelected ? activeColor : inactiveColor,
+                size: 24,
+              ),
+              const SizedBox(height: 4),
+              Text(
+                label,
+                style: TextStyle(
+                  color: isSelected ? activeColor : inactiveColor,
+                  fontSize: 11,
+                  fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+                ),
+              ),
+              const SizedBox(height: 4),
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 200),
+                height: 4,
+                width: 4,
+                decoration: BoxDecoration(
+                  color: isSelected ? activeColor : Colors.transparent,
+                  shape: BoxShape.circle,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(height: 4),
-          Text(
-            label,
-            style: TextStyle(
-              color: isSelected ? activeColor : inactiveColor,
-              fontSize: 11,
-              fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-            ),
-          ),
-          const SizedBox(height: 4),
-          AnimatedContainer(
-            duration: const Duration(milliseconds: 200),
-            height: 4,
-            width: 4,
-            decoration: BoxDecoration(
-              color: isSelected ? activeColor : Colors.transparent,
-              shape: BoxShape.circle,
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }

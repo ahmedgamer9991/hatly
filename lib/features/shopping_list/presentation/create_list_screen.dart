@@ -366,6 +366,7 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
                                   ),
                                   const SizedBox(width: 10),
                                   IconButton.filled(
+                                    tooltip: 'Add item to list',
                                     style: IconButton.styleFrom(
                                       backgroundColor: AppTheme.primaryEmerald
                                           .withValues(alpha: 0.2),
@@ -523,6 +524,7 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
                                       ),
                                     ),
                                     IconButton(
+                                      tooltip: 'Delete "${_items[index].name}"',
                                       icon: const Icon(
                                           Icons.delete_outline_rounded,
                                           color: AppTheme.errorRed,
@@ -604,31 +606,36 @@ class _CategorySelectorPill extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 150),
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-        decoration: BoxDecoration(
-          color: isSelected ? color.withValues(alpha: 0.22) : const Color(0x0DFFFFFF),
-          border: Border.all(
-            color: isSelected ? color : const Color(0x1AF8FAFC),
-          ),
-          borderRadius: BorderRadius.circular(50),
-        ),
-        child: Row(
-          children: [
-            Icon(icon, size: 16, color: isSelected ? color : AppTheme.textSecondary),
-            const SizedBox(width: 6),
-            Text(
-              label,
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-                color: isSelected ? color : AppTheme.textSecondary,
-              ),
+    return Semantics(
+      selected: isSelected,
+      button: true,
+      label: '$label category',
+      child: GestureDetector(
+        onTap: onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+          decoration: BoxDecoration(
+            color: isSelected ? color.withValues(alpha: 0.22) : const Color(0x0DFFFFFF),
+            border: Border.all(
+              color: isSelected ? color : const Color(0x1AF8FAFC),
             ),
-          ],
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Row(
+            children: [
+              Icon(icon, size: 16, color: isSelected ? color : AppTheme.textSecondary),
+              const SizedBox(width: 6),
+              Text(
+                label,
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+                  color: isSelected ? color : AppTheme.textSecondary,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

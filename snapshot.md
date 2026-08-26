@@ -1,11 +1,13 @@
 # Project Snapshot — Hatly (`snapshot.md`)
-*Last Updated: 2026-08-12*
+*Last Updated: 2026-08-26*
 
 ---
 
 ## 🟢 Status & Quality Metrics
 - **Static Analysis:** `flutter analyze` ➔ **0 errors, 0 warnings**
-- **Unit Tests:** `flutter test` ➔ **7/7 passed** (`household_model_test`, `shopping_list_model_test`, `user_model_test`, `whatsapp_parser_test`)
+- **Unit Tests:** `flutter test` ➔ **19/19 passed** across 6 test suites (`category_model_test`, `notification_payload_test`, `household_model_test`, `shopping_list_model_test`, `user_model_test`, `whatsapp_parser_test`).
+- **Responsive UI & Multi-Device:** Hardened for 320dp small screens, large tablets (max-width card constraints), font scaling (1.5x+), and strict viewport bounds.
+- **Accessibility (a11y):** WCAG AA Compliant — 48x48dp touch targets, 4.8:1 input hint contrast, `Semantics` screen reader labels on tabs/checkboxes/pills, full icon tooltips.
 - **Live Security Rules:** Deployed to Firebase project `hatly-app-2026` via Firebase MCP.
 - **Firebase Infrastructure:** Spark Free Tier (Direct FCM HTTP v1 OAuth 2.0 via `googleapis_auth` + `.env`, no Cloud Functions).
 
@@ -45,25 +47,25 @@
 ## 🎨 UI Design System & Core Widgets (`lib/core/widgets/`)
 
 - **[`GlassCard`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/glass_card.dart):** Frosted glass container (`enableBlur: false` for 60/120 FPS list performance, `enableBlur: true` for overlays). Supports `fillColor`, `borderColor`, `hasActiveGlow`, `onTap`.
-- **[`GlassDialog`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/glass_dialog.dart):** `showGlassConfirmationDialog()` helper for glassmorphic popups.
+- **[`GlassDialog`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/glass_dialog.dart):** `showGlassConfirmationDialog()` helper with WCAG AA compliant red button (`#DC2626`) and min 48dp button targets.
 - **[`HatlyHeaderBar`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/hatly_header_bar.dart):** Unified app header bar supporting leading back buttons & trailing actions.
 - **[`CategoryBadge`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/category_badge.dart):** Category pill badge displaying store category icon & color.
-- **[`AppTheme`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme.dart):** Radial dark background gradient (`#11253E` → `#081425` → `#040E1F`), Emerald primary (`#10B981`), `GoogleFonts.sora`.
+- **[`AppTheme`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme.dart):** Radial dark background gradient (`#11253E` → `#081425` → `#040E1F`), Emerald primary (`#10B981`), `GoogleFonts.sora`, 70% input hint contrast (`0xB394A3B8`).
 
 ---
 
 ## 🗺️ Screen Navigation Matrix (`lib/app/config/`)
 
 - **`/` (Splash Guard):** [`AppSplashScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/router.dart) — Routes to `/login`, `/household-setup`, or `/dashboard`.
-- **`/login`:** [`LoginScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/auth/presentation/login_screen.dart) — Handles login & sign up toggle.
-- **`/household-setup`:** [`HouseholdSetupScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/household/presentation/household_setup_screen.dart) — Create new family group or join with 6-letter invite code.
-- **`/dashboard` (Main Shell):** [`MainShellScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/main_shell_screen.dart) — Bottom nav shell (`IndexedStack`):
+- **`/login`:** [`LoginScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/auth/presentation/login_screen.dart) — Handles login & sign up toggle with `Semantics` tab labels, password visibility tooltip, and tablet max-width constraints.
+- **`/household-setup`:** [`HouseholdSetupScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/household/presentation/household_setup_screen.dart) — Create new family group or join with 6-letter invite code, with min 48dp tab hit areas and tablet container constraints.
+- **`/dashboard` (Main Shell):** [`MainShellScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/main_shell_screen.dart) — Bottom nav shell (`IndexedStack`) with `Semantics(selected: ...)` and 48x48dp targets:
   - Index 0: [`DashboardScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/shopping_list/presentation/dashboard_screen.dart)
   - Index 1: [`CreateListScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/shopping_list/presentation/create_list_screen.dart) (Owner only)
   - Index 2: [`HistoryScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/shopping_list/presentation/history_screen.dart)
   - Index 3: [`SettingsScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/settings/presentation/settings_screen.dart)
-- **`/shopping-list/:id`:** [`ActiveListScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/shopping_list/presentation/active_list_screen.dart) — Real-time active item checklist, status updates, out-of-stock flagging, quick item addition, and list completion.
-- **`/manage-household`:** [`ManageHouseholdScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/household/presentation/manage_household_screen.dart) — Member moderation & subgroup manager.
+- **`/shopping-list/:id`:** [`ActiveListScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/shopping_list/presentation/active_list_screen.dart) — Real-time active item checklist, status updates with 48x48dp hit targets, out-of-stock flagging, quick item addition, bounded live progress headers, and list completion.
+- **`/manage-household`:** [`ManageHouseholdScreen`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/features/household/presentation/manage_household_screen.dart) — Member moderation (48x48dp reject/approve buttons with tooltips), overflow-safe invite code container, & subgroup manager.
 
 ---
 

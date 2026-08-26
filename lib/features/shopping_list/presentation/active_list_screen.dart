@@ -398,9 +398,8 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                                   backgroundColor: AppTheme.primaryEmerald,
                                   foregroundColor: const Color(0xFF00391C),
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 8),
-                                  minimumSize: Size.zero,
-                                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                                      horizontal: 14, vertical: 10),
+                                  minimumSize: const Size(48, 48),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10),
                                   ),
@@ -412,11 +411,11 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                                 ),
                                 icon: const Icon(
                                     Icons.notifications_active_rounded,
-                                    size: 16),
+                                    size: 18),
                                 label: const Text(
                                   'Update',
                                   style: TextStyle(
-                                      fontSize: 12, fontWeight: FontWeight.bold),
+                                      fontSize: 13, fontWeight: FontWeight.bold),
                                 ),
                               ),
                             ],
@@ -433,29 +432,36 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Row(
-                              children: [
-                                Container(
-                                  width: 8,
-                                  height: 8,
-                                  decoration: const BoxDecoration(
-                                    color: AppTheme.primaryEmerald,
-                                    shape: BoxShape.circle,
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: 8,
+                                    height: 8,
+                                    decoration: const BoxDecoration(
+                                      color: AppTheme.primaryEmerald,
+                                      shape: BoxShape.circle,
+                                    ),
                                   ),
-                                ),
-                                const SizedBox(width: 8),
-                                Text(
-                                  isOwner
-                                      ? 'Real-Time Monitoring'
-                                      : 'Live Progress: $percentInt%',
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15,
-                                    color: AppTheme.textPrimary,
+                                  const SizedBox(width: 8),
+                                  Expanded(
+                                    child: Text(
+                                      isOwner
+                                          ? 'Real-Time Monitoring'
+                                          : 'Live Progress: $percentInt%',
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 1,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                        color: AppTheme.textPrimary,
+                                      ),
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
+                            const SizedBox(width: 8),
                             Text(
                               '$boughtItems of $totalItems bought',
                               style: const TextStyle(
@@ -467,73 +473,87 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                           ],
                         ),
                         const SizedBox(height: 10),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(6),
-                          child: TweenAnimationBuilder<double>(
-                            duration: const Duration(milliseconds: 500),
-                            curve: Curves.easeOutCubic,
-                            tween: Tween<double>(begin: 0.0, end: progress),
-                            builder: (context, animValue, child) {
-                              return LinearProgressIndicator(
-                                value: animValue,
-                                minHeight: 10,
-                                backgroundColor: const Color(0x1AFFFFFF),
-                                valueColor: const AlwaysStoppedAnimation<Color>(
-                                    AppTheme.primaryEmerald),
-                              );
-                            },
+                        Semantics(
+                          label: 'Shopping progress',
+                          value: '$percentInt percent completed',
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(6),
+                            child: TweenAnimationBuilder<double>(
+                              duration: const Duration(milliseconds: 500),
+                              curve: Curves.easeOutCubic,
+                              tween: Tween<double>(begin: 0.0, end: progress),
+                              builder: (context, animValue, child) {
+                                return LinearProgressIndicator(
+                                  value: animValue,
+                                  minHeight: 10,
+                                  backgroundColor: const Color(0x1AFFFFFF),
+                                  valueColor: const AlwaysStoppedAnimation<Color>(
+                                      AppTheme.primaryEmerald),
+                                );
+                              },
+                            ),
                           ),
                         ),
                         const SizedBox(height: 12),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Row(
-                              children: [
-                                const Icon(Icons.person_outline_rounded,
-                                    size: 13, color: AppTheme.textSecondary),
-                                const SizedBox(width: 4),
-                                Text(
-                                  'Assigned to: ${list.assignedToName}',
-                                  style: const TextStyle(
-                                    fontSize: 12,
-                                    color: AppTheme.textSecondary,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            if (isOwner)
-                              InkWell(
-                                onTap: () => _showReassignDialog(list),
-                                borderRadius: BorderRadius.circular(6),
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 3),
-                                  decoration: BoxDecoration(
-                                    color: AppTheme.primaryEmerald
-                                        .withValues(alpha: 0.15),
-                                    borderRadius: BorderRadius.circular(6),
-                                    border: Border.all(
-                                        color: AppTheme.primaryEmerald
-                                            .withValues(alpha: 0.3)),
-                                  ),
-                                  child: const Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Icon(Icons.edit_rounded,
-                                          size: 12,
-                                          color: AppTheme.primaryEmerald),
-                                      SizedBox(width: 4),
-                                      Text(
-                                        'Reassign',
-                                        style: TextStyle(
-                                          fontSize: 11,
-                                          fontWeight: FontWeight.bold,
-                                          color: AppTheme.primaryEmerald,
-                                        ),
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  const Icon(Icons.person_outline_rounded,
+                                      size: 13, color: AppTheme.textSecondary),
+                                  const SizedBox(width: 4),
+                                  Expanded(
+                                    child: Text(
+                                      'Assigned to: ${list.assignedToName}',
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 1,
+                                      style: const TextStyle(
+                                        fontSize: 12,
+                                        color: AppTheme.textSecondary,
+                                        fontWeight: FontWeight.w600,
                                       ),
-                                    ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            if (isOwner)
+                              Semantics(
+                                button: true,
+                                label: 'Reassign list from ${list.assignedToName}',
+                                child: InkWell(
+                                  onTap: () => _showReassignDialog(list),
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 10, vertical: 6),
+                                    decoration: BoxDecoration(
+                                      color: AppTheme.primaryEmerald
+                                          .withValues(alpha: 0.15),
+                                      borderRadius: BorderRadius.circular(8),
+                                      border: Border.all(
+                                          color: AppTheme.primaryEmerald
+                                              .withValues(alpha: 0.3)),
+                                    ),
+                                    child: const Row(
+                                      children: [
+                                        Icon(Icons.swap_horiz_rounded,
+                                            size: 14,
+                                            color: AppTheme.primaryEmerald),
+                                        SizedBox(width: 4),
+                                        Text(
+                                          'Change',
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: AppTheme.primaryEmerald,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
@@ -695,21 +715,26 @@ class _CategoryPillChoice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-        decoration: BoxDecoration(
-          color: isSelected ? color.withValues(alpha: 0.25) : const Color(0x0DFFFFFF),
-          border: Border.all(color: isSelected ? color : const Color(0x1AF8FAFC)),
-          borderRadius: BorderRadius.circular(50),
-        ),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-            color: isSelected ? color : AppTheme.textSecondary,
+    return Semantics(
+      selected: isSelected,
+      button: true,
+      label: '$label category',
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+          decoration: BoxDecoration(
+            color: isSelected ? color.withValues(alpha: 0.25) : const Color(0x0DFFFFFF),
+            border: Border.all(color: isSelected ? color : const Color(0x1AF8FAFC)),
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+              color: isSelected ? color : AppTheme.textSecondary,
+            ),
           ),
         ),
       ),
@@ -761,49 +786,60 @@ class _CategorySection extends ConsumerWidget {
             padding: const EdgeInsets.all(12),
             child: Row(
               children: [
-                // Status Check Indicator
-                GestureDetector(
-                  onTap: isOwner
-                      ? null // Owner is in read-only monitoring mode
-                      : () {
-                          final newStatus = isBought ? 'pending' : 'bought';
-                          ref
-                              .read(shoppingListControllerProvider.notifier)
-                              .updateItemStatus(
-                                listId: listId,
-                                itemId: item.id,
-                                status: newStatus,
-                              );
-                        },
-                  child: Container(
-                    width: 26,
-                    height: 26,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: isBought
-                          ? AppTheme.primaryEmerald
-                          : (isOutOfStock
-                              ? AppTheme.errorRed.withValues(alpha: 0.2)
-                              : Colors.transparent),
-                      border: Border.all(
-                        color: isBought
-                            ? AppTheme.primaryEmerald
+                // Status Check Indicator with 48x48dp Touch Target & Semantics
+                Semantics(
+                  checked: isBought,
+                  label: '${isBought ? "Mark as pending" : "Mark as bought"} ${item.name}',
+                  button: true,
+                  child: GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTap: isOwner
+                        ? null // Owner is in read-only monitoring mode
+                        : () {
+                            final newStatus = isBought ? 'pending' : 'bought';
+                            ref
+                                .read(shoppingListControllerProvider.notifier)
+                                .updateItemStatus(
+                                  listId: listId,
+                                  itemId: item.id,
+                                  status: newStatus,
+                                );
+                          },
+                    child: Container(
+                      width: 48,
+                      height: 48,
+                      alignment: Alignment.center,
+                      child: Container(
+                        width: 26,
+                        height: 26,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: isBought
+                              ? AppTheme.primaryEmerald
+                              : (isOutOfStock
+                                  ? AppTheme.errorRed.withValues(alpha: 0.2)
+                                  : Colors.transparent),
+                          border: Border.all(
+                            color: isBought
+                                ? AppTheme.primaryEmerald
+                                : (isOutOfStock
+                                    ? AppTheme.errorRed
+                                    : AppTheme.textSecondary.withValues(alpha: 0.5)),
+                            width: 2,
+                          ),
+                        ),
+                        child: isBought
+                            ? const Icon(Icons.check_rounded,
+                                size: 16, color: Color(0xFF00391C))
                             : (isOutOfStock
-                                ? AppTheme.errorRed
-                                : AppTheme.textSecondary.withValues(alpha: 0.5)),
-                        width: 2,
+                                ? const Icon(Icons.close_rounded,
+                                    size: 16, color: AppTheme.errorRed)
+                                : null),
                       ),
                     ),
-                    child: isBought
-                        ? const Icon(Icons.check_rounded,
-                            size: 16, color: Color(0xFF00391C))
-                        : (isOutOfStock
-                            ? const Icon(Icons.close_rounded,
-                                size: 16, color: AppTheme.errorRed)
-                            : null),
                   ),
                 ),
-                const SizedBox(width: 12),
+                const SizedBox(width: 4),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -838,7 +874,7 @@ class _CategorySection extends ConsumerWidget {
                   IconButton(
                     icon: const Icon(Icons.delete_outline_rounded,
                         color: AppTheme.errorRed, size: 20),
-                    tooltip: 'Remove item',
+                    tooltip: 'Remove item "${item.name}"',
                     onPressed: () {
                       ref
                           .read(shoppingListControllerProvider.notifier)
@@ -856,6 +892,7 @@ class _CategorySection extends ConsumerWidget {
                   )
                 else if (!isBought)
                   IconButton(
+                    tooltip: 'Report out of stock',
                     icon: Icon(
                       Icons.warning_amber_rounded,
                       color: isOutOfStock

@@ -100,9 +100,12 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
             SafeArea(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
+                child: Center(
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 540),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
                     HatlyHeaderBar(
                       title: 'Household Setup',
                       leading: IconButton(
@@ -206,52 +209,62 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
                               child: Row(
                                 children: [
                                   Expanded(
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        if (_isJoining) setState(() => _isJoining = false);
-                                      },
-                                      child: Container(
-                                        padding: const EdgeInsets.symmetric(vertical: 10),
-                                        decoration: BoxDecoration(
-                                          color: !_isJoining
-                                              ? AppTheme.primaryEmerald
-                                              : Colors.transparent,
-                                          borderRadius: BorderRadius.circular(10),
-                                        ),
-                                        child: Text(
-                                          'Create Household',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                                    child: Semantics(
+                                      selected: !_isJoining,
+                                      button: true,
+                                      label: 'Create Household tab',
+                                      child: GestureDetector(
+                                        onTap: () {
+                                          if (_isJoining) setState(() => _isJoining = false);
+                                        },
+                                        child: Container(
+                                          padding: const EdgeInsets.symmetric(vertical: 12),
+                                          decoration: BoxDecoration(
                                             color: !_isJoining
-                                                ? const Color(0xFF00391C)
-                                                : AppTheme.textSecondary,
+                                                ? AppTheme.primaryEmerald
+                                                : Colors.transparent,
+                                            borderRadius: BorderRadius.circular(10),
+                                          ),
+                                          child: Text(
+                                            'Create Household',
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: !_isJoining
+                                                  ? const Color(0xFF00391C)
+                                                  : AppTheme.textSecondary,
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Expanded(
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        if (!_isJoining) setState(() => _isJoining = true);
-                                      },
-                                      child: Container(
-                                        padding: const EdgeInsets.symmetric(vertical: 10),
-                                        decoration: BoxDecoration(
-                                          color: _isJoining
-                                              ? AppTheme.primaryEmerald
-                                              : Colors.transparent,
-                                          borderRadius: BorderRadius.circular(10),
-                                        ),
-                                        child: Text(
-                                          'Join Household',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                                    child: Semantics(
+                                      selected: _isJoining,
+                                      button: true,
+                                      label: 'Join Household tab',
+                                      child: GestureDetector(
+                                        onTap: () {
+                                          if (!_isJoining) setState(() => _isJoining = true);
+                                        },
+                                        child: Container(
+                                          padding: const EdgeInsets.symmetric(vertical: 12),
+                                          decoration: BoxDecoration(
                                             color: _isJoining
-                                                ? const Color(0xFF00391C)
-                                                : AppTheme.textSecondary,
+                                                ? AppTheme.primaryEmerald
+                                                : Colors.transparent,
+                                            borderRadius: BorderRadius.circular(10),
+                                          ),
+                                          child: Text(
+                                            'Join Household',
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: _isJoining
+                                                  ? const Color(0xFF00391C)
+                                                  : AppTheme.textSecondary,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -383,13 +396,15 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
                           ],
                         ),
                       ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
-    );
+    ),
+  );
   }
 }
