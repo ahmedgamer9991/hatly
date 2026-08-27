@@ -1,11 +1,12 @@
 # Project Snapshot — Hatly (`snapshot.md`)
-*Last Updated: 2026-08-26*
+*Last Updated: 2026-08-28*
 
 ---
 
 ## 🟢 Status & Quality Metrics
 - **Static Analysis:** `flutter analyze` ➔ **0 errors, 0 warnings**
 - **Unit Tests:** `flutter test` ➔ **19/19 passed** across 6 test suites (`category_model_test`, `notification_payload_test`, `household_model_test`, `shopping_list_model_test`, `user_model_test`, `whatsapp_parser_test`).
+- **Theme Centralization:** 100% centralized single-file theme architecture via [`AppTheme`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme.dart) (`primaryEmerald`, `backgroundGradient`, glass tokens, category colors). All 9 screens reference `AppTheme.backgroundGradient`.
 - **Responsive UI & Multi-Device:** Hardened for 320dp small screens, large tablets (max-width card constraints), font scaling (1.5x+), and strict viewport bounds.
 - **Accessibility (a11y):** WCAG AA Compliant — 48x48dp touch targets, 4.8:1 input hint contrast, `Semantics` screen reader labels on tabs/checkboxes/pills, full icon tooltips.
 - **Live Security Rules:** Deployed to Firebase project `hatly-app-2026` via Firebase MCP.
@@ -50,7 +51,7 @@
 - **[`GlassDialog`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/glass_dialog.dart):** `showGlassConfirmationDialog()` helper with WCAG AA compliant red button (`#DC2626`) and min 48dp button targets.
 - **[`HatlyHeaderBar`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/hatly_header_bar.dart):** Unified app header bar supporting leading back buttons & trailing actions.
 - **[`CategoryBadge`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/category_badge.dart):** Category pill badge displaying store category icon & color.
-- **[`AppTheme`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme.dart):** Radial dark background gradient (`#11253E` → `#081425` → `#040E1F`), Emerald primary (`#10B981`), `GoogleFonts.sora`, 70% input hint contrast (`0xB394A3B8`).
+- **[`AppTheme`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme.dart):** 100% Centralized Theme Token: `backgroundGradient` (`#11253E` → `#081425` → `#040E1F`), `primaryEmerald` (`#10B981`), `GoogleFonts.sora`, 70% input hint contrast (`0xB394A3B8`).
 
 ---
 

@@ -25,6 +25,18 @@ class AppTheme {
   static const Color butcherColor = Color(0xFFF87171);
   static const Color otherColor = Color(0xFFCBD5E1);
 
+  // Global App Background Radial Gradient
+  static const Gradient backgroundGradient = RadialGradient(
+    center: Alignment(-0.8, -0.9),
+    radius: 1.3,
+    colors: [
+      Color(0xFF11253E),
+      Color(0xFF081425),
+      Color(0xFF040E1F),
+    ],
+    stops: [0.0, 0.5, 1.0],
+  );
+
   static ThemeData get darkGlassTheme {
     final baseDark = ThemeData.dark(useMaterial3: true);
     final soraTextTheme = GoogleFonts.soraTextTheme(baseDark.textTheme);

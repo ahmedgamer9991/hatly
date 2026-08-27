@@ -697,16 +697,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             child: SizedBox.expand(
               child: DecoratedBox(
                 decoration: BoxDecoration(
-                  gradient: RadialGradient(
-                    center: Alignment(-0.8, -0.9),
-                    radius: 1.3,
-                    colors: [
-                      Color(0xFF11253E),
-                      Color(0xFF081425),
-                      Color(0xFF040E1F),
-                    ],
-                    stops: [0.0, 0.5, 1.0],
-                  ),
+                  gradient: AppTheme.backgroundGradient,
                 ),
               ),
             ),
