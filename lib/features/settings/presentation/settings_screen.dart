@@ -66,59 +66,63 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     );
   }
 
-  void _showAddSubgroupDialog() {
+  Future<void> _showAddSubgroupDialog() async {
     final groupNameCtrl = TextEditingController();
 
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          backgroundColor: AppTheme.surfaceContainer,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-            side: const BorderSide(color: AppTheme.glassBorder),
-          ),
-          title: const Text(
-            'Add New Family Subgroup',
-            style: TextStyle(color: AppTheme.textPrimary),
-          ),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: groupNameCtrl,
-                style: const TextStyle(color: AppTheme.textPrimary),
-                decoration: const InputDecoration(
-                  labelText: 'Subgroup Name',
-                  hintText: 'e.g. Sons, Kids, Drivers, Parents...',
+    try {
+      await showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            backgroundColor: AppTheme.surfaceContainer,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+              side: const BorderSide(color: AppTheme.glassBorder),
+            ),
+            title: const Text(
+              'Add New Family Subgroup',
+              style: TextStyle(color: AppTheme.textPrimary),
+            ),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: groupNameCtrl,
+                  style: const TextStyle(color: AppTheme.textPrimary),
+                  decoration: const InputDecoration(
+                    labelText: 'Subgroup Name',
+                    hintText: 'e.g. Sons, Kids, Drivers, Parents...',
+                  ),
                 ),
+              ],
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text('Cancel', style: TextStyle(color: AppTheme.textSecondary)),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: AppTheme.primaryEmerald),
+                onPressed: () {
+                  final groupName = groupNameCtrl.text.trim();
+                  if (groupName.isEmpty) return;
+
+                  ref.read(householdControllerProvider.notifier).addSubgroup(groupName);
+                  Navigator.pop(context);
+                },
+                child: const Text('Add Subgroup',
+                    style: TextStyle(color: Color(0xFF00391C))),
               ),
             ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel', style: TextStyle(color: AppTheme.textSecondary)),
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: AppTheme.primaryEmerald),
-              onPressed: () {
-                final groupName = groupNameCtrl.text.trim();
-                if (groupName.isEmpty) return;
-
-                ref.read(householdControllerProvider.notifier).addSubgroup(groupName);
-                Navigator.pop(context);
-              },
-              child: const Text('Add Subgroup',
-                  style: TextStyle(color: Color(0xFF00391C))),
-            ),
-          ],
-        );
-      },
-    );
+          );
+        },
+      );
+    } finally {
+      groupNameCtrl.dispose();
+    }
   }
 
-  void _showAddCategoryDialog(List<CategoryModel> existingCategories) {
+  Future<void> _showAddCategoryDialog(List<CategoryModel> existingCategories) async {
     final nameCtrl = TextEditingController();
     String selectedColorHex = '#64DD91';
     String selectedIconName = 'shopping_cart';
@@ -149,9 +153,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       'more_horiz',
     ];
 
-    showDialog(
-      context: context,
-      builder: (context) {
+    try {
+      await showDialog(
+        context: context,
+        builder: (context) {
         return StatefulBuilder(
           builder: (context, setDialogState) {
             return AlertDialog(
@@ -304,12 +309,15 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         );
       },
     );
+    } finally {
+      nameCtrl.dispose();
+    }
   }
 
-  void _showEditCategoryDialog(
+  Future<void> _showEditCategoryDialog(
     CategoryModel cat,
     List<CategoryModel> existingCategories,
-  ) {
+  ) async {
     final nameCtrl = TextEditingController(text: cat.name);
     String selectedColorHex = cat.colorHex;
     String selectedIconName = cat.iconName;
@@ -340,9 +348,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       'more_horiz',
     ];
 
-    showDialog(
-      context: context,
-      builder: (context) {
+    try {
+      await showDialog(
+        context: context,
+        builder: (context) {
         return StatefulBuilder(
           builder: (context, setDialogState) {
             return AlertDialog(
@@ -497,6 +506,9 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         );
       },
     );
+    } finally {
+      nameCtrl.dispose();
+    }
   }
 
   void _deleteCategory(
@@ -509,8 +521,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         .updateCategories(updatedList);
   }
 
-  void _showSubgroupAssignmentDialog(
-      UserModel member, Map<String, List<String>> subgroups) {
+  Future<void> _showSubgroupAssignmentDialog(
+      UserModel member, Map<String, List<String>> subgroups) async {
     String selectedSubgroup = 'None';
     final newSubgroupCtrl = TextEditingController();
     bool isCreatingNewSubgroup = false;
@@ -524,9 +536,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     final availableGroupNames =
         <String>{'None', 'Sons', 'Parents', ...subgroups.keys}.toList();
 
-    showDialog(
-      context: context,
-      builder: (context) {
+    try {
+      await showDialog(
+        context: context,
+        builder: (context) {
         return StatefulBuilder(
           builder: (context, setDialogState) {
             return AlertDialog(
@@ -671,6 +684,9 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         );
       },
     );
+    } finally {
+      newSubgroupCtrl.dispose();
+    }
   }
 
   @override

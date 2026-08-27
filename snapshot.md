@@ -7,6 +7,8 @@
 - **Static Analysis:** `flutter analyze` ➔ **0 errors, 0 warnings**
 - **Unit Tests:** `flutter test` ➔ **19/19 passed** across 6 test suites (`category_model_test`, `notification_payload_test`, `household_model_test`, `shopping_list_model_test`, `user_model_test`, `whatsapp_parser_test`).
 - **Theme Centralization:** 100% centralized single-file theme architecture via [`AppTheme`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme.dart) (`primaryEmerald`, `backgroundGradient`, glass tokens, category colors). All 9 screens reference `AppTheme.backgroundGradient`.
+- **Memory & Lifecycle Safety:** All dialog `TextEditingController` instances bound to `try-finally` or `StatefulWidget` disposal cycles.
+- **Code Cleanliness:** 0 dead files (removed unused `category_badge.dart`), centralized shared components (`reassign_dialog.dart`).
 - **Responsive UI & Multi-Device:** Hardened for 320dp small screens, large tablets (max-width card constraints), font scaling (1.5x+), and strict viewport bounds.
 - **Accessibility (a11y):** WCAG AA Compliant — 48x48dp touch targets, 4.8:1 input hint contrast, `Semantics` screen reader labels on tabs/checkboxes/pills, full icon tooltips.
 - **Live Security Rules:** Deployed to Firebase project `hatly-app-2026` via Firebase MCP.
@@ -50,7 +52,7 @@
 - **[`GlassCard`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/glass_card.dart):** Frosted glass container (`enableBlur: false` for 60/120 FPS list performance, `enableBlur: true` for overlays). Supports `fillColor`, `borderColor`, `hasActiveGlow`, `onTap`.
 - **[`GlassDialog`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/glass_dialog.dart):** `showGlassConfirmationDialog()` helper with WCAG AA compliant red button (`#DC2626`) and min 48dp button targets.
 - **[`HatlyHeaderBar`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/hatly_header_bar.dart):** Unified app header bar supporting leading back buttons & trailing actions.
-- **[`CategoryBadge`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/category_badge.dart):** Category pill badge displaying store category icon & color.
+- **[`showReassignListDialog`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/core/widgets/reassign_dialog.dart):** Shared modal dialog for reassigning shopping lists to family members or subgroups.
 - **[`AppTheme`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme.dart):** 100% Centralized Theme Token: `backgroundGradient` (`#11253E` → `#081425` → `#040E1F`), `primaryEmerald` (`#10B981`), `GoogleFonts.sora`, 70% input hint contrast (`0xB394A3B8`).
 
 ---
