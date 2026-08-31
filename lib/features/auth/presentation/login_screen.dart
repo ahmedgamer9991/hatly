@@ -57,6 +57,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     final initialDataState = ref.watch(appInitialDataLoaderProvider);
 
     final isPreloading = authUser != null && initialDataState.isLoading;
+    final bgGradient = ref.watch(activeGradientProvider);
+    final primaryColor = Theme.of(context).colorScheme.primary;
+    final onPrimary = Theme.of(context).colorScheme.onPrimary;
 
     ref.listen<AsyncValue<void>>(authControllerProvider, (previous, next) {
       if (next.hasError) {
@@ -99,8 +102,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     if (isPreloading) {
       return Scaffold(
         body: Container(
-          decoration: const BoxDecoration(
-            gradient: AppTheme.backgroundGradient,
+          decoration: BoxDecoration(
+            gradient: bgGradient,
           ),
           child: SafeArea(
             child: Center(
@@ -117,23 +120,23 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         height: 64,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: AppTheme.primaryEmerald.withValues(alpha: 0.15),
+                          color: primaryColor.withValues(alpha: 0.15),
                           border: Border.all(
-                            color: AppTheme.primaryEmerald.withValues(alpha: 0.4),
+                            color: primaryColor.withValues(alpha: 0.4),
                           ),
                         ),
-                        child: const Icon(
+                        child: Icon(
                           Icons.shopping_basket_rounded,
-                          color: AppTheme.primaryEmerald,
+                          color: primaryColor,
                           size: 32,
                         ),
                       ),
                       const SizedBox(height: 24),
-                      const SizedBox(
+                      SizedBox(
                         width: 32,
                         height: 32,
                         child: CircularProgressIndicator(
-                          color: AppTheme.primaryEmerald,
+                          color: primaryColor,
                           strokeWidth: 3,
                         ),
                       ),
@@ -170,8 +173,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
       body: Stack(
         children: [
           Container(
-            decoration: const BoxDecoration(
-              gradient: AppTheme.backgroundGradient,
+            decoration: BoxDecoration(
+              gradient: bgGradient,
             ),
           ),
 
@@ -192,10 +195,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         shape: BoxShape.circle,
                         color: Color(0x1AFFFFFF),
                       ),
-                      child: const Icon(
+                      child: Icon(
                         Icons.shopping_basket_rounded,
                         size: 64,
-                        color: AppTheme.primaryEmerald,
+                        color: primaryColor,
                       ),
                     ),
                     const SizedBox(height: 16),
@@ -246,7 +249,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                           padding: const EdgeInsets.symmetric(vertical: 12),
                                           decoration: BoxDecoration(
                                             color: !_isSignUp
-                                                ? AppTheme.primaryEmerald
+                                                ? primaryColor
                                                 : Colors.transparent,
                                             borderRadius: BorderRadius.circular(10),
                                           ),
@@ -256,7 +259,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               color: !_isSignUp
-                                                  ? const Color(0xFF00391C)
+                                                  ? onPrimary
                                                   : AppTheme.textSecondary,
                                             ),
                                           ),
@@ -276,7 +279,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                           padding: const EdgeInsets.symmetric(vertical: 12),
                                           decoration: BoxDecoration(
                                             color: _isSignUp
-                                                ? AppTheme.primaryEmerald
+                                                ? primaryColor
                                                 : Colors.transparent,
                                             borderRadius: BorderRadius.circular(10),
                                           ),
@@ -286,7 +289,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               color: _isSignUp
-                                                  ? const Color(0xFF00391C)
+                                                  ? onPrimary
                                                   : AppTheme.textSecondary,
                                             ),
                                           ),

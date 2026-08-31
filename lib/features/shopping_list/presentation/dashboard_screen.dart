@@ -8,6 +8,7 @@ import '../../../core/widgets/glass_dialog.dart';
 import '../../../core/widgets/hatly_header_bar.dart';
 import '../../../core/widgets/reassign_dialog.dart';
 import '../../auth/presentation/auth_controller.dart';
+import '../../household/domain/category_model.dart';
 import '../../household/presentation/household_controller.dart';
 import '../domain/shopping_list_model.dart';
 import 'shopping_list_controller.dart';
@@ -25,10 +26,11 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
   void _copyCode(String code) {
     Clipboard.setData(ClipboardData(text: code));
     setState(() => _isCopied = true);
+    final primaryColor = Theme.of(context).colorScheme.primary;
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Invite code copied!'),
-        backgroundColor: AppTheme.primaryEmerald,
+      SnackBar(
+        content: const Text('Invite code copied!'),
+        backgroundColor: primaryColor,
       ),
     );
     Future.delayed(const Duration(seconds: 2), () {
@@ -48,29 +50,21 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
     final isOwner = currentUser != null &&
         currentHousehold != null &&
         (currentUser.uid == currentHousehold.adminId);
+    final primaryColor = Theme.of(context).colorScheme.primary;
 
     return Scaffold(
-      body: Stack(
-        children: [
-          const RepaintBoundary(
-            child: SizedBox.expand(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: AppTheme.backgroundGradient,
-                ),
-              ),
-            ),
-          ),
-          SafeArea(
-          child: Column(
-            children: [
-              const HatlyHeaderBar(),
+      backgroundColor: Colors.transparent,
+      body: SafeArea(
+        bottom: false,
+        child: Column(
+          children: [
+            const HatlyHeaderBar(title: 'Hatly'),
 
-              // Scrollable Dashboard Feed
-              Expanded(
-                child: ListView(
-                  padding: const EdgeInsets.only(
-                      left: 16, right: 16, top: 16, bottom: 100),
+            // Scrollable Dashboard Feed
+            Expanded(
+              child: ListView(
+                padding: const EdgeInsets.only(
+                    left: 16, right: 16, top: 16, bottom: 120),
                   children: [
                     // Family Group Glass Banner Card
                     if (currentHousehold != null)
@@ -80,12 +74,12 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text(
+                            Text(
                               'Family Group',
                               style: TextStyle(
                                 fontSize: 13,
                                 fontWeight: FontWeight.w600,
-                                color: AppTheme.primaryEmerald,
+                                color: primaryColor,
                               ),
                             ),
                             const SizedBox(height: 4),
@@ -101,59 +95,77 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                             ),
                             const SizedBox(height: 16),
 
-                            // Inset Invite Code Card
-                            Container(
-                              width: double.infinity,
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 16, vertical: 12),
-                              decoration: BoxDecoration(
-                                color: const Color(0x0DFFFFFF),
+                            // Inset Invite Code Card (Tap to Copy)
+                            Material(
+                              color: Colors.transparent,
+                              child: InkWell(
+                                onTap: () =>
+                                    _copyCode(currentHousehold.inviteCode),
                                 borderRadius: BorderRadius.circular(14),
-                                border: Border.all(color: const Color(0x1AF8FAFC)),
-                              ),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                child: Container(
+                                  width: double.infinity,
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 16, vertical: 12),
+                                  decoration: BoxDecoration(
+                                    color: primaryColor.withValues(alpha: 0.08),
+                                    borderRadius: BorderRadius.circular(14),
+                                    border: Border.all(
+                                      color: _isCopied
+                                          ? primaryColor.withValues(alpha: 0.6)
+                                          : primaryColor.withValues(alpha: 0.25),
+                                      width: 1,
+                                    ),
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Text(
-                                        'INVITE CODE',
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: AppTheme.textSecondary,
-                                          letterSpacing: 0.8,
-                                        ),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'INVITE CODE',
+                                            style: TextStyle(
+                                              fontSize: 10,
+                                              fontWeight: FontWeight.bold,
+                                              color: primaryColor.withValues(alpha: 0.8),
+                                              letterSpacing: 0.8,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 4),
+                                          Text(
+                                            currentHousehold.inviteCode,
+                                            style: TextStyle(
+                                              color: primaryColor,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 17,
+                                              letterSpacing: 1.2,
+                                            ),
+                                          ),
+                                        ],
                                       ),
-                                      const SizedBox(height: 4),
-                                      Text(
-                                        currentHousehold.inviteCode,
-                                        style: const TextStyle(
-                                          color: AppTheme.primaryEmerald,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 17,
-                                          letterSpacing: 1.2,
+                                      Container(
+                                        padding: const EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                          color: _isCopied
+                                              ? primaryColor.withValues(alpha: 0.2)
+                                              : const Color(0x14FFFFFF),
+                                          borderRadius: BorderRadius.circular(10),
+                                        ),
+                                        child: Icon(
+                                          _isCopied
+                                              ? Icons.check_rounded
+                                              : Icons.copy_rounded,
+                                          color: _isCopied
+                                              ? primaryColor
+                                              : AppTheme.textPrimary,
+                                          size: 18,
                                         ),
                                       ),
                                     ],
                                   ),
-                                  IconButton(
-                                    onPressed: () =>
-                                        _copyCode(currentHousehold.inviteCode),
-                                    icon: Icon(
-                                      _isCopied
-                                          ? Icons.check_rounded
-                                          : Icons.copy_rounded,
-                                      color: _isCopied
-                                          ? AppTheme.primaryEmerald
-                                          : AppTheme.textPrimary,
-                                      size: 20,
-                                    ),
-                                  ),
-                                ],
+                                ),
                               ),
                             ),
                           ],
@@ -176,11 +188,11 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
 
                     // Real-Time Active Lists Stream
                     activeListsState.when(
-                      loading: () => const Center(
+                      loading: () => Center(
                         child: Padding(
-                          padding: EdgeInsets.all(32.0),
+                          padding: const EdgeInsets.all(32.0),
                           child: CircularProgressIndicator(
-                              color: AppTheme.primaryEmerald),
+                              color: primaryColor),
                         ),
                       ),
                       error: (err, stack) => GlassCard(
@@ -245,10 +257,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
             ],
           ),
         ),
-      ],
-    ),
-  );
-}
+      );
+    }
 }
 
 void _confirmDeleteList(
@@ -290,28 +300,46 @@ class _ShoppingListCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final primaryColor = Theme.of(context).colorScheme.primary;
     final totalItems = list.items.length;
     final boughtItems = list.items.where((i) => i.status == 'bought').length;
     final progress = totalItems > 0 ? boughtItems / totalItems : 0.0;
     final percentInt = (progress * 100).toInt();
 
-    // Map store category icons based on list items
-    IconData cardIcon = Icons.shopping_cart_outlined;
-    Color cardColor = AppTheme.supermarketColor;
+    final household = ref.watch(currentHouseholdProvider).value;
+    final categories = household?.activeCategories ?? CategoryModel.defaultCategories;
 
-    if (list.title.toLowerCase().contains('pharmacy') ||
-        list.title.toLowerCase().contains('صيدلية')) {
-      cardIcon = Icons.local_pharmacy_outlined;
-      cardColor = AppTheme.pharmacyColor;
-    } else if (list.title.toLowerCase().contains('bakery') ||
-        list.title.toLowerCase().contains('مخبز')) {
-      cardIcon = Icons.bakery_dining_outlined;
-      cardColor = AppTheme.bakeryColor;
-    } else if (list.title.toLowerCase().contains('butcher') ||
-        list.title.toLowerCase().contains('جزار')) {
-      cardIcon = Icons.restaurant_outlined;
-      cardColor = AppTheme.butcherColor;
+    // Resolve category icon and color based on the first item in the list
+    CategoryModel? firstCategory;
+    if (list.items.isNotEmpty) {
+      final firstItemCat = list.items.first.category.trim();
+      firstCategory = categories.firstWhere(
+        (c) => c.name.toLowerCase() == firstItemCat.toLowerCase(),
+        orElse: () => CategoryModel(
+          id: '',
+          name: firstItemCat,
+          colorHex: '#10B981',
+          iconName: 'shopping_bag',
+        ),
+      );
+    } else {
+      // Fallback matching on list title
+      final titleLower = list.title.toLowerCase();
+      firstCategory = categories.firstWhere(
+        (c) => titleLower.contains(c.name.toLowerCase()),
+        orElse: () => CategoryModel(
+          id: '',
+          name: 'General',
+          colorHex: '#10B981',
+          iconName: 'shopping_bag',
+        ),
+      );
     }
+
+    final IconData cardIcon = firstCategory.iconData;
+    final Color cardColor = Color(
+      int.parse(firstCategory.colorHex.replaceFirst('#', '0xFF')),
+    );
 
     return GlassCard(
       margin: const EdgeInsets.only(bottom: 14),
@@ -347,63 +375,81 @@ class _ShoppingListCard extends ConsumerWidget {
                         color: AppTheme.textPrimary,
                       ),
                     ),
-                    const SizedBox(height: 4),
+                    const SizedBox(height: 6),
                     Row(
                       children: [
-                        const Icon(Icons.person_outline_rounded,
-                            size: 13, color: AppTheme.textSecondary),
-                        const SizedBox(width: 4),
-                        Expanded(
-                          child: Text(
-                            'Assigned: ${list.assignedToName}',
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                              fontSize: 12,
-                              color: AppTheme.textSecondary,
-                            ),
-                          ),
-                        ),
-                        if (isOwner) ...[
-                          const SizedBox(width: 4),
-                          Semantics(
-                            button: true,
-                            label: 'Change assignment for ${list.title}',
-                            child: InkWell(
-                              onTap: () =>
-                                  showReassignListDialog(context: context, ref: ref, list: list),
-                              borderRadius: BorderRadius.circular(6),
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 6, vertical: 2),
-                                decoration: BoxDecoration(
-                                  color: AppTheme.primaryEmerald
-                                      .withValues(alpha: 0.15),
-                                  borderRadius: BorderRadius.circular(6),
-                                  border: Border.all(
-                                      color: AppTheme.primaryEmerald
-                                          .withValues(alpha: 0.3)),
-                                ),
-                                child: const Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Icon(Icons.edit_rounded,
-                                        size: 11,
-                                        color: AppTheme.primaryEmerald),
-                                    SizedBox(width: 3),
-                                    Text(
-                                      'Change',
-                                      style: TextStyle(
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.bold,
-                                        color: AppTheme.primaryEmerald,
-                                      ),
+                        Flexible(
+                          child: Semantics(
+                            button: isOwner,
+                            label: isOwner
+                                ? 'Assigned to ${list.assignedToName}. Tap to change assignment.'
+                                : 'Assigned to ${list.assignedToName}',
+                            child: Material(
+                              color: Colors.transparent,
+                              child: InkWell(
+                                onTap: isOwner
+                                    ? () => showReassignListDialog(
+                                          context: context,
+                                          ref: ref,
+                                          list: list,
+                                        )
+                                    : null,
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 8, vertical: 3),
+                                  decoration: BoxDecoration(
+                                    color: isOwner
+                                        ? primaryColor.withValues(alpha: 0.12)
+                                        : const Color(0x14FFFFFF),
+                                    borderRadius: BorderRadius.circular(20),
+                                    border: Border.all(
+                                      color: isOwner
+                                          ? primaryColor.withValues(alpha: 0.3)
+                                          : const Color(0x1FFFFFFF),
+                                      width: 1,
                                     ),
-                                  ],
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Icon(
+                                        Icons.person_rounded,
+                                        size: 12,
+                                        color: isOwner
+                                            ? primaryColor
+                                            : AppTheme.textSecondary,
+                                      ),
+                                      const SizedBox(width: 4),
+                                      Flexible(
+                                        child: Text(
+                                          list.assignedToName,
+                                          overflow: TextOverflow.ellipsis,
+                                          maxLines: 1,
+                                          style: TextStyle(
+                                            fontSize: 11,
+                                            fontWeight: FontWeight.w600,
+                                            color: isOwner
+                                                ? primaryColor
+                                                : AppTheme.textSecondary,
+                                          ),
+                                        ),
+                                      ),
+                                      if (isOwner) ...[
+                                        const SizedBox(width: 2),
+                                        Icon(
+                                          Icons.arrow_drop_down_rounded,
+                                          size: 15,
+                                          color: primaryColor,
+                                        ),
+                                      ],
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
                           ),
-                        ],
+                        ),
                       ],
                     ),
                   ],
@@ -457,18 +503,27 @@ class _ShoppingListCard extends ConsumerWidget {
             value: '$percentInt percent completed',
             child: ClipRRect(
               borderRadius: BorderRadius.circular(6),
-              child: TweenAnimationBuilder<double>(
-                duration: const Duration(milliseconds: 500),
-                curve: Curves.easeOutCubic,
-                tween: Tween<double>(begin: 0.0, end: progress),
-                builder: (context, animValue, child) {
-                  return LinearProgressIndicator(
-                    value: animValue,
-                    minHeight: 8,
-                    backgroundColor: const Color(0x1AFFFFFF),
-                    valueColor: AlwaysStoppedAnimation<Color>(cardColor),
-                  );
-                },
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6),
+                  border: Border.all(
+                    color: const Color(0x24FFFFFF),
+                    width: 0.8,
+                  ),
+                ),
+                child: TweenAnimationBuilder<double>(
+                  duration: const Duration(milliseconds: 500),
+                  curve: Curves.easeOutCubic,
+                  tween: Tween<double>(begin: 0.0, end: progress),
+                  builder: (context, animValue, child) {
+                    return LinearProgressIndicator(
+                      value: animValue,
+                      minHeight: 7,
+                      backgroundColor: const Color(0x1AFFFFFF),
+                      valueColor: AlwaysStoppedAnimation<Color>(cardColor),
+                    );
+                  },
+                ),
               ),
             ),
           ),

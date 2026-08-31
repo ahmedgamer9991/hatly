@@ -10,11 +10,12 @@ class HatlyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(routerProvider);
+    final activeTheme = ref.watch(activeThemeProvider);
 
     return MaterialApp.router(
       title: 'Hatly',
-      theme: AppTheme.darkGlassTheme,
-      darkTheme: AppTheme.darkGlassTheme,
+      theme: activeTheme.themeData,
+      darkTheme: activeTheme.themeData,
       themeMode: ThemeMode.dark,
       routerConfig: router,
       debugShowCheckedModeBanner: false,

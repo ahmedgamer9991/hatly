@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../app/config/theme.dart';
 
 /// Reusable application header bar with branded logo, title, optional leading widget, and optional trailing action.
 class HatlyHeaderBar extends StatelessWidget {
@@ -17,8 +16,10 @@ class HatlyHeaderBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final primaryColor = Theme.of(context).colorScheme.primary;
+
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      padding: const EdgeInsets.only(left: 16, right: 16, top: 12, bottom: 10),
       decoration: const BoxDecoration(
         border: Border(
           bottom: BorderSide(
@@ -38,14 +39,14 @@ class HatlyHeaderBar extends StatelessWidget {
             height: 38,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: AppTheme.primaryEmerald.withValues(alpha: 0.15),
+              color: primaryColor.withValues(alpha: 0.15),
               border: Border.all(
-                color: AppTheme.primaryEmerald.withValues(alpha: 0.4),
+                color: primaryColor.withValues(alpha: 0.4),
               ),
             ),
-            child: const Icon(
+            child: Icon(
               Icons.shopping_bag_rounded,
-              color: AppTheme.primaryEmerald,
+              color: primaryColor,
               size: 20,
             ),
           ),
@@ -58,7 +59,7 @@ class HatlyHeaderBar extends StatelessWidget {
               style: GoogleFonts.sora(
                 fontWeight: FontWeight.w800,
                 fontSize: 20,
-                color: AppTheme.primaryEmerald,
+                color: primaryColor,
                 letterSpacing: -0.5,
               ),
             ),

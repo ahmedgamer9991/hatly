@@ -172,90 +172,124 @@ class _MainShellScreenState extends ConsumerState<MainShellScreen> {
             SettingsScreen(),
           ];
 
+    final currentTheme = ref.watch(activeThemeProvider);
+    final bgGradient = ref.watch(activeGradientProvider);
+    final primaryColor = Theme.of(context).colorScheme.primary;
+
     if (_currentIndex >= pages.length) {
       _currentIndex = 0;
     }
 
-    return Scaffold(
-      backgroundColor: const Color(0xFF040E1F),
-      extendBody: true,
-      body: IndexedStack(
-        index: _currentIndex,
-        children: pages,
-      ),
-      bottomNavigationBar: ClipRect(
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 24, sigmaY: 24),
-          child: Container(
-            decoration: const BoxDecoration(
-              color: Color(0xD9081425),
-              border: Border(
-                top: BorderSide(
-                  color: Color(0x26FFFFFF),
-                  width: 1,
-                ),
+    return Stack(
+      children: [
+        // 1. Root full-screen theme gradient that flows behind the entire screen and floating dock
+        RepaintBoundary(
+          child: SizedBox.expand(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: bgGradient,
               ),
-            ),
-            padding: EdgeInsets.only(
-              top: 10,
-              bottom: MediaQuery.of(context).padding.bottom + 6,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: isOwner
-                  ? [
-                      _NavBarItem(
-                        icon: Icons.home_rounded,
-                        label: 'Home',
-                        isSelected: _currentIndex == 0,
-                        onTap: () => setState(() => _currentIndex = 0),
-                      ),
-                      _NavBarItem(
-                        icon: Icons.add_circle_outline_rounded,
-                        selectedIcon: Icons.add_circle_rounded,
-                        label: 'Create',
-                        isSelected: _currentIndex == 1,
-                        onTap: () => setState(() => _currentIndex = 1),
-                      ),
-                      _NavBarItem(
-                        icon: Icons.history_rounded,
-                        label: 'History',
-                        isSelected: _currentIndex == 2,
-                        onTap: () => setState(() => _currentIndex = 2),
-                      ),
-                      _NavBarItem(
-                        icon: Icons.settings_outlined,
-                        selectedIcon: Icons.settings_rounded,
-                        label: 'Settings',
-                        isSelected: _currentIndex == 3,
-                        onTap: () => setState(() => _currentIndex = 3),
-                      ),
-                    ]
-                  : [
-                      _NavBarItem(
-                        icon: Icons.home_rounded,
-                        label: 'Home',
-                        isSelected: _currentIndex == 0,
-                        onTap: () => setState(() => _currentIndex = 0),
-                      ),
-                      _NavBarItem(
-                        icon: Icons.history_rounded,
-                        label: 'History',
-                        isSelected: _currentIndex == 1,
-                        onTap: () => setState(() => _currentIndex = 1),
-                      ),
-                      _NavBarItem(
-                        icon: Icons.settings_outlined,
-                        selectedIcon: Icons.settings_rounded,
-                        label: 'Settings',
-                        isSelected: _currentIndex == 2,
-                        onTap: () => setState(() => _currentIndex = 2),
-                      ),
-                    ],
             ),
           ),
         ),
-      ),
+
+        // 2. Active Screen Content (Full viewport so lists scroll smoothly behind dock)
+        Positioned.fill(
+          child: IndexedStack(
+            index: _currentIndex,
+            children: pages,
+          ),
+        ),
+
+        // 3. True Floating Glass HUD Navigation Dock with 100% transparent surround
+        Positioned(
+          left: 18,
+          right: 18,
+          bottom: MediaQuery.of(context).padding.bottom > 0
+              ? MediaQuery.of(context).padding.bottom + 4
+              : 14,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(32),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 25, sigmaY: 25),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                decoration: BoxDecoration(
+                  color: currentTheme.backgroundGradient.colors.last
+                      .withValues(alpha: 0.65),
+                  borderRadius: BorderRadius.circular(32),
+                  border: Border.all(
+                    color: primaryColor.withValues(alpha: 0.25),
+                    width: 1.2,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.35),
+                      blurRadius: 22,
+                      offset: const Offset(0, 8),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: isOwner
+                      ? [
+                          _NavBarItem(
+                            icon: Icons.home_outlined,
+                            selectedIcon:Icons.home_rounded,
+                            label: 'Home',
+                            isSelected: _currentIndex == 0,
+                            onTap: () => setState(() => _currentIndex = 0),
+                          ),
+                          _NavBarItem(
+                            icon: Icons.add_circle_outline_rounded,
+                            selectedIcon: Icons.add_circle_rounded,
+                            label: 'Create',
+                            isSelected: _currentIndex == 1,
+                            onTap: () => setState(() => _currentIndex = 1),
+                          ),
+                          _NavBarItem(
+                            icon: Icons.history_rounded,
+                            label: 'History',
+                            isSelected: _currentIndex == 2,
+                            onTap: () => setState(() => _currentIndex = 2),
+                          ),
+                          _NavBarItem(
+                            icon: Icons.settings_outlined,
+                            selectedIcon: Icons.settings_rounded,
+                            label: 'Settings',
+                            isSelected: _currentIndex == 3,
+                            onTap: () => setState(() => _currentIndex = 3),
+                          ),
+                        ]
+                      : [
+                          _NavBarItem(
+                            icon: Icons.home_outlined,
+                            selectedIcon: Icons.home_rounded,
+                            label: 'Home',
+                            isSelected: _currentIndex == 0,
+                            onTap: () => setState(() => _currentIndex = 0),
+                          ),
+                          _NavBarItem(
+                            icon: Icons.history_rounded,
+                            label: 'History',
+                            isSelected: _currentIndex == 1,
+                            onTap: () => setState(() => _currentIndex = 1),
+                          ),
+                          _NavBarItem(
+                            icon: Icons.settings_outlined,
+                            selectedIcon: Icons.settings_rounded,
+                            label: 'Settings',
+                            isSelected: _currentIndex == 2,
+                            onTap: () => setState(() => _currentIndex = 2),
+                          ),
+                        ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
@@ -277,47 +311,88 @@ class _NavBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final activeColor = AppTheme.primaryEmerald;
+    final activeColor = Theme.of(context).colorScheme.primary;
     final inactiveColor = AppTheme.textSecondary;
 
     return Semantics(
       selected: isSelected,
       label: '$label tab',
       button: true,
-      child: GestureDetector(
-        onTap: onTap,
-        behavior: HitTestBehavior.opaque,
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(minWidth: 48, minHeight: 48),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                isSelected ? (selectedIcon ?? icon) : icon,
-                color: isSelected ? activeColor : inactiveColor,
-                size: 24,
-              ),
-              const SizedBox(height: 4),
-              Text(
-                label,
-                style: TextStyle(
-                  color: isSelected ? activeColor : inactiveColor,
-                  fontSize: 11,
-                  fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+      child: Material(
+        type: MaterialType.transparency,
+        child: InkWell(
+          onTap: onTap,
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minWidth: 54, minHeight: 48),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    // Soft Radial Ambient Glow behind Icon
+                    AnimatedContainer(
+                      duration: const Duration(milliseconds: 250),
+                      curve: Curves.easeOutCubic,
+                      width: isSelected ? 38 : 0,
+                      height: isSelected ? 38 : 0,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: isSelected
+                            ? RadialGradient(
+                                colors: [
+                                  activeColor.withValues(alpha: 0.35),
+                                  activeColor.withValues(alpha: 0.12),
+                                  Colors.transparent,
+                                ],
+                                stops: const [0.0, 0.55, 1.0],
+                              )
+                            : null,
+                      ),
+                    ),
+                    Icon(
+                      isSelected ? (selectedIcon ?? icon) : icon,
+                      color: isSelected ? activeColor : inactiveColor,
+                      size: 24,
+                      shadows: isSelected
+                          ? [
+                              Shadow(
+                                color: activeColor.withValues(alpha: 0.7),
+                                blurRadius: 16,
+                              ),
+                              Shadow(
+                                color: activeColor.withValues(alpha: 0.4),
+                                blurRadius: 6,
+                              ),
+                            ]
+                          : null,
+                    ),
+                  ],
                 ),
-              ),
-              const SizedBox(height: 4),
-              AnimatedContainer(
-                duration: const Duration(milliseconds: 200),
-                height: 4,
-                width: 4,
-                decoration: BoxDecoration(
-                  color: isSelected ? activeColor : Colors.transparent,
-                  shape: BoxShape.circle,
+                const SizedBox(height: 3),
+                Text(
+                  label,
+                  style: TextStyle(
+                    color: isSelected ? activeColor : inactiveColor,
+                    fontSize: 11,
+                    fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+                    letterSpacing: 0.2,
+                    decoration: TextDecoration.none,
+                    shadows: isSelected
+                        ? [
+                            Shadow(
+                              color: activeColor.withValues(alpha: 0.6),
+                              blurRadius: 10,
+                            ),
+                          ]
+                        : null,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

@@ -8,8 +8,15 @@ Future<bool?> showGlassConfirmationDialog({
   required String content,
   String confirmLabel = 'Confirm',
   String cancelLabel = 'Cancel',
-  Color confirmColor = const Color(0xFFDC2626), // Red 600 for WCAG AA 4.6:1 contrast
+  Color? confirmColor,
+  Color? confirmTextColor,
 }) {
+  final primaryColor = Theme.of(context).colorScheme.primary;
+  final onPrimary = Theme.of(context).colorScheme.onPrimary;
+  final effectiveConfirmColor = confirmColor ?? primaryColor;
+  final effectiveConfirmTextColor = confirmTextColor ??
+      (confirmColor != null ? Colors.white : onPrimary);
+
   return showDialog<bool>(
     context: context,
     builder: (ctx) => AlertDialog(
@@ -45,12 +52,18 @@ Future<bool?> showGlassConfirmationDialog({
         ),
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: confirmColor,
-            foregroundColor: Colors.white,
+            backgroundColor: effectiveConfirmColor,
+            foregroundColor: effectiveConfirmTextColor,
             minimumSize: const Size(48, 48),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
           ),
           onPressed: () => Navigator.pop(ctx, true),
-          child: Text(confirmLabel),
+          child: Text(
+            confirmLabel,
+            style: const TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
       ],
     ),

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+export 'theme_presets.dart';
+export 'theme_controller.dart';
+
 class AppTheme {
   AppTheme._();
 
@@ -112,6 +115,25 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
           side: const BorderSide(color: Color(0x33FFFFFF)),
+        ),
+      ),
+      snackBarTheme: SnackBarThemeData(
+        behavior: SnackBarBehavior.floating,
+        backgroundColor: surfaceContainer,
+        contentTextStyle: GoogleFonts.sora(
+          color: textPrimary,
+          fontWeight: FontWeight.w600,
+          fontSize: 13,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(14),
+          side: const BorderSide(color: Color(0x33FFFFFF), width: 1),
+        ),
+        elevation: 8,
+        insetPadding: const EdgeInsets.only(
+          left: 16,
+          right: 16,
+          bottom: 90,
         ),
       ),
     );

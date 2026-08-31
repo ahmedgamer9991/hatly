@@ -127,10 +127,13 @@ class _AppSplashScreenState extends ConsumerState<AppSplashScreen>
 
   @override
   Widget build(BuildContext context) {
+    final bgGradient = ref.watch(activeGradientProvider);
+    final primaryColor = Theme.of(context).colorScheme.primary;
+
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
-          gradient: AppTheme.backgroundGradient,
+        decoration: BoxDecoration(
+          gradient: bgGradient,
         ),
         child: Center(
           child: FadeTransition(
@@ -145,23 +148,23 @@ class _AppSplashScreenState extends ConsumerState<AppSplashScreen>
                     height: 72,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: AppTheme.primaryEmerald.withValues(alpha: 0.15),
+                      color: primaryColor.withValues(alpha: 0.15),
                       border: Border.all(
-                        color: AppTheme.primaryEmerald,
+                        color: primaryColor,
                         width: 2,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: AppTheme.primaryEmerald.withValues(alpha: 0.3),
+                          color: primaryColor.withValues(alpha: 0.3),
                           blurRadius: 20,
                           spreadRadius: 2,
                         ),
                       ],
                     ),
-                    child: const Center(
+                    child: Center(
                       child: Icon(
                         Icons.shopping_bag_rounded,
-                        color: AppTheme.primaryEmerald,
+                        color: primaryColor,
                         size: 36,
                       ),
                     ),
@@ -172,7 +175,7 @@ class _AppSplashScreenState extends ConsumerState<AppSplashScreen>
                     style: GoogleFonts.sora(
                       fontWeight: FontWeight.w800,
                       fontSize: 38,
-                      color: AppTheme.primaryEmerald,
+                      color: primaryColor,
                       letterSpacing: -0.5,
                     ),
                   ),
@@ -192,11 +195,11 @@ class _AppSplashScreenState extends ConsumerState<AppSplashScreen>
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           width: 18,
                           height: 18,
                           child: CircularProgressIndicator(
-                            color: AppTheme.primaryEmerald,
+                            color: primaryColor,
                             strokeWidth: 2.5,
                           ),
                         ),

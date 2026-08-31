@@ -23,10 +23,11 @@ class _ManageHouseholdScreenState
   void _copyInviteCode(String code) {
     Clipboard.setData(ClipboardData(text: code));
     setState(() => _isCopied = true);
+    final primaryColor = Theme.of(context).colorScheme.primary;
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Invite code copied to clipboard!'),
-        backgroundColor: AppTheme.primaryEmerald,
+      SnackBar(
+        content: const Text('Invite code copied to clipboard!'),
+        backgroundColor: primaryColor,
       ),
     );
     Future.delayed(const Duration(seconds: 2), () {
@@ -39,11 +40,14 @@ class _ManageHouseholdScreenState
     final householdState = ref.watch(currentHouseholdProvider);
     final membersState = ref.watch(householdMembersProvider);
     final pendingState = ref.watch(pendingMembersProvider);
+    final bgGradient = ref.watch(activeGradientProvider);
+    final primaryColor = Theme.of(context).colorScheme.primary;
+    final onPrimary = Theme.of(context).colorScheme.onPrimary;
 
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
-          gradient: AppTheme.backgroundGradient,
+        decoration: BoxDecoration(
+          gradient: bgGradient,
         ),
         child: SafeArea(
           child: Column(
@@ -60,9 +64,9 @@ class _ManageHouseholdScreenState
               // Scrollable Feed
               Expanded(
                 child: householdState.when(
-                  loading: () => const Center(
+                  loading: () => Center(
                     child: CircularProgressIndicator(
-                        color: AppTheme.primaryEmerald),
+                        color: primaryColor),
                   ),
                   error: (err, stack) => Center(
                     child: Text(
@@ -134,7 +138,7 @@ class _ManageHouseholdScreenState
                                           child: Text(
                                             household.inviteCode,
                                             style: GoogleFonts.sora(
-                                              color: AppTheme.primaryEmerald,
+                                              color: primaryColor,
                                               fontWeight: FontWeight.w900,
                                               fontSize: 22,
                                               letterSpacing: 2.5,
@@ -155,7 +159,7 @@ class _ManageHouseholdScreenState
                                                   : Icons.copy_rounded,
                                               size: 16,
                                               color: _isCopied
-                                                  ? AppTheme.primaryEmerald
+                                                  ? primaryColor
                                                   : AppTheme.textSecondary,
                                             ),
                                             const SizedBox(width: 6),
@@ -165,7 +169,7 @@ class _ManageHouseholdScreenState
                                                 fontSize: 12,
                                                 fontWeight: FontWeight.w600,
                                                 color: _isCopied
-                                                    ? AppTheme.primaryEmerald
+                                                    ? primaryColor
                                                     : AppTheme.textSecondary,
                                               ),
                                             ),
@@ -208,16 +212,16 @@ class _ManageHouseholdScreenState
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 10, vertical: 4),
                                         decoration: BoxDecoration(
-                                          color: AppTheme.primaryEmerald,
+                                          color: primaryColor,
                                           borderRadius:
                                               BorderRadius.circular(50),
                                         ),
                                         child: Text(
                                           '${pendingUsers.length} New',
-                                          style: const TextStyle(
+                                          style: TextStyle(
                                             fontSize: 11,
                                             fontWeight: FontWeight.bold,
-                                            color: Color(0xFF00391C),
+                                            color: onPrimary,
                                           ),
                                         ),
                                       ),
@@ -298,17 +302,17 @@ class _ManageHouseholdScreenState
                                               },
                                             ),
                                             const SizedBox(width: 8),
-                                            // Approve Green Button
+                                            // Approve Button
                                             IconButton.filled(
                                               tooltip: 'Approve request from ${user.name}',
                                               style: IconButton.styleFrom(
-                                                backgroundColor:
-                                                    AppTheme.primaryEmerald,
+                                                backgroundColor: primaryColor,
+                                                foregroundColor: onPrimary,
                                                 minimumSize: const Size(48, 48),
                                               ),
-                                              icon: const Icon(
+                                              icon: Icon(
                                                   Icons.check_rounded,
-                                                  color: Color(0xFF00391C),
+                                                  color: onPrimary,
                                                   size: 20),
                                               onPressed: () {
                                                 ref
@@ -338,11 +342,11 @@ class _ManageHouseholdScreenState
                           ),
                           const SizedBox(height: 12),
                           membersState.when(
-                            loading: () => const Center(
+                            loading: () => Center(
                               child: Padding(
-                                padding: EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.all(16.0),
                                 child: CircularProgressIndicator(
-                                    color: AppTheme.primaryEmerald),
+                                    color: primaryColor),
                               ),
                             ),
                             error: (err, _) => Text(
@@ -364,7 +368,7 @@ class _ManageHouseholdScreenState
                                           height: 44,
                                           decoration: BoxDecoration(
                                             color: isAdmin
-                                                ? AppTheme.primaryEmerald
+                                                ? primaryColor
                                                     .withValues(alpha: 0.15)
                                                 : const Color(0x1AFFFFFF),
                                             borderRadius:
@@ -377,7 +381,7 @@ class _ManageHouseholdScreenState
                                                 ? Icons.star_rounded
                                                 : Icons.person_outline_rounded,
                                             color: isAdmin
-                                                ? AppTheme.primaryEmerald
+                                                ? primaryColor
                                                 : AppTheme.textSecondary,
                                             size: 22,
                                           ),
@@ -407,7 +411,7 @@ class _ManageHouseholdScreenState
                                                   fontSize: 12,
                                                   fontWeight: FontWeight.w500,
                                                   color: isAdmin
-                                                      ? AppTheme.primaryEmerald
+                                                      ? primaryColor
                                                       : AppTheme.textSecondary,
                                                 ),
                                               ),

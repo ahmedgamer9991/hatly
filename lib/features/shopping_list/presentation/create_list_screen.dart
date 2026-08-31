@@ -93,6 +93,10 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
               child: const Text('Cancel', style: TextStyle(color: AppTheme.textSecondary)),
             ),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Theme.of(context).colorScheme.primary,
+                foregroundColor: Theme.of(context).colorScheme.onPrimary,
+              ),
               onPressed: () {
                 final parsed = WhatsAppParser.parseRawText(
                   _whatsappTextController.text,
@@ -105,7 +109,8 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
                 }
                 Navigator.pop(context);
               },
-              child: const Text('Parse & Add Items'),
+              child: const Text('Parse & Add Items',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
           ],
         );
@@ -146,10 +151,11 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
           );
         }
       } else {
+        final primaryColor = Theme.of(context).colorScheme.primary;
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Shopping list created successfully!'),
-            backgroundColor: AppTheme.primaryEmerald,
+          SnackBar(
+            content: const Text('Shopping list created successfully!'),
+            backgroundColor: primaryColor,
           ),
         );
         _titleController.clear();
@@ -167,22 +173,22 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
     final household = ref.watch(currentHouseholdProvider).value;
 
     final categories = household?.activeCategories ?? CategoryModel.defaultCategories;
+    final primaryColor = Theme.of(context).colorScheme.primary;
+    final onPrimary = Theme.of(context).colorScheme.onPrimary;
 
     return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          gradient: AppTheme.backgroundGradient,
-        ),
-        child: SafeArea(
-          child: Column(
-            children: [
-              const HatlyHeaderBar(title: 'Create List'),
+      backgroundColor: Colors.transparent,
+      body: SafeArea(
+        bottom: false,
+        child: Column(
+          children: [
+            const HatlyHeaderBar(title: 'Create List'),
 
-              // Form Scrollable Feed
-              Expanded(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.only(
-                      left: 16, right: 16, top: 16, bottom: 100),
+            // Form Scrollable Feed
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.only(
+                    left: 16, right: 16, top: 16, bottom: 120),
                   child: Form(
                     key: _formKey,
                     child: Column(
@@ -359,10 +365,10 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
                                   IconButton.filled(
                                     tooltip: 'Add item to list',
                                     style: IconButton.styleFrom(
-                                      backgroundColor: AppTheme.primaryEmerald
+                                      backgroundColor: primaryColor
                                           .withValues(alpha: 0.2),
-                                      side: const BorderSide(
-                                          color: AppTheme.primaryEmerald),
+                                      side: BorderSide(
+                                          color: primaryColor),
                                       shape: RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(12),
@@ -370,9 +376,9 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
                                       minimumSize: const Size(48, 48),
                                     ),
                                     onPressed: _addItem,
-                                    icon: const Icon(
+                                    icon: Icon(
                                       Icons.add_rounded,
-                                      color: AppTheme.primaryEmerald,
+                                      color: primaryColor,
                                     ),
                                   ),
                                 ],
@@ -383,17 +389,17 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
                               Center(
                                 child: TextButton.icon(
                                   onPressed: _openWhatsAppImportDialog,
-                                  icon: const Icon(
+                                  icon: Icon(
                                     Icons.auto_awesome_rounded,
                                     size: 16,
-                                    color: AppTheme.primaryEmerald,
+                                    color: primaryColor,
                                   ),
-                                  label: const Text(
+                                  label: Text(
                                     'OR PARSE BULK TEXT',
                                     style: TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.bold,
-                                      color: AppTheme.primaryEmerald,
+                                      color: primaryColor,
                                       letterSpacing: 0.8,
                                     ),
                                   ),
@@ -536,14 +542,14 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
                         // Bottom Submit Button
                         ElevatedButton.icon(
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: AppTheme.primaryEmerald,
-                            foregroundColor: const Color(0xFF00391C),
+                            backgroundColor: primaryColor,
+                            foregroundColor: onPrimary,
                             minimumSize: const Size(double.infinity, 50),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(14),
                             ),
                             elevation: 4,
-                            shadowColor: AppTheme.primaryEmerald
+                            shadowColor: primaryColor
                                 .withValues(alpha: 0.4),
                           ),
                           onPressed: state.isLoading ? null : _submit,
@@ -551,11 +557,11 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
                               ? const SizedBox.shrink()
                               : const Icon(Icons.near_me_rounded, size: 20),
                           label: state.isLoading
-                              ? const SizedBox(
+                              ? SizedBox(
                                   height: 24,
                                   width: 24,
                                   child: CircularProgressIndicator(
-                                    color: Color(0xFF00391C),
+                                    color: onPrimary,
                                     strokeWidth: 2.5,
                                   ),
                                 )
@@ -575,9 +581,8 @@ class _CreateListScreenState extends ConsumerState<CreateListScreen> {
             ],
           ),
         ),
-      ),
-    );
-  }
+      );
+    }
 }
 
 class _CategorySelectorPill extends StatelessWidget {

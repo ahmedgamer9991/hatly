@@ -45,10 +45,11 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
         );
 
     if (mounted) {
+      final primaryColor = Theme.of(context).colorScheme.primary;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('✓ "$text" added to list'),
-          backgroundColor: AppTheme.primaryEmerald,
+          backgroundColor: primaryColor,
           duration: const Duration(seconds: 2),
         ),
       );
@@ -89,10 +90,11 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
           assignedToName: assignedToName,
         );
 
+    final primaryColor = Theme.of(context).colorScheme.primary;
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text('✓ List updated! Notification sent to $assignedToName'),
-        backgroundColor: AppTheme.primaryEmerald,
+        backgroundColor: primaryColor,
       ),
     );
   }
@@ -101,68 +103,22 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
     BuildContext context,
     ShoppingItemModel item,
   ) async {
-    final noteController = TextEditingController(text: item.note ?? '');
-
-    try {
-      await showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(
-            backgroundColor: AppTheme.surfaceContainer,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-              side: const BorderSide(color: AppTheme.glassBorder),
-            ),
-            title: Text(
-              'Out of Stock: ${item.name}',
-              style: const TextStyle(color: AppTheme.textPrimary),
-            ),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Text(
-                  'Add a quick note for the list creator (e.g. out of stock, bought smaller size...):',
-                  style: TextStyle(fontSize: 13, color: AppTheme.textSecondary),
-                ),
-                const SizedBox(height: 12),
-                TextField(
-                  controller: noteController,
-                  style: const TextStyle(color: AppTheme.textPrimary),
-                  decoration: const InputDecoration(
-                    labelText: 'Comment / Note',
-                    hintText: 'e.g. Only 500g box available...',
-                  ),
-                ),
-              ],
-            ),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.pop(context),
-                child: const Text('Cancel', style: TextStyle(color: AppTheme.textSecondary)),
-              ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: AppTheme.errorRed),
-                onPressed: () {
-                  ref
-                      .read(shoppingListControllerProvider.notifier)
-                      .updateItemStatus(
-                        listId: widget.listId,
-                        itemId: item.id,
-                        status: 'outOfStock',
-                        note: noteController.text,
-                      );
-                  Navigator.pop(context);
-                },
-                child: const Text('Flag Out of Stock',
-                    style: TextStyle(color: Color(0xFF690005))),
-              ),
-            ],
-          );
+    await showDialog(
+      context: context,
+      builder: (context) => _OutOfStockDialog(
+        item: item,
+        onSave: (note) {
+          ref
+              .read(shoppingListControllerProvider.notifier)
+              .updateItemStatus(
+                listId: widget.listId,
+                itemId: item.id,
+                status: 'outOfStock',
+                note: note,
+              );
         },
-      );
-    } finally {
-      noteController.dispose();
-    }
+      ),
+    );
   }
 
   @override
@@ -176,8 +132,8 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
     return listState.when(
       loading: () => Scaffold(
         appBar: AppBar(title: const Text('Loading...')),
-        body: const Center(
-          child: CircularProgressIndicator(color: AppTheme.primaryEmerald),
+        body: Center(
+          child: CircularProgressIndicator(color: Theme.of(context).colorScheme.primary),
         ),
       ),
       error: (err, stack) => Scaffold(
@@ -220,14 +176,18 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
           }
         }
 
+        final bgGradient = ref.watch(activeGradientProvider);
+        final primaryColor = Theme.of(context).colorScheme.primary;
+        final onPrimary = Theme.of(context).colorScheme.onPrimary;
+
         return Scaffold(
           body: Stack(
             children: [
-              const RepaintBoundary(
+              RepaintBoundary(
                 child: SizedBox.expand(
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      gradient: AppTheme.backgroundGradient,
+                      gradient: bgGradient,
                     ),
                   ),
                 ),
@@ -258,8 +218,8 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                               const SizedBox(width: 4),
                               ElevatedButton.icon(
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: AppTheme.primaryEmerald,
-                                  foregroundColor: const Color(0xFF00391C),
+                                  backgroundColor: primaryColor,
+                                  foregroundColor: onPrimary,
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 14, vertical: 10),
                                   minimumSize: const Size(48, 48),
@@ -301,8 +261,8 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                                   Container(
                                     width: 8,
                                     height: 8,
-                                    decoration: const BoxDecoration(
-                                      color: AppTheme.primaryEmerald,
+                                    decoration: BoxDecoration(
+                                      color: primaryColor,
                                       shape: BoxShape.circle,
                                     ),
                                   ),
@@ -327,10 +287,10 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                             const SizedBox(width: 8),
                             Text(
                               '$boughtItems of $totalItems bought',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontWeight: FontWeight.w600,
                                 fontSize: 12,
-                                color: AppTheme.primaryEmerald,
+                                color: primaryColor,
                               ),
                             ),
                           ],
@@ -350,8 +310,8 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                                   value: animValue,
                                   minHeight: 10,
                                   backgroundColor: const Color(0x1AFFFFFF),
-                                  valueColor: const AlwaysStoppedAnimation<Color>(
-                                      AppTheme.primaryEmerald),
+                                  valueColor: AlwaysStoppedAnimation<Color>(
+                                      primaryColor),
                                 );
                               },
                             ),
@@ -398,25 +358,25 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 10, vertical: 6),
                                     decoration: BoxDecoration(
-                                      color: AppTheme.primaryEmerald
+                                      color: primaryColor
                                           .withValues(alpha: 0.15),
                                       borderRadius: BorderRadius.circular(8),
                                       border: Border.all(
-                                          color: AppTheme.primaryEmerald
+                                          color: primaryColor
                                               .withValues(alpha: 0.3)),
                                     ),
-                                    child: const Row(
+                                    child: Row(
                                       children: [
                                         Icon(Icons.swap_horiz_rounded,
                                             size: 14,
-                                            color: AppTheme.primaryEmerald),
-                                        SizedBox(width: 4),
+                                            color: primaryColor),
+                                        const SizedBox(width: 4),
                                         Text(
                                           'Change',
                                           style: TextStyle(
                                             fontSize: 12,
                                             fontWeight: FontWeight.bold,
-                                            color: AppTheme.primaryEmerald,
+                                            color: primaryColor,
                                           ),
                                         ),
                                       ],
@@ -520,14 +480,14 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                           const SizedBox(width: 10),
                           IconButton.filled(
                             style: IconButton.styleFrom(
-                              backgroundColor: AppTheme.primaryEmerald,
+                              backgroundColor: primaryColor,
                               minimumSize: const Size(48, 48),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
                             ),
-                            icon: const Icon(Icons.add_rounded,
-                                color: Color(0xFF00391C)),
+                            icon: Icon(Icons.add_rounded,
+                                color: onPrimary),
                             onPressed: _addItem,
                           ),
                         ],
@@ -536,8 +496,8 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                   )
                 : ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.primaryEmerald,
-                      foregroundColor: const Color(0xFF00391C),
+                      backgroundColor: primaryColor,
+                      foregroundColor: onPrimary,
                       minimumSize: const Size(double.infinity, 52),
                     ),
                     onPressed: () {
@@ -545,10 +505,10 @@ class _ActiveListScreenState extends ConsumerState<ActiveListScreen> {
                           .read(shoppingListControllerProvider.notifier)
                           .completeList(widget.listId);
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text(
+                        SnackBar(
+                          content: const Text(
                               'Shopping trip finished! List moved to History.'),
-                          backgroundColor: AppTheme.primaryEmerald,
+                          backgroundColor: primaryColor,
                         ),
                       );
                       Navigator.pop(context);
@@ -629,6 +589,8 @@ class _CategorySection extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (items.isEmpty) return const SizedBox.shrink();
+    final primaryColor = Theme.of(context).colorScheme.primary;
+    final onPrimary = Theme.of(context).colorScheme.onPrimary;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -682,13 +644,13 @@ class _CategorySection extends ConsumerWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: isBought
-                              ? AppTheme.primaryEmerald
+                              ? primaryColor
                               : (isOutOfStock
                                   ? AppTheme.errorRed.withValues(alpha: 0.2)
                                   : Colors.transparent),
                           border: Border.all(
                             color: isBought
-                                ? AppTheme.primaryEmerald
+                                ? primaryColor
                                 : (isOutOfStock
                                     ? AppTheme.errorRed
                                     : AppTheme.textSecondary.withValues(alpha: 0.5)),
@@ -696,8 +658,8 @@ class _CategorySection extends ConsumerWidget {
                           ),
                         ),
                         child: isBought
-                            ? const Icon(Icons.check_rounded,
-                                size: 16, color: Color(0xFF00391C))
+                            ? Icon(Icons.check_rounded,
+                                size: 16, color: onPrimary)
                             : (isOutOfStock
                                 ? const Icon(Icons.close_rounded,
                                     size: 16, color: AppTheme.errorRed)
@@ -752,6 +714,7 @@ class _CategorySection extends ConsumerWidget {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text('Item "${item.name}" removed'),
+                          backgroundColor: primaryColor,
                           duration: const Duration(seconds: 2),
                         ),
                       );
@@ -773,6 +736,82 @@ class _CategorySection extends ConsumerWidget {
             ),
           );
         }),
+      ],
+    );
+  }
+}
+
+class _OutOfStockDialog extends StatefulWidget {
+  final ShoppingItemModel item;
+  final ValueChanged<String> onSave;
+
+  const _OutOfStockDialog({required this.item, required this.onSave});
+
+  @override
+  State<_OutOfStockDialog> createState() => _OutOfStockDialogState();
+}
+
+class _OutOfStockDialogState extends State<_OutOfStockDialog> {
+  late final TextEditingController _noteController;
+
+  @override
+  void initState() {
+    super.initState();
+    _noteController = TextEditingController(text: widget.item.note ?? '');
+  }
+
+  @override
+  void dispose() {
+    _noteController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      backgroundColor: AppTheme.surfaceContainer,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+        side: const BorderSide(color: AppTheme.glassBorder),
+      ),
+      title: Text(
+        'Out of Stock: ${widget.item.name}',
+        style: const TextStyle(color: AppTheme.textPrimary),
+      ),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Text(
+            'Add a quick note for the list creator (e.g. out of stock, bought smaller size...):',
+            style: TextStyle(fontSize: 13, color: AppTheme.textSecondary),
+          ),
+          const SizedBox(height: 12),
+          TextField(
+            controller: _noteController,
+            style: const TextStyle(color: AppTheme.textPrimary),
+            decoration: const InputDecoration(
+              labelText: 'Comment / Note',
+              hintText: 'e.g. Only 500g box available...',
+            ),
+          ),
+        ],
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Cancel', style: TextStyle(color: AppTheme.textSecondary)),
+        ),
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppTheme.errorRed,
+            foregroundColor: const Color(0xFF690005),
+          ),
+          onPressed: () {
+            widget.onSave(_noteController.text);
+            Navigator.pop(context);
+          },
+          child: const Text('Flag Out of Stock'),
+        ),
       ],
     );
   }

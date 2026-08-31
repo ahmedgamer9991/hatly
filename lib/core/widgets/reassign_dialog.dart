@@ -108,10 +108,11 @@ Future<void> showReassignListDialog({
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.primaryEmerald,
-                  foregroundColor: const Color(0xFF00391C),
+                  backgroundColor: Theme.of(ctx).colorScheme.primary,
+                  foregroundColor: Theme.of(ctx).colorScheme.onPrimary,
                 ),
                 onPressed: () async {
+                  final primary = Theme.of(ctx).colorScheme.primary;
                   Navigator.pop(ctx);
                   await ref
                       .read(shoppingListControllerProvider.notifier)
@@ -128,7 +129,7 @@ Future<void> showReassignListDialog({
                         content: Text(
                           '✓ List reassigned to $selectedAssignedToName!',
                         ),
-                        backgroundColor: AppTheme.primaryEmerald,
+                        backgroundColor: primary,
                       ),
                     );
                   }

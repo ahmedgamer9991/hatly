@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../../../app/config/theme.dart';
 import '../../../core/widgets/glass_card.dart';
-import '../../../core/widgets/hatly_header_bar.dart';
 import '../../auth/presentation/auth_controller.dart';
 import 'household_controller.dart';
 
@@ -72,6 +72,10 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
       }
     });
 
+    final bgGradient = ref.watch(activeGradientProvider);
+    final primaryColor = Theme.of(context).colorScheme.primary;
+    final onPrimary = Theme.of(context).colorScheme.onPrimary;
+
     return PopScope(
       canPop: false,
       onPopInvokedWithResult: (didPop, result) {
@@ -83,8 +87,8 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
         body: Stack(
           children: [
             Container(
-              decoration: const BoxDecoration(
-                gradient: AppTheme.backgroundGradient,
+              decoration: BoxDecoration(
+                gradient: bgGradient,
               ),
             ),
 
@@ -97,99 +101,102 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                    HatlyHeaderBar(
-                      title: 'Household Setup',
-                      leading: IconButton(
-                        icon: const Icon(Icons.arrow_back_rounded,
-                            color: AppTheme.textPrimary),
-                        tooltip: 'Back to Sign In',
-                        onPressed: () {
-                          ref
-                              .read(authControllerProvider.notifier)
-                              .signOut();
-                        },
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      'Connect with your family to share real-time shopping lists',
-                      textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppTheme.textSecondary,
-                          ),
-                    ),
-                    const SizedBox(height: 32),
-
-                    // Pending Approval View (If user has sent join request)
-                    if (isPendingApproval)
-                      GlassCard(
-                        padding: const EdgeInsets.all(28.0),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: 64,
-                              height: 64,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: AppTheme.primaryEmerald.withValues(alpha: 0.15),
-                                border: Border.all(
-                                  color: AppTheme.primaryEmerald.withValues(alpha: 0.4),
+                        // Custom Header
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 24.0),
+                          child: Column(
+                            children: [
+                              Text(
+                                'Welcome to Hatly',
+                                style: GoogleFonts.sora(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.w900,
+                                  color: AppTheme.textPrimary,
                                 ),
                               ),
-                              child: const Icon(
-                                Icons.hourglass_top_rounded,
-                                color: AppTheme.primaryEmerald,
-                                size: 32,
+                              const SizedBox(height: 8),
+                              const Text(
+                                'Manage your household grocery lists together seamlessly.',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: AppTheme.textSecondary,
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 20),
-                            Text(
-                              'Request Sent to "${household.name}"',
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: AppTheme.textPrimary,
-                              ),
-                            ),
-                            const SizedBox(height: 10),
-                            const Text(
-                              'Your join request has been sent! Please ask the family owner to open Hatly and approve your request.',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 13,
-                                color: AppTheme.textSecondary,
-                              ),
-                            ),
-                            const SizedBox(height: 24),
-                            OutlinedButton.icon(
-                              style: OutlinedButton.styleFrom(
-                                side: const BorderSide(color: Color(0x66F87171)),
-                              ),
-                              onPressed: () {
-                                ref
-                                    .read(authControllerProvider.notifier)
-                                    .signOut();
-                              },
-                              icon: const Icon(Icons.logout_rounded,
-                                  color: Color(0xFFF87171), size: 18),
-                              label: const Text(
-                                'Sign Out',
-                                style: TextStyle(color: Color(0xFFF87171)),
-                              ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      )
 
-                    // Glass Container Card for Create vs Join
-                    else
-                      GlassCard(
-                        padding: const EdgeInsets.all(24.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
+                        // Section 1: Pending Approval View (If user has sent join request)
+                        if (isPendingApproval)
+                          GlassCard(
+                            padding: const EdgeInsets.all(28.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  width: 64,
+                                  height: 64,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: primaryColor.withValues(alpha: 0.15),
+                                    border: Border.all(
+                                      color: primaryColor.withValues(alpha: 0.4),
+                                    ),
+                                  ),
+                                  child: Icon(
+                                    Icons.hourglass_top_rounded,
+                                    color: primaryColor,
+                                    size: 32,
+                                  ),
+                                ),
+                                const SizedBox(height: 20),
+                                Text(
+                                  'Request Sent to "${household.name}"',
+                                  textAlign: TextAlign.center,
+                                  style: const TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppTheme.textPrimary,
+                                  ),
+                                ),
+                                const SizedBox(height: 10),
+                                const Text(
+                                  'Your join request has been sent! Please ask the family owner to open Hatly and approve your request.',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                    color: AppTheme.textSecondary,
+                                  ),
+                                ),
+                                const SizedBox(height: 24),
+                                OutlinedButton.icon(
+                                  style: OutlinedButton.styleFrom(
+                                    side: const BorderSide(color: Color(0x66F87171)),
+                                  ),
+                                  onPressed: () {
+                                    ref
+                                        .read(authControllerProvider.notifier)
+                                        .signOut();
+                                  },
+                                  icon: const Icon(Icons.logout_rounded,
+                                      color: Color(0xFFF87171), size: 18),
+                                  label: const Text(
+                                    'Sign Out',
+                                    style: TextStyle(color: Color(0xFFF87171)),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
+
+                        // Glass Container Card for Create vs Join
+                        else
+                          GlassCard(
+                            padding: const EdgeInsets.all(24.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
                             // Segmented Switcher (Create vs Join)
                             Container(
                               padding: const EdgeInsets.all(4),
@@ -212,7 +219,7 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
                                           padding: const EdgeInsets.symmetric(vertical: 12),
                                           decoration: BoxDecoration(
                                             color: !_isJoining
-                                                ? AppTheme.primaryEmerald
+                                                ? primaryColor
                                                 : Colors.transparent,
                                             borderRadius: BorderRadius.circular(10),
                                           ),
@@ -222,7 +229,7 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               color: !_isJoining
-                                                  ? const Color(0xFF00391C)
+                                                  ? onPrimary
                                                   : AppTheme.textSecondary,
                                             ),
                                           ),
@@ -243,7 +250,7 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
                                           padding: const EdgeInsets.symmetric(vertical: 12),
                                           decoration: BoxDecoration(
                                             color: _isJoining
-                                                ? AppTheme.primaryEmerald
+                                                ? primaryColor
                                                 : Colors.transparent,
                                             borderRadius: BorderRadius.circular(10),
                                           ),
@@ -253,7 +260,7 @@ class _HouseholdSetupScreenState extends ConsumerState<HouseholdSetupScreen> {
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               color: _isJoining
-                                                  ? const Color(0xFF00391C)
+                                                  ? onPrimary
                                                   : AppTheme.textSecondary,
                                             ),
                                           ),

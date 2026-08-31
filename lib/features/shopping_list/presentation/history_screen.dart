@@ -18,6 +18,8 @@ class HistoryScreen extends ConsumerWidget {
     ShoppingListModel list,
     List<CategoryModel> categories,
   ) {
+    final primaryColor = Theme.of(context).colorScheme.primary;
+
     showDialog(
       context: context,
       builder: (context) {
@@ -40,9 +42,9 @@ class HistoryScreen extends ConsumerWidget {
                   ),
                 ),
               ),
-              const Icon(
+              Icon(
                 Icons.check_circle_rounded,
-                color: AppTheme.primaryEmerald,
+                color: primaryColor,
                 size: 22,
               ),
             ],
@@ -94,7 +96,7 @@ class HistoryScreen extends ConsumerWidget {
                                 : Icons.remove_circle_outline_rounded,
                             size: 18,
                             color: isBought
-                                ? AppTheme.primaryEmerald
+                                ? primaryColor
                                 : AppTheme.errorRed,
                           ),
                           const SizedBox(width: 10),
@@ -110,20 +112,26 @@ class HistoryScreen extends ConsumerWidget {
                                     color: AppTheme.textPrimary,
                                     decoration: isBought
                                         ? TextDecoration.lineThrough
-                                        : null,
+                                        : TextDecoration.none,
+                                    decorationColor: AppTheme.textSecondary,
                                   ),
                                 ),
-                                if (item.note != null && item.note!.isNotEmpty)
+                                if (item.note != null &&
+                                    item.note!.isNotEmpty) ...[
+                                  const SizedBox(height: 2),
                                   Text(
                                     'Note: ${item.note}',
                                     style: const TextStyle(
                                       fontSize: 11,
-                                      color: AppTheme.errorRed,
+                                      color: AppTheme.textSecondary,
+                                      fontStyle: FontStyle.italic,
                                     ),
                                   ),
+                                ],
                               ],
                             ),
                           ),
+                          const SizedBox(width: 8),
                           Container(
                             padding: const EdgeInsets.symmetric(
                               horizontal: 8,
@@ -153,9 +161,9 @@ class HistoryScreen extends ConsumerWidget {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text(
+              child: Text(
                 'Close',
-                style: TextStyle(color: AppTheme.primaryEmerald),
+                style: TextStyle(color: primaryColor),
               ),
             ),
           ],
@@ -205,22 +213,15 @@ class HistoryScreen extends ConsumerWidget {
     final categories =
         household?.activeCategories ?? CategoryModel.defaultCategories;
 
+    final primaryColor = Theme.of(context).colorScheme.primary;
+
     return Scaffold(
-      body: Stack(
-        children: [
-          const RepaintBoundary(
-            child: SizedBox.expand(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: AppTheme.backgroundGradient,
-                ),
-              ),
-            ),
-          ),
-          SafeArea(
-          child: Column(
-            children: [
-              const HatlyHeaderBar(title: 'History & Archive'),
+      backgroundColor: Colors.transparent,
+      body: SafeArea(
+        bottom: false,
+        child: Column(
+          children: [
+            const HatlyHeaderBar(title: 'History & Archive'),
               Expanded(
                 child: household == null
                     ? const Center(
@@ -236,9 +237,9 @@ class HistoryScreen extends ConsumerWidget {
                         builder: (context, snapshot) {
                           if (snapshot.connectionState ==
                               ConnectionState.waiting) {
-                            return const Center(
+                            return Center(
                               child: CircularProgressIndicator(
-                                color: AppTheme.primaryEmerald,
+                                color: primaryColor,
                               ),
                             );
                           }
@@ -257,7 +258,7 @@ class HistoryScreen extends ConsumerWidget {
                                     Icon(
                                       Icons.history_toggle_off_rounded,
                                       size: 56,
-                                      color: AppTheme.primaryEmerald
+                                      color: primaryColor
                                           .withValues(alpha: 0.6),
                                     ),
                                     const SizedBox(height: 16),
@@ -291,7 +292,7 @@ class HistoryScreen extends ConsumerWidget {
                               left: 16,
                               right: 16,
                               top: 12,
-                              bottom: 100,
+                              bottom: 120,
                             ),
                             itemCount: completedLists.length,
                             itemBuilder: (context, index) {
@@ -341,21 +342,21 @@ class HistoryScreen extends ConsumerWidget {
                                             vertical: 4,
                                           ),
                                           decoration: BoxDecoration(
-                                            color: AppTheme.primaryEmerald
+                                            color: primaryColor
                                                 .withValues(alpha: 0.15),
                                             borderRadius:
                                                 BorderRadius.circular(12),
                                             border: Border.all(
-                                              color: AppTheme.primaryEmerald
+                                              color: primaryColor
                                                   .withValues(alpha: 0.4),
                                             ),
                                           ),
-                                          child: const Text(
+                                          child: Text(
                                             'Completed ✓',
                                             style: TextStyle(
                                               fontSize: 11,
                                               fontWeight: FontWeight.bold,
-                                              color: AppTheme.primaryEmerald,
+                                              color: primaryColor,
                                             ),
                                           ),
                                         ),
@@ -376,7 +377,7 @@ class HistoryScreen extends ConsumerWidget {
                                         child: OutlinedButton.icon(
                                           style: OutlinedButton.styleFrom(
                                             side: BorderSide(
-                                              color: AppTheme.primaryEmerald
+                                              color: primaryColor
                                                   .withValues(alpha: 0.5),
                                             ),
                                             shape: RoundedRectangleBorder(
@@ -410,25 +411,25 @@ class HistoryScreen extends ConsumerWidget {
                                             if (context.mounted) {
                                               ScaffoldMessenger.of(context)
                                                   .showSnackBar(
-                                                const SnackBar(
-                                                  content: Text(
+                                                SnackBar(
+                                                  content: const Text(
                                                     'List duplicated and re-sent!',
                                                   ),
                                                   backgroundColor:
-                                                      AppTheme.primaryEmerald,
+                                                      primaryColor,
                                                 ),
                                               );
                                             }
                                           },
-                                          icon: const Icon(
+                                          icon: Icon(
                                             Icons.replay_rounded,
                                             size: 18,
-                                            color: AppTheme.primaryEmerald,
+                                            color: primaryColor,
                                           ),
-                                          label: const Text(
+                                          label: Text(
                                             'Duplicate & Re-Send List',
                                             style: TextStyle(
-                                              color: AppTheme.primaryEmerald,
+                                              color: primaryColor,
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
@@ -446,8 +447,6 @@ class HistoryScreen extends ConsumerWidget {
             ],
           ),
         ),
-      ],
-    ),
-  );
-}
+      );
+    }
 }

@@ -5,10 +5,15 @@
 
 ## 🟢 Status & Quality Metrics
 - **Static Analysis:** `flutter analyze` ➔ **0 errors, 0 warnings**
-- **Unit Tests:** `flutter test` ➔ **19/19 passed** across 6 test suites (`category_model_test`, `notification_payload_test`, `household_model_test`, `shopping_list_model_test`, `user_model_test`, `whatsapp_parser_test`).
-- **Theme Centralization:** 100% centralized single-file theme architecture via [`AppTheme`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme.dart) (`primaryEmerald`, `backgroundGradient`, glass tokens, category colors). All 9 screens reference `AppTheme.backgroundGradient`.
+- **Unit Tests:** `flutter test` ➔ **23/23 passed** across 7 test suites (`theme_preset_test`, `category_model_test`, `notification_payload_test`, `household_model_test`, `shopping_list_model_test`, `user_model_test`, `whatsapp_parser_test`).
+- **Luminous Halo Navigation Dock:** True Floating HUD Overlay (`Stack` architecture) with 100% transparent side/bottom gaps and continuous pass-through scrolling (lists scroll completely underneath and past the dock), real-time backdrop blur (`sigma: 25`), dynamic theme surface tint (`theme.backgroundGradient.colors.last`), floating capsule geometry (`borderRadius: 32`), and borderless active tab luminous halo glow (radial ambient light behind icon with icon/text drop shadows).
+- **Dynamic Category Icons & Interactive Assignment Chips:** Dashboard active shopping list cards dynamically resolve first-item category store icons/colors, feature merged interactive assignment pills (`[ 👤 Name ▾ ]`) with direct tap-to-reassign modal triggers, and enhanced 0% progress track border affordances.
+- **100% Theme-Adaptive & Floating SnackBars:** Global floating SnackBar system (`SnackBarBehavior.floating`, `insetPadding: bottom 90`) elevated cleanly above the floating navigation dock with dynamic theme accent adaptation (`primary`, `onPrimary`, `surfaceContainer`, `elevation: 8`).
+- **Interactive Invite Code Banner:** Tap-anywhere copy-to-clipboard invite code card with theme-accent sheen, tactile ripple, and copy status micro-feedback.
+- **10-Theme Dynamic Switcher:** 10 curated Glassmorphic themes (`theme_presets.dart`) with instant live preview, `SharedPreferences` persistence (`theme_controller.dart`), and reactive `activeGradientProvider` across all 9 screens.
+- **Theme Centralization:** 100% centralized single-file theme architecture via [`AppTheme`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme.dart) + [`ThemePreset`](file:///c:/Users/ahmed/Desktop/flutter/hatly/lib/app/config/theme_presets.dart).
 - **Memory & Lifecycle Safety:** All dialog `TextEditingController` instances bound to `try-finally` or `StatefulWidget` disposal cycles.
-- **Code Cleanliness:** 0 dead files (removed unused `category_badge.dart`), centralized shared components (`reassign_dialog.dart`).
+- **Code Cleanliness:** 0 dead files, centralized shared components (`reassign_dialog.dart`).
 - **Responsive UI & Multi-Device:** Hardened for 320dp small screens, large tablets (max-width card constraints), font scaling (1.5x+), and strict viewport bounds.
 - **Accessibility (a11y):** WCAG AA Compliant — 48x48dp touch targets, 4.8:1 input hint contrast, `Semantics` screen reader labels on tabs/checkboxes/pills, full icon tooltips.
 - **Live Security Rules:** Deployed to Firebase project `hatly-app-2026` via Firebase MCP.
